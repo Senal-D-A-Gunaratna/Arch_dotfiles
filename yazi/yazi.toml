@@ -1,0 +1,31 @@
+[opener]
+edit = [
+  { run = 'setsid kwrite "$@" &', block = false, desc = "KWrite" },
+  { run = 'setsid code "$@" &',   block = false, desc = "VS Code" },
+  { run = 'nvim "$@"',            block = true,  desc = "Neovim" },
+]
+open = [
+  { run = 'setsid xdg-open "$@" &', block = false },
+]
+image = [
+  { run = 'setsid gwenview "$@" &', block = false, desc = "Gwenview" },
+]
+libreoffice = [
+  { run = 'setsid libreoffice "$@" &', block = false, desc = "LibreOffice" },
+]
+
+[open]
+prepend_rules = [
+  { mime = "image/*", use = "image" },
+  { mime = "text/*", use = "edit" },
+  { mime = "application/vnd.openxmlformats-officedocument.wordprocessingml.document", use = "libreoffice" },
+  { mime = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", use = "libreoffice" },
+  { mime = "application/vnd.openxmlformats-officedocument.presentationml.presentation", use = "libreoffice" },
+  { mime = "application/msword", use = "libreoffice" },
+  { mime = "application/vnd.ms-excel", use = "libreoffice" },
+  { mime = "application/vnd.ms-powerpoint", use = "libreoffice" },
+  { name = "*", use = "open" }
+]
+
+[mgr]
+ratio = [1, 2, 3]

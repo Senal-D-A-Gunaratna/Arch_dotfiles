@@ -1,0 +1,4 @@
+@define-color base-bg {{colors.surface.default.hex}};
+@define-color surface-variant {{colors.surface_variant.default.hex}};
+@define-color primary-neon {{colors.primary.default.hex}};
+@define-color text-main {{colors.on_surface.default.hex}};

@@ -1,0 +1,10 @@
+configuration {
+    modes: "drun,run,window,combi";
+    combi-modes: "drun,run,window";
+    show-icons: true;
+    click-to-exit: true;
+    drun-display-format: "{name}";
+    display-drun: "Search";
+    lines: 8;
+}
+@theme "/home/senal/.cache/matugen/matugen.rasi"

@@ -1,0 +1,75 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 22, // slightly tighter
+
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": ["hyprland/window"],
+
+  "hyprland/window": {
+    "max-length": 50,
+    "separate-outputs": true,
+    "tooltip": false
+  },
+
+  "modules-right": [
+    "pulseaudio",
+    "custom/monitor_brightness",
+    "network",
+    "cpu",
+    "memory",
+    "clock"
+  ],
+
+  "hyprland/workspaces": {
+    "format": "{name}",
+    "tooltip": false,
+    "disable-scroll": true // prevents accidental workspace switching
+  },
+
+  "custom/monitor_brightness": {
+    "format": "{}",
+    "exec": "/home/senal/.config/waybar/brightness",
+    "return-type": "json",
+    "on-scroll-up": "/home/senal/.config/waybar/brightness up && pkill -RTMIN+8 waybar",
+    "on-scroll-down": "/home/senal/.config/waybar/brightness down && pkill -RTMIN+8 waybar",
+    "signal": 8,
+    "tooltip": false
+  },
+
+  "pulseaudio": {
+    "format": "  {volume}%",
+    "format-muted": " muted",
+    "tooltip": false,
+    "on-click": "setsid hyprctl dispatch exec '[float;center;size 650 800]' 'kitty -e wiremix'"
+  },
+
+  "network": {
+    "format-wifi": "  {signalStrength}%",
+    "format-ethernet": "󰈀",
+    "format-disconnected": "⚠",
+    "tooltip": false,
+    "interval": 1, // 1s is overkill, wastes CPU
+    "on-click": "setsid hyprctl dispatch exec '[float;center;size 650 800]' 'kitty -e impala'"
+  },
+
+  "cpu": {
+    "format": "  {usage}%",
+    "tooltip": false,
+    "interval": 1
+  },
+
+  "memory": {
+    "format": "  {percentage}%",
+    "tooltip": false,
+    "interval": 1
+  },
+
+  "clock": {
+  "format": "{:%H:%M}",
+  "tooltip-format": "{:%A, %d %B %Y}",  // correct property
+  "tooltip": true,                        // enable tooltip
+  "interval": 1,
+  "on-click": "setsid kitty -e calcurse &"
+  }
+}

@@ -1,0 +1,69 @@
+/* ROFI VERTICAL THEME - MATUGEN COLORS */
+* {
+    font:               "JetBrains Mono 12";
+    background-color:   transparent;
+    text-color:         {{colors.on_surface.default.hex}};
+    accent-color:       {{colors.primary.default.hex}};
+    margin:     0px;
+    padding:    0px;
+    spacing:    0px;
+}
+window {
+    background-color:   {{colors.surface_container.default.rgba | set_alpha: 0.4}};
+    border-color:       {{colors.primary.default.hex}};
+    location:   center;
+    width:      480px;
+    border:     1px;
+    border-radius:      10px;
+}
+inputbar {
+    background-color:   {{colors.surface_container.default.rgba | set_alpha: 0.4}};
+    padding:    8px 12px;
+    spacing:    12px;
+    children:   [ prompt, entry ];
+}
+prompt, entry, element-text, element-icon {
+    vertical-align: 0.5;
+}
+prompt {
+    text-color: {{colors.primary.default.hex}};
+}
+listview {
+    lines:      8;
+    columns:    1;
+    fixed-height:   false;
+    background-color: transparent;
+}
+element {
+    padding:    8px;
+    spacing:    8px;
+    background-color: transparent;
+}
+element normal urgent {
+    text-color: {{colors.error.default.hex}};
+}
+element normal active {
+    text-color: {{colors.primary.default.hex}};
+}
+element alternate active {
+    text-color: {{colors.primary.default.hex}};
+}
+element selected {
+    text-color: {{colors.on_primary_container.default.hex}};
+}
+element selected normal {
+    background-color:   {{colors.primary_container.default.hex}};
+}
+element selected urgent {
+    background-color:   {{colors.error_container.default.hex}};
+}
+element selected active {
+    background-color:   {{colors.primary_container.default.hex}};
+}
+element-icon {
+    size:   0.75em;
+}
+element-text {
+    text-color: inherit;
+    background-color: transparent;
+}

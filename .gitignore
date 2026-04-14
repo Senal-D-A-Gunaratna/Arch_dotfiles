@@ -1,0 +1,33 @@
+# Ignore everything in this directory
+/*
+
+# But not these files...
+!.gitignore
+!kitty
+!rofi
+!mpv
+!waybar
+!yazi
+!qt6ct
+!matugen
+!waypaper
+!hypr
+!btop
+!gtk-3.0
+!gtk-4.0
+gtk-4.0/assets
+!dunst
+!README.md
+!clipse
+clipse/tmp_files
+!clipse/config.json
+!clipse/custom_theme.json
+clipse/clipboard_history.json
+clipse/clipse.log
+
+#VsCode
+!Code
+Code/*
+!Code/User
+Code/User/*
+!Code/User/settings.json
