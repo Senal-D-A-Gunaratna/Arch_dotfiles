@@ -1,3 +1,6 @@
+[manager]
+ratio = [1, 2, 3]
+
 [opener]
 edit = [
   { run = 'setsid kwrite "$@" &', block = false, desc = "KWrite" },
@@ -8,7 +11,7 @@ open = [
   { run = 'setsid xdg-open "$@" &', block = false },
 ]
 image = [
-  { run = 'setsid gwenview "$@" &', block = false, desc = "Gwenview" },
+  { run = 'setsid gthumb "$@"', block = false, desc = "gThumb" },
 ]
 libreoffice = [
   { run = 'setsid libreoffice "$@" &', block = false, desc = "LibreOffice" },
@@ -16,16 +19,21 @@ libreoffice = [
 
 [open]
 prepend_rules = [
+  # Images (including WebP)
   { mime = "image/*", use = "image" },
+  { name = "*.webp",  use = "image" },
+  
+  # Text/Code
   { mime = "text/*", use = "edit" },
+  
+  # Office Documents
   { mime = "application/vnd.openxmlformats-officedocument.wordprocessingml.document", use = "libreoffice" },
   { mime = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", use = "libreoffice" },
   { mime = "application/vnd.openxmlformats-officedocument.presentationml.presentation", use = "libreoffice" },
   { mime = "application/msword", use = "libreoffice" },
   { mime = "application/vnd.ms-excel", use = "libreoffice" },
   { mime = "application/vnd.ms-powerpoint", use = "libreoffice" },
+  
+  # Fallback
   { name = "*", use = "open" }
 ]
-
-[mgr]
-ratio = [1, 2, 3]
