@@ -24,6 +24,7 @@ clipse/tmp_files
 !clipse/custom_theme.json
 clipse/clipboard_history.json
 clipse/clipse.log
+!calcurse
 
 #VsCode
 !Code
