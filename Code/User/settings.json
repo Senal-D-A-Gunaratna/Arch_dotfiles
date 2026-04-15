@@ -107,7 +107,14 @@
         "terminal.ansiBrightBlue": "#1f4876",
         "terminal.ansiBrightMagenta": "#3c4758",
         "terminal.ansiBrightCyan": "#3c4758",
-        "terminal.ansiBrightWhite": "#c3c6cf"
+        "terminal.ansiBrightWhite": "#c3c6cf",
+        "list.activeSelectionBackground": "#1f4876",
+        "list.activeSelectionForeground": "#d3e3ff",
+        "list.hoverBackground": "#272a2f",
+        "list.inactiveSelectionBackground": "#32353a",
+        "list.focusBackground": "#1f4876",
+        "list.focusOutline": "#a4c9fe",
+        "explorer.indentGuidesCombined": "#43474e"
     },
     "workbench.editorAssociations": {
         "*.copilotmd": "vscode.markdown.preview.editor",

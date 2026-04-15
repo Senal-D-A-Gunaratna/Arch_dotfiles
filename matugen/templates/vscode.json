@@ -86,6 +86,14 @@
         "terminal.ansiBrightBlue": "{{colors.primary_container.default.hex}}",
         "terminal.ansiBrightMagenta": "{{colors.secondary_container.default.hex}}",
         "terminal.ansiBrightCyan": "{{colors.secondary_container.default.hex}}",
-        "terminal.ansiBrightWhite": "{{colors.on_surface_variant.default.hex}}"
+        "terminal.ansiBrightWhite": "{{colors.on_surface_variant.default.hex}}",
+
+        "list.activeSelectionBackground": "{{colors.primary_container.default.hex}}",
+        "list.activeSelectionForeground": "{{colors.on_primary_container.default.hex}}",
+        "list.hoverBackground": "{{colors.surface_container_high.default.hex}}",
+        "list.inactiveSelectionBackground": "{{colors.surface_container_highest.default.hex}}",
+        "list.focusBackground": "{{colors.primary_container.default.hex}}",
+        "list.focusOutline": "{{colors.primary.default.hex}}",
+        "explorer.indentGuidesCombined": "{{colors.outline_variant.default.hex}}"
     }
 }
