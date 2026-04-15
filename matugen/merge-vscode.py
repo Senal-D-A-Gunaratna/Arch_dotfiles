@@ -2,7 +2,7 @@ import json
 from pathlib import Path
 
 BASE = Path.home() / ".config/Code/User/settings.json"
-COLORS = Path.home() / ".cache/matugen/colors-vscode.json"
+COLORS = Path.home() / ".config/Code/User/colors-vscode.json"
 
 base = json.loads(BASE.read_text())
 colors = json.loads(COLORS.read_text())

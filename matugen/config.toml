@@ -4,11 +4,11 @@ awww = true # Optional: if you use swww for wallpapers
 
 [templates.rofi]
 input_path = "~/.config/matugen/templates/matugen.rasi"
-output_path = "~/.cache/matugen/matugen.rasi"
+output_path = "~/.config/rofi/matugen.rasi"
 
 [templates.kitty]
 input_path = "~/.config/matugen/templates/kitty-colors.conf"
-output_path = "~/.cache/matugen/kitty-colors.conf"
+output_path = "~/.config/kitty/kitty-colors.conf"
 post_hook = "pkill -USR1 kitty"
 
 [templates.gtk3]
@@ -31,17 +31,17 @@ post_hook = "pkill -USR2 btop || true"
 
 [templates.waybar]
 input_path = "~/.config/matugen/templates/waybar.css"
-output_path = "~/.cache/matugen/colors.css"
+output_path = "~/.config/waybar/colors.css"
 post_hook = "pkill -SIGUSR2 waybar"
 
 [templates.vscode]
 input_path = "~/.config/matugen/templates/vscode.json"
-output_path = "~/.cache/matugen/colors-vscode.json"
+output_path = "~/.config/Code/User/colors-vscode.json"
 post_hook = "python3 ~/.config/matugen/merge-vscode.py"
 
 [templates.hyprland]
 input_path = "~/.config/matugen/templates/hyprland-colors.conf"
-output_path = "~/.cache/matugen/hyprland-colors.conf"
+output_path = "~/.config/hyprland/hyprland-colors.conf"
 post_hook = "bash ~/.config/matugen/apply-hyprland.sh"
 
 [templates.clipse]
