@@ -101,5 +101,6 @@
     "telemetry.editStats.enabled": false,
     "workbench.secondarySideBar.defaultVisibility": "visible",
     "chat.viewSessions.orientation": "stacked",
-    "github.copilot.chat.copilotMemory.enabled": true
+    "github.copilot.chat.copilotMemory.enabled": true,
+    "chat.disableAIFeatures": true
 }
