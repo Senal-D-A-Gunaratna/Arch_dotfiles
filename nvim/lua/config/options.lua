@@ -4,6 +4,3 @@
 
 -- Disable True Color support so it falls back to your terminal
 vim.opt.termguicolors = false
--- Ensure Neovim knows your terminal supports at least 256 colors for compatibility
--- but we will limit the theme to 16.
-vim.cmd("set t_Co=256")
