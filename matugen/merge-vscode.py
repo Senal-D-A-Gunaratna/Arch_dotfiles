@@ -2,7 +2,7 @@ import json
 from pathlib import Path
 
 BASE = Path.home() / ".config/Code/User/settings.json"
-COLORS_PATH = Path.home() / ".config/Code/User/colors-vscode.json"
+COLORS_PATH = Path.home() / ".config/Code/User/vscode-colors.json"
 
 try:
     # Handle empty or missing settings file
