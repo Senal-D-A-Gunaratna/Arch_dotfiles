@@ -132,6 +132,25 @@
         "symbolIcon.variableForeground": "{{colors.primary.default.hex}}",
         "symbolIcon.propertyForeground": "{{colors.tertiary.default.hex}}",
         "symbolIcon.functionForeground": "{{colors.secondary.default.hex}}",
-        "symbolIcon.constantForeground": "{{colors.primary.default.hex}}"
+        "symbolIcon.constantForeground": "{{colors.primary.default.hex}}",
+        "symbolIcon.fieldForeground": "{{colors.primary.default.hex}}",
+        "symbolIcon.eventForeground": "{{colors.primary.default.hex}}",
+        "symbolIcon.classForeground": "{{colors.primary.default.hex}}",
+        "symbolIcon.interfaceForeground": "{{colors.primary.default.hex}}",
+        "symbolIcon.enumForeground": "{{colors.primary.default.hex}}",
+        "symbolIcon.typeParameterForeground": "{{colors.primary.default.hex}}",
+        "symbolIcon.unitForeground": "{{colors.primary.default.hex}}",
+        "symbolIcon.keywordForeground": "{{colors.primary.default.hex}}",
+        "symbolIcon.operatorForeground": "{{colors.primary.default.hex}}",
+        "symbolIcon.aliasForeground": "{{colors.primary.default.hex}}",
+        "symbolIcon.moduleForeground": "{{colors.primary.default.hex}}",
+        "symbolIcon.namespaceForeground": "{{colors.primary.default.hex}}",
+        "symbolIcon.packageForeground": "{{colors.primary.default.hex}}",
+        "symbolIcon.nullForeground": "{{colors.primary.default.hex}}",
+        "symbolIcon.structForeground": "{{colors.primary.default.hex}}",
+        "symbolIcon.annotationForeground": "{{colors.primary.default.hex}}",
+        "symbolIcon.decoratorForeground": "{{colors.primary.default.hex}}",
+        "symbolIcon.directoryForeground": "{{colors.primary.default.hex}}",
+        "symbolIcon.fileForeground": "{{colors.primary.default.hex}}"
     }
 }
