@@ -89,7 +89,16 @@
         "editorGutter.background": "#111318",
         "editor.lineHighlightBackground": "#272a2f44",
         "editor.lineHighlightBorder": "#00000000",
-        "editorLineNumber.activeForeground": "#a4c9fe"
+        "editorLineNumber.activeForeground": "#a4c9fe",
+        "pickerGroup.foreground": "#a4c9fe",
+        "pickerGroup.border": "#43474e",
+        "quickInput.background": "#1d2024",
+        "quickInput.foreground": "#e1e2e9",
+        "quickInputList.focusBackground": "#1f4876",
+        "input.background": "#272a2f",
+        "input.border": "#8d9199",
+        "input.foreground": "#e1e2e9",
+        "input.placeholderForeground": "#8d9199"
     },
     "files.autoSave": "afterDelay",
     "explorer.fileNesting.patterns": {
