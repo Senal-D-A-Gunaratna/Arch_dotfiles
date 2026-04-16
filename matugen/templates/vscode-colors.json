@@ -126,6 +126,12 @@
         "breadcrumb.foreground": "{{colors.outline.default.hex}}",
         "breadcrumb.focusForeground": "{{colors.primary.default.hex}}",
         "breadcrumb.activeSelectionForeground": "{{colors.on_surface.default.hex}}",
-        "breadcrumbPicker.background": "{{colors.surface_container.default.hex}}"
+        "breadcrumbPicker.background": "{{colors.surface_container.default.hex}}",
+        "breadcrumbPicker.border": "{{colors.outline_variant.default.hex}}",
+    
+        "symbolIcon.variableForeground": "{{colors.primary.default.hex}}",
+        "symbolIcon.propertyForeground": "{{colors.tertiary.default.hex}}",
+        "symbolIcon.functionForeground": "{{colors.secondary.default.hex}}",
+        "symbolIcon.constantForeground": "{{colors.primary.default.hex}}"
     }
 }

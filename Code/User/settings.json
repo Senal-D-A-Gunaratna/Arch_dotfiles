@@ -108,7 +108,14 @@
         "breadcrumb.foreground": "#8d9199",
         "breadcrumb.focusForeground": "#a4c9fe",
         "breadcrumb.activeSelectionForeground": "#e1e2e9",
-        "breadcrumbPicker.background": "#1d2024"
+        "breadcrumbPicker.background": "#1d2024",
+        "editorIndentGuide.background": "#4f4539",
+        "editorIndentGuide.activeBackground": "#f1be6d",
+        "breadcrumbPicker.border": "#43474e",
+        "symbolIcon.variableForeground": "#a4c9fe",
+        "symbolIcon.propertyForeground": "#d9bde3",
+        "symbolIcon.functionForeground": "#bcc7db",
+        "symbolIcon.constantForeground": "#a4c9fe"
     },
     "files.autoSave": "afterDelay",
     "explorer.fileNesting.patterns": {
