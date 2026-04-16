@@ -115,6 +115,12 @@
         "input.background": "{{colors.surface_container_high.default.hex}}",
         "input.border": "{{colors.outline.default.hex}}",
         "input.foreground": "{{colors.on_surface.default.hex}}",
-        "input.placeholderForeground": "{{colors.outline.default.hex}}"
+        "input.placeholderForeground": "{{colors.outline.default.hex}}",
+    
+    "commandCenter.background": "{{colors.surface_container_high.default.hex}}",
+    "commandCenter.border": "{{colors.primary.default.hex}}33",
+    "commandCenter.activeBackground": "{{colors.primary_container.default.hex}}",
+    "commandCenter.activeBorder": "{{colors.primary.default.hex}}",
+    "commandCenter.foreground": "{{colors.primary.default.hex}}"
     }
 }

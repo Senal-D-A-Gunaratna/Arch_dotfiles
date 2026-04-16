@@ -98,7 +98,13 @@
         "input.background": "#272a2f",
         "input.border": "#8d9199",
         "input.foreground": "#e1e2e9",
-        "input.placeholderForeground": "#8d9199"
+        "input.placeholderForeground": "#8d9199",
+        "commandCenter.background": "#272a2f",
+        "commandCenter.activeBackground": "#1f4876",
+        "commandCenter.border": "#a4c9fe33",
+        "commandCenter.foreground": "#a4c9fe",
+        "commandCenter.inactiveForeground": "#9b8f80",
+        "commandCenter.activeBorder": "#a4c9fe"
     },
     "files.autoSave": "afterDelay",
     "explorer.fileNesting.patterns": {
