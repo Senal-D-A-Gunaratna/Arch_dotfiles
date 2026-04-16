@@ -41,7 +41,7 @@ post_hook = "python ~/.config/matugen/merge-vscode.py"
 
 [templates.hyprland]
 input_path = "~/.config/matugen/templates/hyprland-colors.conf"
-output_path = "~/.config/hyprland/hyprland-colors.conf"
+output_path = "~/.config/hypr/hyprland-colors.conf"
 post_hook = "bash ~/.config/matugen/apply-hyprland.sh"
 
 [templates.clipse]
