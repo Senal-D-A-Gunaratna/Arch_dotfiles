@@ -159,6 +159,23 @@
         "welcomePage.tileBackground": "{{colors.surface_container.default.hex}}",
         "welcomePage.tileHoverBackground": "{{colors.surface_container_high.default.hex}}",
         "welcomePage.tileBorder": "{{colors.outline_variant.default.hex}}",
-        "focusBorder": "{{colors.primary.default.hex}}"
+        "focusBorder": "{{colors.primary.default.hex}}",
+
+
+        "editorCursor.foreground": "{{colors.primary.default.hex}}",
+        "editor.selectionBackground": "{{colors.primary.default.hex}}33",
+        "editor.selectionHighlightBackground": "{{colors.primary.default.hex}}22",
+        "editor.wordHighlightBackground": "{{colors.secondary.default.hex}}33",
+        "editor.wordHighlightStrongBackground": "{{colors.tertiary.default.hex}}33",
+
+ 
+        "terminalCursor.background": "{{colors.on_primary.default.hex}}",
+
+        "terminal.selectionBackground": "{{colors.primary.default.hex}}44",
+        "terminal.inactiveSelectionBackground": "{{colors.surface_container_highest.default.hex}}",
+
+        "editor.findMatchBackground": "{{colors.primary.default.hex}}66",
+        "editor.findMatchHighlightBackground": "{{colors.primary.default.hex}}33",
+        "editor.findRangeHighlightBackground": "{{colors.surface_container_highest.default.hex}}44"
     }
 }

@@ -141,7 +141,18 @@
         "editorWidget.background": "#272a2f",
         "editorWidget.border": "#43474e",
         "editorMarkerNavigationError.background": "#ffb4ab",
-        "editorMarkerNavigationWarning.background": "#bcc7db"
+        "editorMarkerNavigationWarning.background": "#bcc7db",
+        "editorCursor.foreground": "#a4c9fe",
+        "editor.selectionBackground": "#a4c9fe33",
+        "editor.selectionHighlightBackground": "#a4c9fe22",
+        "editor.wordHighlightBackground": "#bcc7db33",
+        "editor.wordHighlightStrongBackground": "#d9bde333",
+        "terminalCursor.background": "#00315c",
+        "terminal.selectionBackground": "#a4c9fe44",
+        "terminal.inactiveSelectionBackground": "#32353a",
+        "editor.findMatchBackground": "#a4c9fe66",
+        "editor.findMatchHighlightBackground": "#a4c9fe33",
+        "editor.findRangeHighlightBackground": "#32353a44"
     },
     "files.autoSave": "afterDelay",
     "explorer.fileNesting.patterns": {
