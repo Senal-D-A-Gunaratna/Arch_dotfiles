@@ -85,6 +85,7 @@
         "activityBarBadge.background": "{{colors.primary.default.hex}}",
         "activityBarBadge.foreground": "{{colors.on_primary.default.hex}}",
         "countBadge.background": "{{colors.primary_container.default.hex}}",
-        "countBadge.foreground": "{{colors.on_primary_container.default.hex}}"
+        "countBadge.foreground": "{{colors.on_primary_container.default.hex}}",
+        "editorGutter.background": "{{colors.surface.default.hex}}"
     }
 }
