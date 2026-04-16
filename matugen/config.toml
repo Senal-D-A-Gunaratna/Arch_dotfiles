@@ -35,7 +35,7 @@ output_path = "~/.config/waybar/colors.css"
 post_hook = "pkill -SIGUSR2 waybar"
 
 [templates.vscode]
-input_path = "~/.config/matugen/templates/vscode.json"
+input_path = "~/.config/matugen/templates/vscode-colors.json"
 output_path = "~/.config/Code/User/colors-vscode.json"
 post_hook = "python ~/.config/matugen/merge-vscode.py"
 
