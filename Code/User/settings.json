@@ -104,7 +104,11 @@
         "commandCenter.border": "#a4c9fe33",
         "commandCenter.foreground": "#a4c9fe",
         "commandCenter.inactiveForeground": "#9b8f80",
-        "commandCenter.activeBorder": "#a4c9fe"
+        "commandCenter.activeBorder": "#a4c9fe",
+        "breadcrumb.foreground": "#8d9199",
+        "breadcrumb.focusForeground": "#a4c9fe",
+        "breadcrumb.activeSelectionForeground": "#e1e2e9",
+        "breadcrumbPicker.background": "#1d2024"
     },
     "files.autoSave": "afterDelay",
     "explorer.fileNesting.patterns": {
