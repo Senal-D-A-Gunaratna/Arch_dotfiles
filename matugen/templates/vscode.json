@@ -81,6 +81,10 @@
         "terminal.background": "{{colors.surface.default.hex}}",
         "terminal.border": "{{colors.outline_variant.default.hex}}",
         "terminal.tab.activeBorder": "{{colors.primary.default.hex}}",
-        "panel.border": "{{colors.outline_variant.default.hex}}"
+        "panel.border": "{{colors.outline_variant.default.hex}}",
+        "activityBarBadge.background": "{{colors.primary.default.hex}}",
+        "activityBarBadge.foreground": "{{colors.on_primary.default.hex}}",
+        "countBadge.background": "{{colors.primary_container.default.hex}}",
+        "countBadge.foreground": "{{colors.on_primary_container.default.hex}}"
     }
 }
