@@ -86,7 +86,10 @@
         "activityBarBadge.foreground": "#00315c",
         "countBadge.background": "#1f4876",
         "countBadge.foreground": "#d3e3ff",
-        "editorGutter.background": "#111318"
+        "editorGutter.background": "#111318",
+        "editor.lineHighlightBackground": "#272a2f44",
+        "editor.lineHighlightBorder": "#00000000",
+        "editorLineNumber.activeForeground": "#a4c9fe"
     },
     "files.autoSave": "afterDelay",
     "explorer.fileNesting.patterns": {
