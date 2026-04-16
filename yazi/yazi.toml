@@ -5,7 +5,7 @@ ratio = [1, 2, 3]
 edit = [
   { run = 'setsid kwrite "$@" &', block = false, desc = "KWrite" },
   { run = 'setsid code "$@" &',   block = false, desc = "VS Code" },
-  { run = 'nvim "$@"',            block = true,  desc = "Neovim" },
+  { run = 'setsid nvim "$@"',            block = true,  desc = "Neovim" },
 ]
 open = [
   { run = 'setsid xdg-open "$@" &', block = false },
