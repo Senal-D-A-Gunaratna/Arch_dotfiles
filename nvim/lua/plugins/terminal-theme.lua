@@ -1,3 +1,9 @@
+local enabled = true -- Set to false to go back to "Normal" mode
+
+if not enabled then
+  return {}
+end
+
 return {
   -- 1. Force LazyVim to use your ANSI theme
   {
@@ -13,7 +19,7 @@ return {
     lazy = false,
     priority = 1000,
     init = function()
-      -- This overrides your options.lua automatically [cite: 17, 20]
+      -- These only run if 'enabled' is true
       vim.opt.termguicolors = false 
       vim.o.background = "dark" 
     end,
