@@ -33,5 +33,3 @@ Code/*
 Code/User/*
 !Code/User/settings.json
 
-#Neovim
-!nvim
