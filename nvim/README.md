@@ -8,10 +8,3 @@ Refer to the [documentation](https://lazyvim.github.io/installation) to get star
 the theming is dun by making Neovim directly use the terminal color palate via a custom plugin
 
 [Plugin](/nvim/lua/plugins/terminal-theme.lua)
-
-also add this code snippet to your (nvim/lua/config/options.lua)
-
-```lua
--- Disable True Color support so it falls back to your terminal
-vim.opt.termguicolors = false
-```
