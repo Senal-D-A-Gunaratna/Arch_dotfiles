@@ -116,6 +116,8 @@
         "list.activeSelectionForeground": "{{colors.on_primary_container.default.hex}}",
         "list.focusBackground": "{{colors.primary_container.default.hex}}",
         "list.focusOutline": "{{colors.primary.default.hex}}",
+        "list.hoverBackground": "{{colors.surface_container_high.default.hex}}",
+        "list.inactiveSelectionBackground": "{{colors.surface_container_highest.default.hex}}",
 
         "button.background": "{{colors.primary.default.hex}}",
         "button.foreground": "{{colors.on_primary.default.hex}}",
@@ -180,10 +182,6 @@
         "welcomePage.tileBackground": "{{colors.surface_container.default.hex}}",
         "welcomePage.tileHoverBackground": "{{colors.surface_container_high.default.hex}}",
         "welcomePage.tileBorder": "{{colors.outline_variant.default.hex}}",
-        "focusBorder": "{{colors.primary.default.hex}}",
-    
-
-        "list.hoverBackground": "{{colors.surface_container_high.default.hex}}",
-        "list.inactiveSelectionBackground": "{{colors.surface_container_highest.default.hex}}"
+        "focusBorder": "{{colors.primary.default.hex}}"
     }
 }
