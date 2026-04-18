@@ -167,7 +167,15 @@
         "dialog.background": "#181115",
         "dialog.foreground": "#eddfe3",
         "dialog.border": "#fbb0d7",
-        "button.separator": "#9c8d93"
+        "button.separator": "#9c8d93",
+        "checkbox.background": "#181115",
+        "checkbox.foreground": "#eddfe3",
+        "checkbox.border": "#9c8d93",
+        "checkbox.selectBackground": "#fbb0d7",
+        "dropdown.background": "#181115",
+        "dropdown.foreground": "#eddfe3",
+        "dropdown.border": "#9c8d93",
+        "dropdown.listBackground": "#181115"
     },
     "files.autoSave": "afterDelay",
     "explorer.fileNesting.patterns": {
