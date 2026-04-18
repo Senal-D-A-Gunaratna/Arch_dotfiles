@@ -18,7 +18,6 @@
         "editor.findRangeHighlightBackground": "{{colors.surface_container_highest.default.hex}}44",
         "editorStickyScroll.background": "{{colors.surface.default.hex}}",
         "editorStickyScrollHover.background": "{{colors.surface_container.default.hex}}",
-        "editorWidget.background": "{{colors.surface_container_high.default.hex}}",
         "editorWidget.border": "{{colors.outline_variant.default.hex}}",
         "editorMarkerNavigationError.background": "{{colors.error.default.hex}}",
         "editorMarkerNavigationWarning.background": "{{colors.secondary.default.hex}}",
@@ -102,8 +101,6 @@
 
         "list.activeSelectionBackground": "{{colors.primary_container.default.hex}}",
         "list.activeSelectionForeground": "{{colors.on_primary_container.default.hex}}",
-        "list.hoverBackground": "{{colors.surface_container_high.default.hex}}",
-        "list.inactiveSelectionBackground": "{{colors.surface_container_highest.default.hex}}",
         "list.focusBackground": "{{colors.primary_container.default.hex}}",
         "list.focusOutline": "{{colors.primary.default.hex}}",
 
@@ -178,10 +175,9 @@
         "editorSuggestWidget.highlightForeground": "{{colors.primary.default.hex}}",
         "editorSuggestWidget.selectedBackground": "{{colors.primary_container.default.hex}}",
         "editorSuggestWidget.selectedForeground": "{{colors.on_primary_container.default.hex}}",
-        "editorSuggestWidget.focusHighlightForeground": "{{colors.primary.default.hex}}"
-
-  
-  
-    
+        "editorSuggestWidget.focusHighlightForeground": "{{colors.primary.default.hex}}",
+        "editorWidget.background": "{{colors.surface.default.hex}}",
+        "list.hoverBackground": "{{colors.surface_container_high.default.hex}}",
+        "list.inactiveSelectionBackground": "{{colors.surface_container_highest.default.hex}}"
     }
 }
