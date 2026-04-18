@@ -159,7 +159,11 @@
         "editorSuggestWidget.highlightForeground": "#a4c9fe",
         "editorSuggestWidget.selectedBackground": "#1f4876",
         "editorSuggestWidget.selectedForeground": "#d3e3ff",
-        "editorSuggestWidget.focusHighlightForeground": "#a4c9fe"
+        "editorSuggestWidget.focusHighlightForeground": "#a4c9fe",
+        "editorWidget.foreground": "#e1e2e9",
+        "editorError.foreground": "#ffb4ab",
+        "editorWarning.foreground": "#bcc7db",
+        "editorInfo.foreground": "#d9bde3"
     },
     "files.autoSave": "afterDelay",
     "explorer.fileNesting.patterns": {
