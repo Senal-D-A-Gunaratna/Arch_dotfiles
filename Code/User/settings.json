@@ -175,7 +175,10 @@
         "dropdown.background": "#181115",
         "dropdown.foreground": "#eddfe3",
         "dropdown.border": "#9c8d93",
-        "dropdown.listBackground": "#181115"
+        "dropdown.listBackground": "#181115",
+        "notification.background": "#181115",
+        "notification.foreground": "#eddfe3",
+        "notification.border": "#fbb0d7"
     },
     "files.autoSave": "afterDelay",
     "explorer.fileNesting.patterns": {
