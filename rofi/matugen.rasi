@@ -2,22 +2,22 @@
 * {
     font:               "JetBrains Mono 12";
     background-color:   transparent;
-    text-color:         #eddfe3;
-    accent-color:       #fbb0d7;
+    text-color:         #e1e2e9;
+    accent-color:       #a4c9fe;
     margin:     0px;
     padding:    0px;
     spacing:    0px;
 }
 window {
-    background-color:   rgba(37, 29, 33, 0.4);
-    border-color:       #fbb0d7;
+    background-color:   rgba(29, 32, 36, 0.4);
+    border-color:       #a4c9fe;
     location:   center;
     width:      480px;
     border:     1px;
     border-radius:      10px;
 }
 inputbar {
-    background-color:   rgba(37, 29, 33, 0.4);
+    background-color:   rgba(29, 32, 36, 0.4);
     padding:    8px 12px;
     spacing:    12px;
     children:   [ prompt, entry ];
@@ -26,7 +26,7 @@ prompt, entry, element-text, element-icon {
     vertical-align: 0.5;
 }
 prompt {
-    text-color: #fbb0d7;
+    text-color: #a4c9fe;
 }
 listview {
     lines:      8;
@@ -43,22 +43,22 @@ element normal urgent {
     text-color: #ffb4ab;
 }
 element normal active {
-    text-color: #fbb0d7;
+    text-color: #a4c9fe;
 }
 element alternate active {
-    text-color: #fbb0d7;
+    text-color: #a4c9fe;
 }
 element selected {
-    text-color: #ffd8e9;
+    text-color: #d3e3ff;
 }
 element selected normal {
-    background-color:   #6c3454;
+    background-color:   #1f4876;
 }
 element selected urgent {
     background-color:   #93000a;
 }
 element selected active {
-    background-color:   #6c3454;
+    background-color:   #1f4876;
 }
 element-icon {
     size:   0.75em;
