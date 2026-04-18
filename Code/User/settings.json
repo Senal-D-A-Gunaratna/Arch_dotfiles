@@ -152,7 +152,11 @@
         "terminal.inactiveSelectionBackground": "#32353a",
         "editor.findMatchBackground": "#a4c9fe66",
         "editor.findMatchHighlightBackground": "#a4c9fe33",
-        "editor.findRangeHighlightBackground": "#32353a44"
+        "editor.findRangeHighlightBackground": "#32353a44",
+        "editorSuggestWidget.background": "#111318",
+        "editorSuggestWidget.border": "#a4c9fe",
+        "editorSuggestWidget.foreground": "#e1e2e9",
+        "editorSuggestWidget.highlightForeground": "#a4c9fe"
     },
     "files.autoSave": "afterDelay",
     "explorer.fileNesting.patterns": {
