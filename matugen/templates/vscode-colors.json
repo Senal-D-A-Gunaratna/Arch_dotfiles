@@ -182,6 +182,11 @@
         "welcomePage.tileBackground": "{{colors.surface_container.default.hex}}",
         "welcomePage.tileHoverBackground": "{{colors.surface_container_high.default.hex}}",
         "welcomePage.tileBorder": "{{colors.outline_variant.default.hex}}",
-        "focusBorder": "{{colors.primary.default.hex}}"
+        "focusBorder": "{{colors.primary.default.hex}}",
+    
+        "dialog.background": "{{colors.surface.default.hex}}",
+        "dialog.foreground": "{{colors.on_surface.default.hex}}",
+        "dialog.border": "{{colors.primary.default.hex}}",
+        "button.separator": "{{colors.outline.default.hex}}"
     }
 }
