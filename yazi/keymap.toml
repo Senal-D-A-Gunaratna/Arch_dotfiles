@@ -13,5 +13,5 @@ prepend_keymap = [
   
   # Tabs and System
   { on = "W", run = "close", desc = "Close tab" },
-  { on = "B", run = 'shell "dragon -x \"$@\"" --confirm', desc = "Drag and drop" }
+  { on = "B", run = 'shell "dragon-drop -x \"$@\"" --confirm', desc = "Drag and drop" }
 ]
