@@ -1,5 +1,6 @@
 [manager]
 ratio = [1, 2, 3]
+mouse_events = [ "click", "scroll", "touch", "drag" ]
 
 [opener]
 edit = [
