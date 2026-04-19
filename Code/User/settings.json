@@ -227,5 +227,8 @@
             "filename": "**/LICENSE*",
             "enabled": true
         }
-    ]
+    ],
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    }
 }
