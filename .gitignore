@@ -25,6 +25,7 @@ clipse/tmp_files
 clipse/clipboard_history.json
 clipse/clipse.log
 !calcurse
+!scripts
 
 #VsCode
 !Code
