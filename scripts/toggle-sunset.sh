@@ -2,8 +2,8 @@
 
 if pgrep -x "hyprsunset" > /dev/null; then
     pkill -x "hyprsunset"
-    dunstify -u low -t 2000 "Hyprsunset" "Blue light filter disabled"
+    notify-send -u low -t 2000 "Hyprsunset" "Filter Disabled"
 else
     hyprsunset &
-    dunstify -u low -t 2000 "Hyprsunset" "Blue light filter enabled"
+    notify-send -u low -t 2000 "Hyprsunset" "Filter Enabled"
 fi
