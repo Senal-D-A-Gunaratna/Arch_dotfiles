@@ -18,7 +18,7 @@ libreoffice = [
   { run = 'setsid libreoffice "$@" &', block = false, desc = "LibreOffice" },
 ]
 music = [
-  { run = 'kitty --detach --class music-player musikcube "$1"', desc = "musikcube" },
+  { run = 'setsid kitty -e termusic "$@"', block = false, desc = "Termusic" },
 ]
 [open]
 prepend_rules = [
