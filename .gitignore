@@ -28,12 +28,10 @@ clipse/clipse.log
 !scripts
 !xsettingsd
 
-#musikube
-!musikcube
-musikcube/1
-musikcube/cache
-musikcube/stderr.txt
-musikcube/log.txt
+#Termusic
+!termusic
+termusic/*
+!termusic/tui.toml
 
 #VsCode
 !Code
@@ -41,4 +39,3 @@ Code/*
 !Code/User
 Code/User/*
 !Code/User/settings.json
-
