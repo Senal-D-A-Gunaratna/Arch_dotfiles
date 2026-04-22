@@ -26,7 +26,12 @@ clipse/clipboard_history.json
 clipse/clipse.log
 !calcurse
 !scripts
-!kew
+#musikube
+!musikcube
+musikcube/1*
+musikcube/cache/*
+musikcube/stderr.txt
+musikcube/log.txt
 
 #VsCode
 !Code
