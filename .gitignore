@@ -26,6 +26,8 @@ clipse/clipboard_history.json
 clipse/clipse.log
 !calcurse
 !scripts
+!xsettingsd
+
 #musikube
 !musikcube
 musikcube/1
