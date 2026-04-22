@@ -17,8 +17,8 @@ image = [
 libreoffice = [
   { run = 'setsid libreoffice "$@" &', block = false, desc = "LibreOffice" },
 ]
-play = [
-  { run = 'kitty kew', desc = "kew" },
+music = [
+  { run = 'kitty --detach --class music-player musikcube "$1"', desc = "musikcube" },
 ]
 [open]
 prepend_rules = [
@@ -29,7 +29,7 @@ prepend_rules = [
   # Text/Code
   { mime = "text/*", use = "edit" },
   
-  { mime = "audio/*", use = "play" },
+  { mime = "audio/*", use = "music" },
 
   # Office Documents
   { mime = "application/vnd.openxmlformats-officedocument.wordprocessingml.document", use = "libreoffice" },
