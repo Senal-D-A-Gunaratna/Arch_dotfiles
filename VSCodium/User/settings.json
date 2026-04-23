@@ -195,7 +195,6 @@
         "*.sdb": "${capture}.${extname}-*",
         "*.s3db": "${capture}.${extname}-*"
     },
-    "workbench.iconTheme": "material-icon-theme",
     "git.autofetch": true,
     "git.enableSmartCommit": true,
     "editor.fontFamily": "'JetBrainsMono Nerd Font', monospace",
@@ -226,5 +225,6 @@
         }
     ],
     "pascal.format.path": "/usr/bin/ptop",
-    "git.path": "/usr/bin/git"
+    "git.path": "/usr/bin/git",
+    "workbench.iconTheme": "material-icon-theme"
 }
