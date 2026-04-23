@@ -178,7 +178,9 @@
         "welcomePage.tileBackground": "#1d2024",
         "welcomePage.tileHoverBackground": "#272a2f",
         "welcomePage.tileBorder": "#43474e",
-        "focusBorder": "#a5c9fe"
+        "focusBorder": "#a5c9fe",
+        "activityBarItem.activeBorder": "#a5c9fe",
+        "activityBar.activeBorder": "#a5c9fe"
     },
     "files.autoSave": "afterDelay",
     "explorer.fileNesting.patterns": {
