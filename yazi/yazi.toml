@@ -19,9 +19,10 @@ libreoffice = [
 ]
 music = [
   { run = 'setsid kitty -e termusic "$@"', block = false, desc = "Termusic" },
+  { run = 'setsid mpv "$@"', block = false, desc = "mpv" },
 ]
 video = [
-  { run = 'setsid mpv "$@" &', block = false, desc = "mpv" },
+  { run = 'mpv "$@"', block = false, desc = "mpv" },
 ]
 [open]
 prepend_rules = [
