@@ -180,5 +180,6 @@
         "welcomePage.tileBorder": "#43474e",
         "focusBorder": "#a5c9fe"
     },
-    "workbench.iconTheme": "material-icon-theme"
+    "workbench.iconTheme": "material-icon-theme",
+    "git.autofetch": true
 }
