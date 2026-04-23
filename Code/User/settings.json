@@ -208,12 +208,18 @@
         "{git,gitlens,chat-editing-snapshot-text-model,copilot,git-graph,git-graph-3}:/**/*.qrc": "default",
         "*.qrc": "qt-core.qrcEditor"
     },
-    "telemetry.feedback.enabled": false,
+"telemetry.feedback.enabled": false,
     "telemetry.editStats.enabled": false,
     "workbench.secondarySideBar.defaultVisibility": "visible",
     "chat.viewSessions.orientation": "stacked",
-    "github.copilot.chat.copilotMemory.enabled": true,
-    "chat.disableAIFeatures": true,
+    "chat.disableAIFeatures": false,
+    "github.copilot.enable": {
+        "*": false
+    },
+    "github.copilot.editor.enableAutoCompletions": false,
+    "github.copilot.chat.copilotMemory.enabled": false,
+    "github.copilot.chat.welcomeMessage.enabled": false,
+    "editor.inlineSuggest.enabled": false,
     "diffEditor.codeLens": true,
     "cSpell.enabled": true,
     "cSpell.enabledFileTypes": {
