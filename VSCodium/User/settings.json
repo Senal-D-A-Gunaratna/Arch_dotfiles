@@ -210,7 +210,6 @@
     "telemetry.telemetryLevel": "off",
     "workbench.secondarySideBar.defaultVisibility": "visible",
     "chat.viewSessions.orientation": "stacked",
-    "chat.disableAIFeatures": false,
     "editor.inlineSuggest.enabled": false,
     "diffEditor.codeLens": true,
     "cSpell.enabled": true,
@@ -228,5 +227,6 @@
     ],
     "pascal.format.path": "/usr/bin/ptop",
     "git.path": "/usr/bin/git",
-    "workbench.iconTheme": "material-icon-theme"
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.browser.showInTitleBar": true
 }
