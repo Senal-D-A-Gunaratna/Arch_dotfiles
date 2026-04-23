@@ -20,6 +20,9 @@ libreoffice = [
 music = [
   { run = 'setsid kitty -e termusic "$@"', block = false, desc = "Termusic" },
 ]
+video = [
+  { run = 'setsid mpv "$@" &', block = false, desc = "mpv" },
+]
 [open]
 prepend_rules = [
   # Images (including WebP)
@@ -29,7 +32,11 @@ prepend_rules = [
   # Text/Code
   { mime = "text/*", use = "edit" },
   
+  #Audio
   { mime = "audio/*", use = "music" },
+
+  #Video
+  { mime = "video/*", use = "video" },
 
   # Office Documents
   { mime = "application/vnd.openxmlformats-officedocument.wordprocessingml.document", use = "libreoffice" },
