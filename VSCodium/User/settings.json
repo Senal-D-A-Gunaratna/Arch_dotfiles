@@ -181,7 +181,11 @@
         "focusBorder": "#a5c9fe",
         "activityBarItem.activeBorder": "#d4e3ff",
         "activityBar.activeBorder": "#d4e3ff",
-        "progressBar.background": "#d4e3ff"
+        "progressBar.background": "#d4e3ff",
+        "scrollbar.background": "#1d202480",
+        "scrollbarSlider.background": "#20487666",
+        "scrollbarSlider.hoverBackground": "#a5c9feaa",
+        "scrollbarSlider.activeBackground": "#a5c9feff"
     },
     "files.autoSave": "afterDelay",
     "explorer.fileNesting.patterns": {

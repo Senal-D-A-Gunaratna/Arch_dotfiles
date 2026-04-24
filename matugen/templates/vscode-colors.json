@@ -205,6 +205,11 @@
         "welcomePage.tileBackground": "{{colors.surface_container.default.hex}}",
         "welcomePage.tileHoverBackground": "{{colors.surface_container_high.default.hex}}",
         "welcomePage.tileBorder": "{{colors.outline_variant.default.hex}}",
-        "focusBorder": "{{colors.primary.default.hex}}"
+        "focusBorder": "{{colors.primary.default.hex}}",
+
+        "scrollbar.background": "{{colors.surface_container.default.hex}}80",
+        "scrollbarSlider.background": "{{colors.primary_container.default.hex}}66",
+        "scrollbarSlider.hoverBackground": "{{colors.primary.default.hex}}aa",
+        "scrollbarSlider.activeBackground": "{{colors.primary.default.hex}}ff"
     }
 }
