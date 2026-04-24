@@ -10,5 +10,10 @@
         "key": "alt+q",
         "command": "workbench.action.toggleMaximizedPanel",
         "when": "panelMaximized"
-    }
+    },
+    {
+        "key": "alt+a",
+        "command": "geminicodeassist.showinEditor",
+        "when": "authLoggedIn && config.geminicodeassist.enable && editorTextFocus && shouldRegisterInEditorCommand && !inGeminiDiffView && !isInDiffEditor"
+    },
 ]
