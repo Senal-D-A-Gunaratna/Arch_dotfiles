@@ -185,7 +185,10 @@
         "scrollbar.background": "#1f1f2580",
         "scrollbarSlider.background": "#39437966",
         "scrollbarSlider.hoverBackground": "#bac3ffaa",
-        "scrollbarSlider.activeBackground": "#bac3ffff"
+        "scrollbarSlider.activeBackground": "#bac3ffff",
+        "editorIndentGuide.background": "#34343a33",
+        "editorIndentGuide.activeBackground": "#bac3ffaa",
+        "editorWhitespace.foreground": "#46464f44"
     },
     "files.autoSave": "afterDelay",
     "explorer.fileNesting.patterns": {
