@@ -213,6 +213,19 @@
         "scrollbar.background": "{{colors.surface_container.default.hex}}80",
         "scrollbarSlider.background": "{{colors.primary_container.default.hex}}66",
         "scrollbarSlider.hoverBackground": "{{colors.primary.default.hex}}aa",
-        "scrollbarSlider.activeBackground": "{{colors.primary.default.hex}}ff"
+        "scrollbarSlider.activeBackground": "{{colors.primary.default.hex}}ff",
+
+        "gitDecoration.addedResourceForeground": "{{colors.primary.default.hex}}",
+        "gitDecoration.modifiedResourceForeground": "{{colors.secondary.default.hex}}",
+        "gitDecoration.untrackedResourceForeground": "{{colors.tertiary.default.hex}}",
+        "gitDecoration.ignoredResourceForeground": "{{colors.outline.default.hex}}",
+
+        "editorGutter.addedBackground": "{{colors.primary.default.hex}}",
+        "editorGutter.modifiedBackground": "{{colors.secondary.default.hex}}",
+        "editorGutter.deletedBackground": "{{colors.error.default.hex}}",
+
+        "charts.blue": "{{colors.primary.default.hex}}",
+        "charts.purple": "{{colors.secondary.default.hex}}",
+        "charts.red": "{{colors.error.default.hex}}"
     }
 }

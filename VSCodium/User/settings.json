@@ -188,7 +188,17 @@
         "scrollbarSlider.activeBackground": "#bac3ffff",
         "editorIndentGuide.background": "#34343a33",
         "editorIndentGuide.activeBackground": "#bac3ffaa",
-        "editorWhitespace.foreground": "#46464f44"
+        "editorWhitespace.foreground": "#46464f44",
+        "gitDecoration.addedResourceForeground": "#bac3ff",
+        "gitDecoration.modifiedResourceForeground": "#c3c5dd",
+        "gitDecoration.untrackedResourceForeground": "#e5bad8",
+        "gitDecoration.ignoredResourceForeground": "#90909a",
+        "editorGutter.addedBackground": "#bac3ff",
+        "editorGutter.modifiedBackground": "#c3c5dd",
+        "editorGutter.deletedBackground": "#ffb4ab",
+        "charts.blue": "#bac3ff",
+        "charts.purple": "#c3c5dd",
+        "charts.red": "#ffb4ab"
     },
     "files.autoSave": "afterDelay",
     "explorer.fileNesting.patterns": {
