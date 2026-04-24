@@ -102,7 +102,7 @@ goto_bottom = "shift+G"
 [keys.global_player]
 toggle_pause = "space"
 next_track = "."
-previous_track = "shift+,"
+previous_track = ","
 volume_up = "="
 volume_down = "-"
 seek_forward = "f"
