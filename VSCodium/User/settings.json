@@ -180,7 +180,8 @@
         "welcomePage.tileBorder": "#43474e",
         "focusBorder": "#a5c9fe",
         "activityBarItem.activeBorder": "#d4e3ff",
-        "activityBar.activeBorder": "#d4e3ff"
+        "activityBar.activeBorder": "#d4e3ff",
+        "progressBar.background": "#d4e3ff"
     },
     "files.autoSave": "afterDelay",
     "explorer.fileNesting.patterns": {
