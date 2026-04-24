@@ -8,6 +8,11 @@
     {
         "key": "alt+`",
         "command": "geminicodeassist.showinEditor",
-        "when": "authLoggedIn && config.geminicodeassist.enable && editorTextFocus && shouldRegisterInEditorCommand && !inGeminiDiffView && !isInDiffEditor"
+        "when": "authLoggedIn && config.geminicodeassist.enable && editorTextFocus && shouldRegisterInEditorCommand && !inGeminiDiffView && !isInDiffEditor && !sidePanelVisible"
     },
+    {
+        "key": "alt+`",
+        "command": "workbench.action.closeSidePanel",
+        "when": "sidePanelVisible"
+    }
 ]
