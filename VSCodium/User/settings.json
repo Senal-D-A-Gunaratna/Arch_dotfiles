@@ -196,9 +196,10 @@
         "editorGutter.addedBackground": "#bac3ff",
         "editorGutter.modifiedBackground": "#c3c5dd",
         "editorGutter.deletedBackground": "#ffb4ab",
-        "charts.blue": "#bac3ff",
+        "charts.blue": "#bac3ffcc",
         "charts.purple": "#c3c5dd",
-        "charts.red": "#ffb4ab"
+        "charts.red": "#ffb4ab",
+        "charts.lines": "#90909a88"
     },
     "files.autoSave": "afterDelay",
     "explorer.fileNesting.patterns": {

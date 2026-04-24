@@ -224,8 +224,9 @@
         "editorGutter.modifiedBackground": "{{colors.secondary.default.hex}}",
         "editorGutter.deletedBackground": "{{colors.error.default.hex}}",
 
-        "charts.blue": "{{colors.primary.default.hex}}",
+        "charts.blue": "{{colors.primary.default.hex}}cc",
         "charts.purple": "{{colors.secondary.default.hex}}",
-        "charts.red": "{{colors.error.default.hex}}"
+        "charts.red": "{{colors.error.default.hex}}",
+        "charts.lines": "{{colors.outline.default.hex}}88"
     }
 }
