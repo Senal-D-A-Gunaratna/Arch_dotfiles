@@ -1,18 +1,12 @@
 [
-    // 1. Maximize the panel when it is currently minimized/small
+    // Toggle the panel between maximized and its original size
     {
         "key": "alt+q",
         "command": "workbench.action.toggleMaximizedPanel",
-        "when": "panelVisible && !panelMaximized"
-    },
-    // 2. Restore the panel to its original size when it is currently maximized
-    {
-        "key": "alt+q",
-        "command": "workbench.action.toggleMaximizedPanel",
-        "when": "panelMaximized"
+        "when": "panelVisible || panelMaximized"
     },
     {
-        "key": "alt+a",
+        "key": "alt+`",
         "command": "geminicodeassist.showinEditor",
         "when": "authLoggedIn && config.geminicodeassist.enable && editorTextFocus && shouldRegisterInEditorCommand && !inGeminiDiffView && !isInDiffEditor"
     },
