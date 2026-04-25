@@ -51,3 +51,10 @@ VSCodium/*
 VSCodium/User/*
 !VSCodium/User/settings.json
 !VSCodium/User/keybindings.json
+
+#zen
+!zen
+zen/*
+!zen/0p1c377k.Default (release)
+zen/0p1c377k.Default (release)/*
+!zen/0p1c377k.Default (release)/chrome
