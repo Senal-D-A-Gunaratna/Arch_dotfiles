@@ -35,6 +35,7 @@ clipse/clipse.log
 !termusic
 termusic/*
 !termusic/tui.toml
+!termusic/server.toml
 
 #VsCode
 !Code
