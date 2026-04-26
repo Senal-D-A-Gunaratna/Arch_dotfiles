@@ -227,6 +227,7 @@
         "*.qrc": "qt-core.qrcEditor"
     },
     "telemetry.telemetryLevel": "off",
+    "editor.smoothScrolling": true,
     "workbench.secondarySideBar.defaultVisibility": "visible",
     "chat.viewSessions.orientation": "stacked",
     "editor.inlineSuggest.enabled": false,
