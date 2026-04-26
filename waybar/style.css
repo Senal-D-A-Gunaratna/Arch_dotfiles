@@ -11,6 +11,7 @@ window#waybar {
 }
 
 /* ALL modules base style */
+#tray,
 #pulseaudio,
 #custom-monitor_brightness,
 #network,
@@ -28,6 +29,7 @@ border: 1px solid rgba(255, 255, 255, 0.05);
 /* SYNCED COLORS:
  *  Applying @primary-neon to match your active workspace
  */
+#tray,
 #pulseaudio,
 #network,
 #cpu,
