@@ -3,8 +3,8 @@
   "position": "top",
   "height": 22, // slightly tighter
 
-  "modules-left": ["hyprland/workspaces"],
   "modules-center": ["hyprland/window"],
+  "modules-left": ["hyprland/workspaces", "tray"],
 
   "hyprland/window": {
     "max-length": 50,
@@ -13,7 +13,6 @@
   },
 
   "modules-right": [
-    "tray",
     "pulseaudio",
     "custom/monitor_brightness",
     "network",
