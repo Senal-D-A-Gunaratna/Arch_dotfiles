@@ -1,7 +1,7 @@
 {
   "layer": "top",
   "position": "top",
-  "height": 22, // slightly tighter
+  "height": 22,
 
   "modules-center": ["hyprland/window"],
   "modules-left": ["hyprland/workspaces", "tray"],
@@ -24,7 +24,7 @@
   "hyprland/workspaces": {
     "format": "{name}",
     "tooltip": false,
-    "disable-scroll": true // prevents accidental workspace switching
+    "disable-scroll": true
   },
 
   "tray": {
@@ -54,7 +54,7 @@
     "format-ethernet": "󰈀",
     "format-disconnected": "⚠",
     "tooltip": false,
-    "interval": 1, // 1s is overkill, wastes CPU
+    "interval": 1,
     "on-click": "setsid hyprctl dispatch exec '[float;center;size 650 800]' 'kitty -e impala'"
   },
 
@@ -72,8 +72,8 @@
 
   "clock": {
   "format": "{:%H:%M}",
-  "tooltip-format": "{:%A, %d %B %Y}",  // correct property
-  "tooltip": true,                        // enable tooltip
+  "tooltip-format": "{:%A, %d %B %Y}",
+  "tooltip": true,
   "interval": 1,
   "on-click": "setsid kitty -e calcurse &"
   }
