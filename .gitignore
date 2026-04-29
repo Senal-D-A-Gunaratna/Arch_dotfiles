@@ -4,7 +4,6 @@
 # But not these files...
 !.gitignore
 
-!rofi
 !mpv
 !yazi
 !qt6ct
@@ -29,6 +28,10 @@ kitty/kitty-colors.conf.conf
 #hypr
 !hypr
 hypr/hyprland-colors.conf
+
+#rofi
+!rofi
+rofi/matugen.rasi
 
 #waybar
 !waybar
