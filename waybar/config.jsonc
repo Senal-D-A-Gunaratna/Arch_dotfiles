@@ -29,7 +29,8 @@
 
   "tray": {
     "icon-size": 18,
-    "spacing": 10
+    "spacing": 10,
+    "tooltip": false
   },
 
   "custom/monitor_brightness": {
