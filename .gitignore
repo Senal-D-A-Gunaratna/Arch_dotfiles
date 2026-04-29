@@ -16,7 +16,6 @@
 !gpu-screen-recorder
 !user-dirs.dirs
 !helix
-!dunst
 !README.md
 
 #kitty
@@ -39,13 +38,16 @@ waybar/colors.css
 
 #btop
 !btop
-btop/*
 !btop/btop.conf
+btop/*
+btop/themes
 
 #gtk
 !gtk-3.0
 !gtk-4.0
 gtk-4.0/assets
+gtk-3.0/colors.css
+gtk-4.0/colors.css
 
 #clipse
 !clipse
@@ -54,6 +56,10 @@ clipse/tmp_files
 !clipse/custom_theme.json
 clipse/clipboard_history.json
 clipse/clipse.log
+
+#dunst
+!dunst
+dunst/dunstrc
 
 #Termusic
 !termusic
