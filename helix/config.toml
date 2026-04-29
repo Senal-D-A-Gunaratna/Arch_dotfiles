@@ -1,0 +1,9 @@
+theme = "my_term"
+
+[editor]
+line-number = "relative"
+cursorline = true
+
+[editor.indent-guides]
+render = true
+character = "╎"

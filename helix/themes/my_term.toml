@@ -1,0 +1,10 @@
+# Inherit the base16 terminal colors
+inherits = "base16_terminal"
+
+# Kill the background so Kitty's transparency shows through
+"ui.background" = {}
+
+# (Optional) Make popups and menus match
+"ui.menu" = { fg = "white" }
+"ui.popup" = { fg = "white" }
+"ui.window" = { fg = "white" }
