@@ -4,12 +4,6 @@
 # But not these files...
 !.gitignore
 
-#kitty
-!kitty
-kitty/*
-kitty/kitty-colors.conf.conf
-!kitty/kitty.conf
-
 !rofi
 !mpv
 !waybar
@@ -18,6 +12,21 @@ kitty/kitty-colors.conf.conf
 !matugen
 !waypaper
 !hypr
+!calcurse
+!scripts
+!xsettingsd
+!kwalletrc
+!gpu-screen-recorder
+!user-dirs.dirs
+!helix
+!dunst
+!README.md
+
+#kitty
+!kitty
+kitty/*
+kitty/kitty-colors.conf.conf
+!kitty/kitty.conf
 
 #btop
 !btop
@@ -29,9 +38,6 @@ btop/*
 !gtk-4.0
 gtk-4.0/assets
 
-!dunst
-!README.md
-
 #clipse
 !clipse
 clipse/tmp_files
@@ -39,14 +45,6 @@ clipse/tmp_files
 !clipse/custom_theme.json
 clipse/clipboard_history.json
 clipse/clipse.log
-
-!calcurse
-!scripts
-!xsettingsd
-!kwalletrc
-!gpu-screen-recorder
-!user-dirs.dirs
-!helix
 
 #Termusic
 !termusic
