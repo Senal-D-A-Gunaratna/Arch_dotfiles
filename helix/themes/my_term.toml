@@ -1,8 +1,12 @@
 # Inherit the base16 terminal colors
 inherits = "base16_terminal"
 
-# Kill the background so Kitty's transparency shows through
+# Kill every possible background layer
 "ui.background" = {}
+"ui.gutter" = {}
+"ui.linenr" = {}           # This clears the background of the line numbers
+"ui.linenr.selected" = {}  # This clears the background of the current line number
+"ui.statusline" = {}       # Optional: makes the bottom bar transparent too
 
 # (Optional) Make popups and menus match
 "ui.menu" = { fg = "white" }
