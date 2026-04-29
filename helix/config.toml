@@ -1,4 +1,4 @@
-theme = "my_term"
+theme = "terminal"
 
 [editor]
 line-number = "relative"
