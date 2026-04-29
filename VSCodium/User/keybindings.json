@@ -9,5 +9,9 @@
         "key": "alt+`",
         "command": "geminicodeassist.showinEditor",
         "when": "authLoggedIn && config.geminicodeassist.enable && editorTextFocus && shouldRegisterInEditorCommand && !inGeminiDiffView && !isInDiffEditor && !sidePanelVisible"
+    },
+    {
+        "key": "shift+space",
+        "command": "workbench.action.quickOpenWithModes"
     }
 ]
