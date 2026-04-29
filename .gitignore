@@ -3,7 +3,13 @@
 
 # But not these files...
 !.gitignore
+
+#kitty
 !kitty
+kitty/*
+kitty/kitty-colors.conf.conf
+!kitty/kitty.conf
+
 !rofi
 !mpv
 !waybar
@@ -12,18 +18,28 @@
 !matugen
 !waypaper
 !hypr
+
+#btop
 !btop
+btop/*
+!btop/btop.conf
+
+#gtk
 !gtk-3.0
 !gtk-4.0
 gtk-4.0/assets
+
 !dunst
 !README.md
+
+#clipse
 !clipse
 clipse/tmp_files
 !clipse/config.json
 !clipse/custom_theme.json
 clipse/clipboard_history.json
 clipse/clipse.log
+
 !calcurse
 !scripts
 !xsettingsd
