@@ -6,12 +6,10 @@
 
 !rofi
 !mpv
-!waybar
 !yazi
 !qt6ct
 !matugen
 !waypaper
-!hypr
 !calcurse
 !scripts
 !xsettingsd
@@ -27,6 +25,14 @@
 kitty/*
 kitty/kitty-colors.conf.conf
 !kitty/kitty.conf
+
+#hypr
+!hypr
+hypr/hyprland-colors.conf
+
+#waybar
+!waybar
+waybar/colors.css
 
 #btop
 !btop
