@@ -52,11 +52,8 @@ gtk-4.0/assets/
 
 # Clipse: No logs or history
 !clipse/
-clipse/tmp_files/
-clipse/clipboard_history.json
-clipse/clipse.log
+clipse/*
 !clipse/config.json
-!clipse/custom_theme.json
 
 # Dunst: Track only the folder, ignore the main rc if it's auto-generated
 !dunst/
