@@ -201,7 +201,6 @@
         "charts.red": "#ffb4ab",
         "charts.lines": "#8d919988"
     },
-
     "explorer.fileNesting.patterns": {
         "*.ts": "${capture}.js",
         "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
@@ -234,19 +233,20 @@
             "enabled": true
         }
     ],
-    "git.autofetch": true,
-    "git.enableSmartCommit": true,
+    "files.autoSave": "afterDelay",
+    "workbench.colorTheme": "Dark Modern",
+    "workbench.iconTheme": "material-icon-theme",
     "editor.fontFamily": "'JetBrainsMono Nerd Font', monospace",
     "editor.fontSize": 14,
     "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font'",
-    "telemetry.telemetryLevel": "off",
     "editor.smoothScrolling": true,
+    "workbench.browser.showInTitleBar": true,
+    "git.autofetch": true,
+    "git.path": "/usr/bin/git",
+    "git.enableSmartCommit": true,
+    "diffEditor.codeLens": true,
     "workbench.secondarySideBar.defaultVisibility": "visible",
     "chat.viewSessions.orientation": "stacked",
-    "diffEditor.codeLens": true,
-    "pascal.format.path": "/usr/bin/ptop",
-    "git.path": "/usr/bin/git",
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.browser.showInTitleBar": true,
-    "workbench.colorTheme": "Dark Modern"
+    "telemetry.telemetryLevel": "off",
+    "pascal.format.path": "/usr/bin/ptop"
 }
