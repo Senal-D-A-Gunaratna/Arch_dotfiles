@@ -226,12 +226,6 @@
         "{git,gitlens,git-graph}:/**/*.qrc": "default",
         "*.qrc": "qt-core.qrcEditor"
     },
-    "telemetry.telemetryLevel": "off",
-    "editor.smoothScrolling": true,
-    "workbench.secondarySideBar.defaultVisibility": "visible",
-    "chat.viewSessions.orientation": "stacked",
-    "editor.inlineSuggest.enabled": false,
-    "diffEditor.codeLens": true,
     "cSpell.enabled": true,
     "cSpell.enabledFileTypes": {
         "*": false,
@@ -245,6 +239,12 @@
             "enabled": true
         }
     ],
+    "telemetry.telemetryLevel": "off",
+    "editor.smoothScrolling": true,
+    "workbench.secondarySideBar.defaultVisibility": "visible",
+    "chat.viewSessions.orientation": "stacked",
+    "editor.inlineSuggest.enabled": false,
+    "diffEditor.codeLens": true,
     "pascal.format.path": "/usr/bin/ptop",
     "git.path": "/usr/bin/git",
     "workbench.iconTheme": "material-icon-theme",
