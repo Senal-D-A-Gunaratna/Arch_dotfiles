@@ -247,6 +247,12 @@
     "diffEditor.codeLens": true,
     "workbench.secondarySideBar.defaultVisibility": "visible",
     "chat.viewSessions.orientation": "stacked",
-    "telemetry.telemetryLevel": "off",
-    "pascal.format.path": "/usr/bin/ptop"
+    "editor.formatOnSave": true,
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": "active",
+        "telemetry.telemetryLevel": "off",
+
+    "pascal.format.path": "/usr/bin/ptop",
 }
