@@ -15,7 +15,6 @@
 !scripts/
 !xsettingsd/
 !gpu-screen-recorder/
-!helix/
 !kwalletrc
 !user-dirs.dirs
 !(~)stuff

@@ -1,9 +1,0 @@
-theme = "terminal"
-
-[editor]
-line-number = "relative"
-cursorline = true
-
-[editor.indent-guides]
-render = true
-character = "╎"
