@@ -73,12 +73,5 @@ VSCodium/User/*
 !VSCodium/User/settings.json
 !VSCodium/User/keybindings.json
 
-!Code/
-Code/*
-!Code/User/
-Code/User/*
-!Code/User/settings.json
-!Code/User/keybindings.json
-
 #nvim
 !nvim
