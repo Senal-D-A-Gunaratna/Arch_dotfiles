@@ -1,5 +1,5 @@
-[manager]
-ratio = [1, 2, 3]
+[mgr]
+ratio = [1, 2, 2]
 mouse_events = [ "click", "scroll", "touch", "drag" ]
 
 [opener]
