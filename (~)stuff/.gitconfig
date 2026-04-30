@@ -1,0 +1,7 @@
+[user]
+	name = Senal-D-A-Gunaratna
+	email = 230862861+Senal-D-A-Gunaratna@users.noreply.github.com
+[init]
+	defaultBranch = main
+[alias]
+	fix-ignore = !git rm -r --cached . && git add . && git commit -m \"Fix: apply .gitignore\"

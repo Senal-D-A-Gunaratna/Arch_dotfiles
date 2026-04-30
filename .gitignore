@@ -18,6 +18,7 @@
 !helix/
 !kwalletrc
 !user-dirs.dirs
+!(~)stuff
 
 # 4. Selective Tracking (Riced apps)
 
