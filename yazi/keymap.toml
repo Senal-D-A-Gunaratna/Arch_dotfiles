@@ -2,7 +2,7 @@
 prepend_keymap = [
   # Mount Plugin
   { on = "M", run = "plugin mount", desc = "Open mount manager" },
-  
+
   # Recycle Bin Actions
   { on = ["R","b"], run = "plugin recycle-bin --launch",    desc = "Open Recycle Bin menu" },
   { on = ["R","o"], run = "plugin recycle-bin --open",      desc = "Open Trash" },
@@ -10,8 +10,9 @@ prepend_keymap = [
   { on = ["R","D"], run = "plugin recycle-bin --emptyDays", desc = "Empty by days deleted" },
   { on = ["R","d"], run = "plugin recycle-bin --delete",    desc = "Delete from Trash" },
   { on = ["R","r"], run = "plugin recycle-bin --restore",   desc = "Restore from Trash" },
-  
+
   # Tabs and System
   { on = "W", run = "close", desc = "Close tab" },
-  { on = "B", run = 'shell "dragon-drop -x \"$@\"" --confirm', desc = "Drag and drop" }
+  { on = "B", run = 'shell "dragon-drop -x \"$@\"" --confirm', desc = "Drag and drop" },
+  {on = "T", run = 'shell "kitty" --workdir "$PWD" &', desc = "Open terminal here"}
 ]
