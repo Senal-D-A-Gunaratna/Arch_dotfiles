@@ -1,84 +1,84 @@
-# Ignore everything in this directory
+# 1. Global Ignore
 /*
 
-# But not these files...
+# 2. Allow the ignore file itself
 !.gitignore
-
-!mpv
-!yazi
-!qt6ct
-!matugen
-!waypaper
-!calcurse
-!scripts
-!xsettingsd
-!kwalletrc
-!gpu-screen-recorder
-!user-dirs.dirs
-!helix
 !README.md
 
-#kitty
-!kitty
-kitty/*
-kitty/kitty-colors.conf.conf
+# 3. Simple Directories (Whole folder tracked)
+!mpv/
+!yazi/
+!qt6ct/
+!matugen/
+!waypaper/
+!calcurse/
+!scripts/
+!xsettingsd/
+!gpu-screen-recorder/
+!helix/
+!kwalletrc
+!user-dirs.dirs
+
+# 4. Selective Tracking (Riced apps)
+
+# Kitty: Track config, ignore matugen colors
+!kitty/
+kitty/kitty-colors.conf
 !kitty/kitty.conf
 
-#hypr
-!hypr
+# Hyprland: Track config, ignore matugen colors
+!hypr/
 hypr/hyprland-colors.conf
 
-#rofi
-!rofi
+# Rofi
+!rofi/
 rofi/matugen.rasi
 
-#waybar
-!waybar
+# Waybar
+!waybar/
 waybar/colors.css
 
-#btop
-!btop
+# Btop: Track config, ignore themes
+!btop/
+btop/themes/
 !btop/btop.conf
-btop/*
-btop/themes
 
-#gtk
-!gtk-3.0
-!gtk-4.0
-gtk-4.0/assets
+# GTK: Track folder, ignore generated CSS
+!gtk-3.0/
+!gtk-4.0/
 gtk-3.0/colors.css
 gtk-4.0/colors.css
+gtk-4.0/assets/
 
-#clipse
-!clipse
-clipse/tmp_files
-!clipse/config.json
-!clipse/custom_theme.json
+# Clipse: No logs or history
+!clipse/
+clipse/tmp_files/
 clipse/clipboard_history.json
 clipse/clipse.log
+!clipse/config.json
+!clipse/custom_theme.json
 
-#dunst
-!dunst
+# Dunst: Track only the folder, ignore the main rc if it's auto-generated
+!dunst/
 dunst/dunstrc
 
-#Termusic
-!termusic
+# Termusic
+!termusic/
 termusic/*
 !termusic/tui.toml
 !termusic/server.toml
 
-#VsCode
-!Code
-Code/*
-!Code/User
-Code/User/*
-!Code/User/settings.json
-!Code/User/keybindings.json
-
-#VSCodium
-!VSCodium
+# VSCodium / Code (The logic fix)
+!VSCodium/
 VSCodium/*
-!VSCodium/User
+!VSCodium/User/
 VSCodium/User/*
 !VSCodium/User/settings.json
 !VSCodium/User/keybindings.json
+
+!Code/
+Code/*
+!Code/User/
+Code/User/*
+!Code/User/settings.json
+!Code/User/keybindings.json
