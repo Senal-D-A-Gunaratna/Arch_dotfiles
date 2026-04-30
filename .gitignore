@@ -59,11 +59,9 @@ clipse/*
 !dunst/
 dunst/dunstrc
 
-# Termusic
-!termusic/
-termusic/*
-!termusic/tui.toml
-!termusic/server.toml
+# kew
+!kew
+kew/themes
 
 # VSCodium / Code (The logic fix)
 !VSCodium/

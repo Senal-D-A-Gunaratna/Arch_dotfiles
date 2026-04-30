@@ -18,7 +18,6 @@ libreoffice = [
 ]
 music = [
   { run = 'mpv "$@"', orphan = true, desc = "mpv" },
-  { run = 'setsid kitty -e termusic "$@"', block = false, desc = "Termusic" },
 ]
 video = [
   { run = 'mpv "$@"', orphan = true, desc = "mpv" },
