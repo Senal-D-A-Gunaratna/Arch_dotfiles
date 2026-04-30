@@ -62,6 +62,7 @@ dunst/dunstrc
 # kew
 !kew
 kew/themes
+kew/library.dat
 
 # VSCodium / Code (The logic fix)
 !VSCodium/
