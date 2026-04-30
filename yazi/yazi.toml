@@ -17,8 +17,8 @@ libreoffice = [
   { run = 'setsid libreoffice "$@" &', block = false, desc = "LibreOffice" },
 ]
 music = [
-  { run = 'setsid kitty -e termusic "$@"', block = false, desc = "Termusic" },
   { run = 'mpv "$@"', orphan = true, desc = "mpv" },
+  { run = 'setsid kitty -e termusic "$@"', block = false, desc = "Termusic" },
 ]
 video = [
   { run = 'mpv "$@"', orphan = true, desc = "mpv" },
@@ -29,10 +29,10 @@ prepend_rules = [
   # Images (including WebP)
   { mime = "image/*", use = "image" },
   { name = "*.webp",  use = "image" },
-  
+
   # Text/Code
   { mime = "text/*", use = "edit" },
-  
+
   #Audio
   { mime = "audio/*", use = "music" },
 
@@ -46,7 +46,7 @@ prepend_rules = [
   { mime = "application/msword", use = "libreoffice" },
   { mime = "application/vnd.ms-excel", use = "libreoffice" },
   { mime = "application/vnd.ms-powerpoint", use = "libreoffice" },
-  
+
   # Fallback
   { name = "*", use = "open" }
 ]
