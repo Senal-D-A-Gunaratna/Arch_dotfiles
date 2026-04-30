@@ -243,7 +243,6 @@
     "editor.smoothScrolling": true,
     "workbench.secondarySideBar.defaultVisibility": "visible",
     "chat.viewSessions.orientation": "stacked",
-    "editor.inlineSuggest.enabled": false,
     "diffEditor.codeLens": true,
     "pascal.format.path": "/usr/bin/ptop",
     "git.path": "/usr/bin/git",
