@@ -13,6 +13,7 @@
   },
 
   "modules-right": [
+    "custom/kew",
     "pulseaudio",
     "custom/monitor_brightness",
     "network",
@@ -31,6 +32,13 @@
     "icon-size": 18,
     "spacing": 10,
     "tooltip": false
+  },
+
+  "custom/kew": {
+    "format": "  {}",
+    "return-type": "json",
+    "max-length": 40,
+    "exec": "playerctl --player=kew metadata --format '{\"text\": \"{{title}}\"}' --follow"
   },
 
   "custom/monitor_brightness": {
