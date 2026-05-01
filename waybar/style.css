@@ -29,7 +29,7 @@ window#waybar {
   font-weight: bold;
 }
 
-/* Specific Kew "Pill" Override */
+
 #custom-media {
     margin-left: 10px; /* Gives it that "center-left" breathing room */
     padding: 2px 15px; /* Slightly wider pill for the artist name */
