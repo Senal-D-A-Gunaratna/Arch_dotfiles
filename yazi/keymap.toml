@@ -16,8 +16,8 @@ prepend_keymap = [
   { on = "B", run = 'shell "dragon-drop -x \"$@\"" --confirm', desc = "Drag and drop" },
   { on = "T", run = 'shell "setsid kitty" --workdir "$PWD" &', desc = "Open terminal here"},
 
-# Compression Menu (c -> x)
-  { on = ["c", "x", "1"], run = "plugin ouch --sync --args='--format zip'",    desc = "Compress to .zip" },
-  { on = ["c", "x", "2"], run = "plugin ouch --sync --args='--format tar.gz'", desc = "Compress to .tar.gz" },
-  { on = ["c", "x", "3"], run = "plugin ouch --sync --args='--format 7z'",     desc = "Compress to .7z" }
+# Compression Selection Menu (c -> x)
+  { on = ["c", "x", "1"], run = 'shell "ouch compress \"$@\" \"$PWD/${1##*/}.zip\"" --confirm',    desc = "Force .zip" },
+  { on = ["c", "x", "2"], run = 'shell "ouch compress \"$@\" \"$PWD/${1##*/}.tar.gz\"" --confirm', desc = "Force .tar.gz" },
+  { on = ["c", "x", "3"], run = 'shell "ouch compress \"$@\" \"$PWD/${1##*/}.7z\"" --confirm',     desc = "Force .7z" }
 ]
