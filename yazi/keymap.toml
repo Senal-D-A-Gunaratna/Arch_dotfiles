@@ -2,6 +2,7 @@
 prepend_keymap = [
   # Mount Plugin
   { on = "M", run = "plugin mount", desc = "Open mount manager" },
+  { on = ["c", "m",], run = "plugin gvfs -- select-then-mount --jump", desc = "MTP/Android Mount" },
 
   # Recycle Bin Actions
   { on = ["R","b"], run = "plugin recycle-bin --launch",    desc = "Open Recycle Bin menu" },
