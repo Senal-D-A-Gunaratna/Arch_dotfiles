@@ -36,9 +36,8 @@
 
   "custom/media": {
     "format": "  {}",
-    "return-type": "json",
     "max-length": 40,
-    "exec": "playerctl metadata --format '{\"text\": \"{{title}}\"}' --follow"
+    "exec": "playerctl metadata --format '{{title}}' --follow"
   },
 
   "custom/monitor_brightness": {
