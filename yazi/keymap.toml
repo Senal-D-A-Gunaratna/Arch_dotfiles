@@ -14,5 +14,9 @@ prepend_keymap = [
   # Tabs and System
   { on = "W", run = "close", desc = "Close tab" },
   { on = "B", run = 'shell "dragon-drop -x \"$@\"" --confirm', desc = "Drag and drop" },
-  { on = "T", run = 'shell "setsid kitty" --workdir "$PWD" &', desc = "Open terminal here"}
+  { on = "T", run = 'shell "setsid kitty" --workdir "$PWD" &', desc = "Open terminal here"},
+
+  # Compression (Ouch)
+  { on = ["I","c"], run = "plugin ouch --sync",           desc = "Compress with ouch" },
+  { on = ["I","x"], run = "plugin ouch --sync --extract", desc = "Extract archive" }
 ]
