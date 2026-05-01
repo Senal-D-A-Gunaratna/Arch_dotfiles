@@ -11,6 +11,10 @@
     },
     {
         "key": "shift+space",
-        "command": "workbench.action.quickOpenWithModes"
+        "command": "workbench.action.quickOpen"
+    },
+    {
+        "key": "ctrl+p",
+        "command": "-workbench.action.quickOpen"
     }
 ]
