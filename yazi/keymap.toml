@@ -17,6 +17,5 @@ prepend_keymap = [
   { on = "T", run = 'shell "setsid kitty" --workdir "$PWD" &', desc = "Open terminal here"},
 
   # Compression (Ouch)
-  { on = ["I","c"], run = "plugin ouch --sync",           desc = "Compress with ouch" },
-  { on = ["I","x"], run = "plugin ouch --sync --extract", desc = "Extract archive" }
+  { on = ["I","c"], run = "plugin ouch --sync --args='--format zip'", desc = "Compress to zip" }
 ]
