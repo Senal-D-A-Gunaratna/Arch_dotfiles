@@ -33,6 +33,7 @@ window#waybar {
 #custom-kew {
     margin-left: 10px; /* Gives it that "center-left" breathing room */
     padding: 2px 15px; /* Slightly wider pill for the artist name */
+    color: @accent_color
 }
 
 /* edge spacing */
