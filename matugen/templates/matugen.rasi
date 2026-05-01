@@ -9,7 +9,7 @@
     spacing:    0px;
 }
 window {
-    background-color:   {{colors.surface_container.default.rgba | set_alpha: 0.4}};
+    background-color:   rgba(0, 0, 0, 0.4);
     border-color:       {{colors.primary.default.hex}};
     location:   center;
     width:      480px;
@@ -17,7 +17,7 @@ window {
     border-radius:      10px;
 }
 inputbar {
-    background-color:   {{colors.surface_container.default.rgba | set_alpha: 0.4}};
+    background-color:   rgba(0, 0, 0, 0.4);
     padding:    8px 12px;
     spacing:    12px;
     children:   [ prompt, entry ];
