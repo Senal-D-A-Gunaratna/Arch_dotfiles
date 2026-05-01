@@ -17,7 +17,7 @@ window {
     border-radius:      10px;
 }
 inputbar {
-    background-color:   rgba(0, 0, 0, 0.4);
+    background-color:   rgba(0, 0, 0, 0);
     padding:    8px 12px;
     spacing:    12px;
     children:   [ prompt, entry ];
