@@ -16,6 +16,7 @@
 !gpu-screen-recorder/
 !kwalletrc
 !user-dirs.dirs
+!nwg-look
 !(~)stuff
 
 # 4. Selective Tracking (Riced apps)
