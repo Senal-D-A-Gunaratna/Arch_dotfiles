@@ -46,7 +46,7 @@ window#waybar {
 }
 
 #window {
-  color: @text-main;
+  color:  @primary-neon;
   padding: 0 10px;
 }
 
