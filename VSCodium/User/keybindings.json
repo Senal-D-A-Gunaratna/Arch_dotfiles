@@ -1,5 +1,4 @@
 [
-    // Toggle the panel between maximized and its original size
     {
         "key": "alt+q",
         "command": "workbench.action.toggleMaximizedPanel",
