@@ -13,7 +13,7 @@
   },
 
   "modules-right": [
-    "custom/kew",
+    "custom/media",
     "pulseaudio",
     "custom/monitor_brightness",
     "network",
@@ -34,7 +34,7 @@
     "tooltip": false
   },
 
-  "custom/kew": {
+  "custom/media": {
     "format": "  {}",
     "return-type": "json",
     "max-length": 40,

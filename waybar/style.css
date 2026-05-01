@@ -11,7 +11,7 @@ window#waybar {
 }
 
 /* ALL modules base style - Added missing commas */
-#custom-kew,
+#custom-media,
 #tray,
 #pulseaudio,
 #custom-monitor_brightness,
@@ -30,7 +30,7 @@ window#waybar {
 }
 
 /* Specific Kew "Pill" Override */
-#custom-kew {
+#custom-media {
     margin-left: 10px; /* Gives it that "center-left" breathing room */
     padding: 2px 15px; /* Slightly wider pill for the artist name */
     color: @accent_color
