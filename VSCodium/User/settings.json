@@ -253,5 +253,6 @@
     "editor.bracketPairColorization.enabled": true,
     "editor.guides.bracketPairs": "active",
     "telemetry.telemetryLevel": "off",
-    "pascal.format.path": "/usr/bin/ptop"
+    "pascal.format.path": "/usr/bin/ptop",
+    "window.commandCenter": false
 }
