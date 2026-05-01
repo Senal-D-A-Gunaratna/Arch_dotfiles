@@ -10,11 +10,11 @@
         "when": "authLoggedIn && config.geminicodeassist.enable && editorTextFocus && shouldRegisterInEditorCommand && !inGeminiDiffView && !isInDiffEditor && !sidePanelVisible"
     },
     {
+        "key": "ctrl+p",
+        "command": "workbench.action.quickOpenWithModes"
+    },
+    {
         "key": "shift+space",
         "command": "workbench.action.quickOpen"
     },
-    {
-        "key": "ctrl+p",
-        "command": "-workbench.action.quickOpen"
-    }
 ]
