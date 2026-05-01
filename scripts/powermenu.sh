@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# Changed the label to "Sleep"
 options="Sleep\nLock\nLogout\nReboot\nShutdown"
 
 chosen=$(echo -e "$options" | rofi -dmenu -p "Power")
