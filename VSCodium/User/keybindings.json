@@ -1,8 +1,8 @@
 [
     {
-        "key": "alt+q",
+        "key": "ctrl+shift+q",
         "command": "workbench.action.toggleMaximizedPanel",
-        "when": "panelVisible || panelMaximized"
+        "when": "panelMaximized || panelVisible"
     },
     {
         "key": "alt+`",
@@ -16,5 +16,15 @@
     {
         "key": "shift+space",
         "command": "workbench.action.quickOpen"
+    },
+    {
+        "key": "ctrl+q",
+        "command": "workbench.action.terminal.toggleTerminal",
+        "when": "terminal.active"
+    },
+    {
+        "key": "ctrl+`",
+        "command": "-workbench.action.terminal.toggleTerminal",
+        "when": "terminal.active"
     },
 ]
