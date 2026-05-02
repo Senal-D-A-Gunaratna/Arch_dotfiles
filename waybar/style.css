@@ -55,7 +55,6 @@ window#waybar {
   color: @surface-variant;
   margin: 4px 2px 0px 2px;
   padding: 2px 8px;
-  font-size: 11px;
   min-width: 22px;
   min-height: 22px;
   border-radius: 12px;
