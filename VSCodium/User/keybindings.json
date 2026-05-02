@@ -9,10 +9,6 @@
         "command": "workbench.action.terminal.toggleTerminal"
     },
     {
-        "key": "alt+q",
-        "command": "workbench.action.terminal.toggleTerminal"
-    },
-    {
         "key": "alt+`",
         "command": "geminicodeassist.showinEditor",
         "when": "authLoggedIn && config.geminicodeassist.enable && editorTextFocus && shouldRegisterInEditorCommand && !inGeminiDiffView && !isInDiffEditor && !sidePanelVisible"
