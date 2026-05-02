@@ -37,7 +37,8 @@
   "custom/media": {
     "format": " {}",
     "max-length": 40,
-    "exec": "playerctl metadata --format '{{title}}' --follow"
+    "exec": "playerctl metadata --format '{{title}}' --follow",
+    "tooltip": false
   },
 
   "custom/monitor_brightness": {
@@ -83,6 +84,6 @@
   "tooltip-format": "{:%A, %d %B %Y}",
   "tooltip": true,
   "interval": 1,
-  "on-click": "setsid kitty -e calcurse &"
+  "on-click": "setsid kitty -e calcurse"
   }
 }
