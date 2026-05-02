@@ -20,7 +20,7 @@ window#waybar {
 #memory,
 #clock {
   background: @base-bg;
-  color: @primary-neon; /* Keeps your synced neon color */
+  color: @primary-neon;
   padding: 2px 10px;
   margin: 4px 2px 0px 2px;
   border-radius: 12px;
