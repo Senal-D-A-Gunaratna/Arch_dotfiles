@@ -4,6 +4,16 @@
         "command": "workbench.action.toggleMaximizedPanel",
         "when": "panelMaximized || panelVisible"
     },
+        {
+        "key": "ctrl+q",
+        "command": "workbench.action.terminal.toggleTerminal",
+        "when": "terminal.active"
+    },
+    {
+        "key": "alt+q",
+        "command": "workbench.action.terminal.toggleTerminal",
+        "when": "terminal.active && panelMaximized || panelVisible"
+    },
     {
         "key": "alt+`",
         "command": "geminicodeassist.showinEditor",
@@ -16,11 +26,6 @@
     {
         "key": "shift+space",
         "command": "workbench.action.quickOpen"
-    },
-    {
-        "key": "ctrl+q",
-        "command": "workbench.action.terminal.toggleTerminal",
-        "when": "terminal.active"
     },
     {
         "key": "ctrl+`",
