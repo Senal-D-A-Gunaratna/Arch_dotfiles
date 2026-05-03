@@ -4,35 +4,14 @@ return {
     lazy = true,
     name = "catppuccin",
     opts = {
-      flavour = "mocha", -- Explicitly set the darkest flavor
-      background = {
-        light = "latte",
-        dark = "mocha",
-      },
-      transparent_background = false,
-      show_end_of_buffer = false, -- hide the ~ at the end of the buffer
-      term_colors = true,
-      dim_inactive = {
-        enabled = false,
-        shade = "dark",
-        percentage = 0.15,
-      },
-      no_italic = false, -- Force no italic
-      no_bold = false, -- Force no bold
-      no_underline = false, -- Force no underline
-      styles = {
-        comments = { "italic" },
-        conditionals = { "italic" },
-        loops = {},
-        functions = {},
-        keywords = {},
-        strings = {},
-        variables = {},
-        numbers = {},
-        booleans = {},
-        properties = {},
-        types = {},
-        operators = {},
+      flavour = "mocha", -- Your preference
+      lsp_styles = {
+        underlines = {
+          errors = { "undercurl" },
+          hints = { "undercurl" },
+          warnings = { "undercurl" },
+          information = { "undercurl" },
+        },
       },
       integrations = {
         aerial = true,
@@ -61,25 +40,11 @@ return {
         which_key = true,
       },
     },
-    -- This part ensures bufferline picks up the Catppuccin palette
-    specs = {
-      {
-        "akinsho/bufferline.nvim",
-        optional = true,
-        opts = function(_, opts)
-          if (vim.g.colors_name or ""):find("catppuccin") then
-            opts.highlights = require("catppuccin.special.bufferline").get_theme()
-          end
-        end,
-      },
-    },
   },
-
-  -- Tell LazyVim to load it
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin-mocha",
+      colorscheme = "catppuccin",
     },
   },
 }
