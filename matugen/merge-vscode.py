@@ -2,7 +2,7 @@ import json
 from pathlib import Path
 
 BASE = Path.home() / ".config/VSCodium/User/settings.json"
-COLORS_PATH = Path.home() / ".config/VSCodium/User/vscode-colors.json"
+COLORS_PATH = Path.home() / "/home/senal/.config/themes/code/vscode-colors.json"
 
 try:
     # Handle empty or missing settings file
@@ -12,7 +12,7 @@ try:
         base = {}
 
     colors_data = json.loads(COLORS_PATH.read_text())
-    
+
     # Extract the actual colors (handles wrapped or raw Matugen output)
     new_colors = colors_data.get("workbench.colorCustomizations", colors_data)
 
