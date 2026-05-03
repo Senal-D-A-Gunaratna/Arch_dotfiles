@@ -31,7 +31,7 @@ post_hook = "pkill -USR2 btop || true"
 
 [templates.waybar]
 input_path = "~/.config/matugen/templates/waybar.css"
-output_path = "~/.config/waybar/colors.css"
+output_path = "~/.config/themes/waybar/colors.css"
 post_hook = "pkill -SIGUSR2 waybar"
 
 [templates.VSCodium]

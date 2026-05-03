@@ -1,4 +1,1 @@
-@define-color base-bg #111418;
-@define-color surface-variant #43474e;
-@define-color primary-neon #a3c9fe;
-@define-color text-main #e1e2e8;
+@import url("/home/senal/.config/themes/waybar/colors.css");
