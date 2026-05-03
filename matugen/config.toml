@@ -4,11 +4,11 @@ awww = true # Optional: if you use swww for wallpapers
 
 [templates.rofi]
 input_path = "~/.config/matugen/templates/matugen.rasi"
-output_path = "~/.config/themes/matugen.rasi"
+output_path = "~/.config/themes/rofi/matugen.rasi"
 
 [templates.kitty]
 input_path = "~/.config/matugen/templates/kitty-colors.conf"
-output_path = "~/.config/themes/kitty-colors.conf"
+output_path = "~/.config/themes/kitty/kitty-colors.conf"
 post_hook = "pkill -USR1 kitty"
 
 [templates.gtk3]

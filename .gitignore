@@ -18,25 +18,12 @@
 !user-dirs.dirs
 !nwg-look
 !(~)stuff
+!waybar
+!rofi
+!hypr
+!kitty
 
 # 4. Selective Tracking (Riced apps)
-
-# Kitty: Track config, ignore matugen colors
-!kitty/
-kitty/kitty-colors.conf
-!kitty/kitty.conf
-
-# Hyprland: Track config, ignore matugen colors
-!hypr/
-hypr/hyprland-colors.conf
-
-# Rofi
-!rofi/
-rofi/matugen.rasi
-
-# Waybar
-!waybar/
-waybar/colors.css
 
 # Btop: Track config, ignore themes
 !btop/
