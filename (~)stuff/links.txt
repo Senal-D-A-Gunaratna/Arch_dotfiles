@@ -1,0 +1,6 @@
+ln -sf /mnt/storage/Documents ~/Documents
+ln -sf /mnt/storage/Downloads ~/Downloads
+ln -sf /mnt/storage/Music ~/Music
+ln -sf /mnt/storage/Pictures ~/Pictures
+ln -sf /mnt/storage/Templates ~/Templates
+ln -sf /mnt/storage/Videos ~/Videos
