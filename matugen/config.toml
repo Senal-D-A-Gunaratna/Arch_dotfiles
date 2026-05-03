@@ -42,7 +42,7 @@ post_hook = "python ~/.config/scripts/merge-vscode.py"
 [templates.hyprland]
 input_path = "~/.config/matugen/templates/hyprland-colors.conf"
 output_path = "~/.config/themes/hypr/hyprland-colors.conf"
-post_hook = "hyprctl keyword general:col.active_border $active_border && true"
+post_hook = "sleep 0.01 && hyprctl keyword general:col.active_border $active_border && true"
 
 [templates.clipse]
 input_path = '~/.config/matugen/templates/clipse_theme.json'
