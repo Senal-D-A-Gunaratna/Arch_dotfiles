@@ -33,8 +33,6 @@ btop/themes/
 # GTK: Track folder, ignore generated CSS
 !gtk-3.0/
 !gtk-4.0/
-gtk-3.0/colors.css
-gtk-4.0/colors.css
 gtk-4.0/assets/
 
 # Clipse: No logs or history
