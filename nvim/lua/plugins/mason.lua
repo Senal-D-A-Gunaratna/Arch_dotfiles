@@ -8,6 +8,8 @@ return {
         "shellcheck",
         "shfmt",
         "flake8",
+        "prettier",  -- JS/TS/HTML/CSS
+        "black",     -- Python formatter
       },
     },
   },
