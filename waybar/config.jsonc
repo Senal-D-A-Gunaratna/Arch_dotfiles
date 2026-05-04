@@ -4,13 +4,10 @@
   "height": 22,
 
   "modules-center": ["hyprland/window"],
-  "modules-left": ["hyprland/workspaces", "tray"],
-
-  "hyprland/window": {
-    "max-length": 50,
-    "separate-outputs": true,
-    "tooltip": false
-  },
+  "modules-left": [
+    "hyprland/workspaces",
+    "tray"
+  ],
 
   "modules-right": [
     "custom/media",
@@ -21,6 +18,12 @@
     "memory",
     "clock"
   ],
+
+  "hyprland/window": {
+    "max-length": 50,
+    "separate-outputs": true,
+    "tooltip": false
+  },
 
   "hyprland/workspaces": {
     "format": "{name}",
