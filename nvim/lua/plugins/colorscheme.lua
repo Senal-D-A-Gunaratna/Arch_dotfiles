@@ -1,3 +1,7 @@
+--Catppuccin mocha color scheme
+
+if true then return {}
+
 return {
   {
     "catppuccin/nvim",
