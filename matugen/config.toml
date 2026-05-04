@@ -48,3 +48,8 @@ output_path = '~/.config/clipse/custom_theme.json'
 input_path = '~/.config/matugen/templates/dunstrc-colors.txt'
 output_path = '~/.config/dunst/dunstrc'
 post_hook = 'dunstctl reload'
+
+[templates.neovim]
+input_path = '~/.config/matugen/templates/nvim-colors.lua'
+output_path = '~/.config/nvim/lua/plugins/generated.lua'
+post_hook = 'pkill -SIGUSR1 nvim'
