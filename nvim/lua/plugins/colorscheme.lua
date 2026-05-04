@@ -1,6 +1,6 @@
 --Catppuccin mocha color scheme
 
-if true then return {}
+if true then return {} end
 
 return {
   {
