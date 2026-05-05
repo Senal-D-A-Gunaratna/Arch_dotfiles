@@ -1,5 +1,4 @@
 return {
-{
   "snacks.nvim",
   opts = {
     dashboard = {
@@ -18,5 +17,4 @@ return {
       },
     },
   },
- },
 }
