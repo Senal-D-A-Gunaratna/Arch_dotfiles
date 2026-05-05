@@ -2,7 +2,7 @@ import json
 from pathlib import Path
 
 BASE = Path.home() / ".config/VSCodium/User/settings.json"
-COLORS_PATH = Path.home() / ".config/themes/code/code-colors.json"
+COLORS_PATH = Path.home() / ".config/themes/code-colors.json"
 
 try:
     # Handle empty or missing settings file
