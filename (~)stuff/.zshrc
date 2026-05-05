@@ -111,3 +111,6 @@ source $ZSH/oh-my-zsh.sh
 #plugins
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+
+#alias
+alias ff='fastfetch'
