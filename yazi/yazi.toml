@@ -1,33 +1,25 @@
 [mgr]
 ratio = [1, 2, 2]
-mouse_events = [ "click", "scroll", "touch", "drag" ]
+mouse_events = ["click", "scroll", "touch", "drag"]
 
 [opener]
 edit = [
-  { run = 'setsid code "$@" &',   block = false, desc = "VS Code" },
   { run = 'setsid nvim "$@"', block = true, desc = "Neovim" },
+  { run = 'setsid codium "$@" &', block = false, desc = "VS Code" },
 ]
-open = [
-  { run = 'setsid xdg-open "$@" &', block = false },
-]
-image = [
-  { run = 'setsid pix "$@"', block = false, desc = "gThumb" },
-]
+open = [{ run = 'setsid xdg-open "$@" &', block = false }]
+image = [{ run = 'setsid pix "$@"', block = false, desc = "gThumb" }]
 libreoffice = [
   { run = 'setsid libreoffice "$@" &', block = false, desc = "LibreOffice" },
 ]
-music = [
-  { run = 'mpv "$@"', orphan = true, desc = "mpv" },
-]
-video = [
-  { run = 'mpv "$@"', orphan = true, desc = "mpv" },
-]
+music = [{ run = 'mpv "$@"', orphan = true, desc = "mpv" }]
+video = [{ run = 'mpv "$@"', orphan = true, desc = "mpv" }]
 
 [open]
 prepend_rules = [
   # Images (including WebP)
   { mime = "image/*", use = "image" },
-  { name = "*.webp",  use = "image" },
+  { name = "*.webp", use = "image" },
 
   # Text/Code
   { mime = "text/*", use = "edit" },
@@ -47,5 +39,5 @@ prepend_rules = [
   { mime = "application/vnd.ms-powerpoint", use = "libreoffice" },
 
   # Fallback
-  { name = "*", use = "open" }
+  { name = "*", use = "open" },
 ]
