@@ -4,9 +4,9 @@ return {
     opts = {
       ensure_installed = {
         "pyright",
-        "ts_ls",         -- was typescript-language-server
-        "rust_analyzer", -- was rust-analyzer
-        "html",          -- was html-lsp
+        "ts_ls",
+        "rust_analyzer",
+        "html",
       },
     },
   },
