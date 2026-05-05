@@ -4,16 +4,16 @@ awww = true # Optional: if you use swww for wallpapers
 
 [templates.rofi]
 input_path = "~/.config/matugen/templates/matugen.rasi"
-output_path = "~/.config/themes/matugen.rasi"
+output_path = "~/.config/matugen/themes/matugen.rasi"
 
 [templates.kitty]
 input_path = "~/.config/matugen/templates/kitty-colors.conf"
-output_path = "~/.config/themes/kitty-colors.conf"
+output_path = "~/.config/matugen/themes/kitty-colors.conf"
 post_hook = "pkill -USR1 kitty"
 
 [templates.gtk]
 input_path = "~/.config/matugen/templates/gtk-colors.css"
-output_path = "~/.config/themes/gtk-colors.css"
+output_path = "~/.config/matugen/themes/gtk-colors.css"
 post_hook = "gsettings set org.gnome.desktop.interface gtk-theme && gsettings set org.gnome.desktop.interface gtk-theme 'adw-gtk3-dark'"
 
 [templates.qt-color-scheme]
@@ -27,17 +27,17 @@ post_hook = "pkill -USR2 btop || true"
 
 [templates.waybar]
 input_path = "~/.config/matugen/templates/waybar.css"
-output_path = "~/.config/themes/waybar-colors.css"
+output_path = "~/.config/matugen/themes/waybar-colors.css"
 post_hook = "pkill -SIGUSR2 waybar"
 
 [templates.code]
 input_path = "~/.config/matugen/templates/code-colors.json"
-output_path = "~/.config/themes/code-colors.json"
+output_path = "~/.config/matugen/themes/code-colors.json"
 post_hook = "python ~/.config/scripts/merge-vscode.py"
 
 [templates.hyprland]
 input_path = "~/.config/matugen/templates/hyprland-colors.conf"
-output_path = "~/.config/themes/hyprland-colors.conf"
+output_path = "~/.config/matugen/themes/hyprland-colors.conf"
 post_hook = "sleep 0.01 && hyprctl keyword general:col.active_border $active_border && true"
 
 [templates.clipse]

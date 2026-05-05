@@ -25,6 +25,10 @@
 
 # 4. Selective Tracking (Riced apps)
 
+#Matugen
+!matugen
+matugen/themes
+
 # Btop: Track config, ignore themes
 !btop/
 btop/themes/
