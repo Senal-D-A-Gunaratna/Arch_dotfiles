@@ -1,8 +1,11 @@
 -- ~/.config/nvim/lua/plugins/avante.lua
 
--- Fix for Neovim not inheriting GEMINI_API_KEY from zsh
 if not vim.env.GEMINI_API_KEY or vim.env.GEMINI_API_KEY == "" then
   vim.env.GEMINI_API_KEY = vim.fn.system("bash -c 'source ~/.zshrc 2>/dev/null && echo -n $GEMINI_API_KEY'")
+end
+
+if not vim.env.MOONSHOT_API_KEY or vim.env.MOONSHOT_API_KEY == "" then
+  vim.env.MOONSHOT_API_KEY = vim.fn.system("bash -c 'source ~/.zshrc 2>/dev/null && echo -n $MOONSHOT_API_KEY'")
 end
 
 return {
@@ -16,10 +19,10 @@ return {
   ---@module 'avante'
   ---@type avante.Config
   opts = {
-    -- this file can contain specific instructions for your project
+    -- global AI instructions file
     instructions_file = vim.fn.expand("~/.config/nvim/avante.md"),
 
-    -- Set Gemini as the active provider
+    -- active provider
     provider = "gemini",
 
     providers = {
@@ -45,7 +48,7 @@ return {
           },
         },
       },
-    }, -- ← this closing brace for `providers` was missing!
+    },
 
     behaviour = {
       auto_suggestions = true,
