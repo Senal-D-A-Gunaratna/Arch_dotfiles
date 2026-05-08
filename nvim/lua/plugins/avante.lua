@@ -25,6 +25,8 @@ return {
     -- active provider
     provider = "moonshot",
 
+    -- provider = "gemini",
+
     providers = {
       moonshot = {
         endpoint = "https://api.moonshot.ai/v1",
