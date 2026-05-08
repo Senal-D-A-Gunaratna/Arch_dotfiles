@@ -1,5 +1,10 @@
 -- ~/.config/nvim/lua/plugins/avante.lua
 
+-- Fix for Neovim not inheriting GEMINI_API_KEY from zsh
+if not vim.env.GEMINI_API_KEY or vim.env.GEMINI_API_KEY == "" then
+ vim.env.GEMINI_API_KEY = vim.fn.system("bash -c 'source ~/.zshrc 2>/dev/null && echo -n $GEMINI_API_KEY'")
+end
+
 return {
   "yetone/avante.nvim",
   -- if you want to build from source then do `make BUILD_FROM_SOURCE=true`
@@ -41,6 +46,7 @@ return {
         endpoint = "https://generativelanguage.googleapis.com/v1beta/models",
         model = "gemini-2.5-flash-preview-05-20",
         timeout = 30000,
+        api_key_name = "GEMINI_API_KEY", -- reads from vim.env after the fix above
         extra_request_body = {
           temperature = 0.75,
           generationConfig = {
