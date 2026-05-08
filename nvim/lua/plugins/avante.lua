@@ -24,7 +24,6 @@ return {
 
     -- active provider
     provider = "moonshot",
-
     -- provider = "gemini",
 
     providers = {
