@@ -2,7 +2,7 @@
 
 -- Fix for Neovim not inheriting GEMINI_API_KEY from zsh
 if not vim.env.GEMINI_API_KEY or vim.env.GEMINI_API_KEY == "" then
- vim.env.GEMINI_API_KEY = vim.fn.system("bash -c 'source ~/.zshrc 2>/dev/null && echo -n $GEMINI_API_KEY'")
+  vim.env.GEMINI_API_KEY = vim.fn.system("bash -c 'source ~/.zshrc 2>/dev/null && echo -n $GEMINI_API_KEY'")
 end
 
 return {
@@ -44,9 +44,9 @@ return {
       },
       gemini = {
         endpoint = "https://generativelanguage.googleapis.com/v1beta/models",
-        model = "gemini-2.5-flash-preview-05-20",
+        model = "gemini-2.5-flash",
         timeout = 30000,
-        api_key_name = "GEMINI_API_KEY", -- reads from vim.env after the fix above
+        api_key_name = "GEMINI_API_KEY",
         extra_request_body = {
           temperature = 0.75,
           generationConfig = {
@@ -54,7 +54,7 @@ return {
           },
         },
       },
-    },
+    }, -- ← this closing brace for `providers` was missing!
 
     behaviour = {
       auto_suggestions = true,
