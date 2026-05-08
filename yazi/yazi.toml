@@ -1,6 +1,5 @@
 [mgr]
 ratio = [1, 2, 2]
-mouse_events = ["click", "scroll", "touch", "drag"]
 
 [opener]
 edit = [
