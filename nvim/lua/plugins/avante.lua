@@ -23,12 +23,12 @@ return {
     instructions_file = vim.fn.expand("~/.config/nvim/avante.md"),
 
     -- active provider
-    provider = "gemini",
+    provider = "moonshot",
 
     providers = {
       moonshot = {
         endpoint = "https://api.moonshot.ai/v1",
-        model = "kimi-k2-0711-preview",
+        model = "kimi-k2.6",
         timeout = 30000,
         api_key_name = "MOONSHOT_API_KEY",
         extra_request_body = {
