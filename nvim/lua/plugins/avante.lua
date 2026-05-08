@@ -19,8 +19,8 @@ return {
   ---@module 'avante'
   ---@type avante.Config
   opts = {
-    -- global AI instructions file
-    instructions_file = vim.fn.expand("~/.config/nvim/avante.md"),
+    -- this file can contain specific instructions for your project
+    instructions_file = "avante.md",
 
     -- active provider
     provider = "moonshot",

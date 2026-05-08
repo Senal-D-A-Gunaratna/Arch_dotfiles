@@ -3,7 +3,7 @@
 
 allowNotifications=2
 
-repeatState=2
+repeatState=0
 
 shuffleEnabled=0
 
@@ -15,7 +15,7 @@ coverAnsi=0
 
 [visualizer]
 
-visualizerEnabled=1
+visualizerEnabled=0
 
 [chroma]
 
