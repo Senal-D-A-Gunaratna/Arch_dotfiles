@@ -1,29 +1,29 @@
 [
-    {
-        "key": "shift+q",
-        "command": "workbench.action.toggleMaximizedPanel",
-        "when": "panelMaximized || panelVisible"
-    },
-    {
-        "key": "ctrl+q",
-        "command": "workbench.action.terminal.toggleTerminal"
-    },
-    {
-        "key": "alt+`",
-        "command": "geminicodeassist.showinEditor",
-        "when": "authLoggedIn && config.geminicodeassist.enable && editorTextFocus && shouldRegisterInEditorCommand && !inGeminiDiffView && !isInDiffEditor && !sidePanelVisible"
-    },
-    {
-        "key": "ctrl+p",
-        "command": "workbench.action.quickOpenWithModes"
-    },
-    {
-        "key": "shift+space",
-        "command": "workbench.action.quickOpen"
-    },
-    {
-        "key": "ctrl+`",
-        "command": "-workbench.action.terminal.toggleTerminal",
-        "when": "terminal.active"
-    },
+  {
+    "key": "shift+q",
+    "command": "workbench.action.toggleMaximizedPanel",
+    "when": "panelMaximized || panelVisible"
+  },
+  {
+    "key": "ctrl+q",
+    "command": "workbench.action.terminal.toggleTerminal"
+  },
+  {
+    "key": "alt+`",
+    "command": "geminicodeassist.showinEditor",
+    "when": "authLoggedIn && config.geminicodeassist.enable && editorTextFocus && shouldRegisterInEditorCommand && !inGeminiDiffView && !isInDiffEditor && !sidePanelVisible"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "workbench.action.quickOpenWithModes"
+  },
+  {
+    "key": "shift+space",
+    "command": "workbench.action.quickOpen"
+  },
+  {
+    "key": "ctrl+`",
+    "command": "-workbench.action.terminal.toggleTerminal",
+    "when": "terminal.active"
+  }
 ]
