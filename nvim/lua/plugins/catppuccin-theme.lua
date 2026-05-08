@@ -12,7 +12,7 @@ return {
     lazy = true,
     name = "catppuccin",
     opts = {
-      flavour = "mocha", -- Your preference
+      flavour = "mocha",
       lsp_styles = {
         underlines = {
           errors = { "undercurl" },
