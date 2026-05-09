@@ -18,7 +18,7 @@ return {
     lazy = false,
     priority = 1000,
     config = function()
-      require("plugins.matugen_theme").load()
+      require("plugins.matugen-theme").load()
     end,
   },
 }
