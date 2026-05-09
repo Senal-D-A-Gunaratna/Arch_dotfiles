@@ -751,7 +751,7 @@ local function apply(c)
   hl("AvantePopupHint",             { fg = c.outline,             italic = true })
   hl("AvanteInlineHint",            { fg = c.outline,             italic = true })
 
-  -- fzf-lua (pulled in by avante)
+  -- fzf-lua
   hl("FzfLuaNormal",                { fg = c.on_surface,          bg = c.surface_container })
   hl("FzfLuaBorder",                { fg = c.primary,             bg = c.surface_container })
   hl("FzfLuaTitle",                 { fg = c.on_primary,          bg = c.primary,           bold = true })
