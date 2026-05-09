@@ -20,7 +20,7 @@ return {
 		config = function()
 			require("base16-colorscheme").setup({
 				--base00 = "{{colors.background.default.hex}}",
-				base01 = "{{colors.surface_container_lowest.default.hex}}",
+				--base01 = "{{colors.surface_container.default.hex}}",
 				base02 = "{{colors.surface_container_low.default.hex}}",
 				base03 = "{{colors.outline_variant.default.hex}}",
 				base04 = "{{colors.on_surface_variant.default.hex}}",
@@ -33,7 +33,7 @@ return {
 				base0A = "{{colors.secondary.default.hex}}",
 				base0B = "{{colors.primary.default.hex}}",
 				base0C = "{{colors.tertiary_container.default.hex}}",
-				base0D = "{{colors.primary_container.default.hex}}",
+				base0D = "{{colors.primary_container.default.hex | lighten: 20}}",
 				base0E = "{{colors.secondary_container.default.hex}}",
 				base0F = "{{colors.secondary.default.hex | lighten: -10}}",
 			})
