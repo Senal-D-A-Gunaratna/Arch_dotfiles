@@ -19,57 +19,75 @@ return {
     priority = 1000,
     config = function()
       require('base16-colorscheme').setup({
-        --base00 = "#181115",
-        base01 = "#130c0f",
-        base02 = "#211a1d",
-        base03 = "#504349",
-        base04 = "#d4c2c8",
-        base05 = "#eddfe3",
-        base06 = "#372e32",
-        base07 = "#40373a",
+        --base00 = "#111318",
+        base01 = "#0c0e13",
+        base02 = "#1a1b20",
+        base03 = "#44474f",
+        base04 = "#c4c6d0",
+        base05 = "#e2e2e9",
+        base06 = "#2f3036",
+        base07 = "#37393e",
 
-        base08 = "#f0aa84",
-        base09 = "#f3ba9b",
-        base0A = "#dfbdcc",
-        base0B = "#fbb0d7",
-        base0C = "#643d26",
-        base0D = "#6c3454",
-        base0E = "#58404c",
-        base0F = "#ce9bb1",
+        base08 = "#d6abd7",
+        base09 = "#debcdf",
+        base0A = "#bfc6dc",
+        base0B = "#adc6ff",
+        base0C = "#583e5b",
+        base0D = "#2b4678",
+        base0E = "#3f4759",
+        base0F = "#9ea9ca",
       })
 
       -- Make selected text stand out more
       vim.api.nvim_set_hl(0, 'Visual', {
-        bg = '#6c3454',
-        fg = '#ffd8e9',
+        bg = '#2b4678',
+        fg = '#d8e2ff',
       })
 
       -- Make "string" text contrast better
       set_hl_multiple({ 'String', 'TSString' }, {
-        fg = '#eb8b57',
+        fg = '#c588c6',
       })
 
       -- Grey out comments
       set_hl_multiple({ 'TSComment', 'Comment' }, {
-        fg = '#9c8d93',
+        fg = '#8e9099',
         italic = true,
       })
 
       set_hl_multiple({ 'TSMethod', 'Method' }, {
-        fg = '#f3ba9b',
+        fg = '#debcdf',
       })
 
       set_hl_multiple({ 'TSFunction', 'Function' }, {
-        fg = '#dfbdcc',
+        fg = '#bfc6dc',
       })
 
       set_hl_multiple({ 'Keyword', 'TSKeyword', 'TSKeywordFunction', 'TSRepeat' }, {
-        fg = '#874b6c',
+        fg = '#445e91',
       })
 
       -- Fix snacks dashboard background tint
 
-      vim.api.nvim_set_hl(0, 'SnacksDashboardHeader', { link = 'Normal' })
+      -- Make all backgrounds transparent
+vim.api.nvim_set_hl(0, 'Normal', { bg = 'none' })
+vim.api.nvim_set_hl(0, 'NormalFloat', { bg = 'none' })
+vim.api.nvim_set_hl(0, 'NormalNC', { bg = 'none' })
+vim.api.nvim_set_hl(0, 'SignColumn', { bg = 'none' })
+vim.api.nvim_set_hl(0, 'StatusLine', { bg = 'none' })
+vim.api.nvim_set_hl(0, 'StatusLineNC', { bg = 'none' })
+vim.api.nvim_set_hl(0, 'TabLine', { bg = 'none' })
+vim.api.nvim_set_hl(0, 'TabLineFill', { bg = 'none' })
+vim.api.nvim_set_hl(0, 'TabLineSel', { bg = 'none' })
+vim.api.nvim_set_hl(0, 'WinBar', { bg = 'none' })
+vim.api.nvim_set_hl(0, 'WinBarNC', { bg = 'none' })
+vim.api.nvim_set_hl(0, 'EndOfBuffer', { bg = 'none' })
+vim.api.nvim_set_hl(0, 'SnacksDashboardNormal', { bg = 'none' })
+vim.api.nvim_set_hl(0, 'SnacksDashboardFooter', { bg = 'none' })
+vim.api.nvim_set_hl(0, 'SnacksDashboardHeader', { bg = 'none' })
+vim.api.nvim_set_hl(0, 'SnacksDashboardDesc', { bg = 'none' })
+vim.api.nvim_set_hl(0, 'SnacksDashboardKey', { bg = 'none' })
+vim.api.nvim_set_hl(0, 'SnacksDashboardIcon', { bg = 'none' })
     end,
   }
 }

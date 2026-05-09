@@ -69,7 +69,25 @@ return {
 
       -- Fix snacks dashboard background tint
 
-      vim.api.nvim_set_hl(0, 'SnacksDashboardHeader', { link = 'Normal' })
+      -- Make all backgrounds transparent
+      vim.api.nvim_set_hl(0, 'Normal', { bg = 'none' })
+      vim.api.nvim_set_hl(0, 'NormalFloat', { bg = 'none' })
+      vim.api.nvim_set_hl(0, 'NormalNC', { bg = 'none' })
+      vim.api.nvim_set_hl(0, 'SignColumn', { bg = 'none' })
+      vim.api.nvim_set_hl(0, 'StatusLine', { bg = 'none' })
+      vim.api.nvim_set_hl(0, 'StatusLineNC', { bg = 'none' })
+      vim.api.nvim_set_hl(0, 'TabLine', { bg = 'none' })
+      vim.api.nvim_set_hl(0, 'TabLineFill', { bg = 'none' })
+      vim.api.nvim_set_hl(0, 'TabLineSel', { bg = 'none' })
+      vim.api.nvim_set_hl(0, 'WinBar', { bg = 'none' })
+      vim.api.nvim_set_hl(0, 'WinBarNC', { bg = 'none' })
+      vim.api.nvim_set_hl(0, 'EndOfBuffer', { bg = 'none' })
+      vim.api.nvim_set_hl(0, 'SnacksDashboardNormal', { bg = 'none' })
+      vim.api.nvim_set_hl(0, 'SnacksDashboardFooter', { bg = 'none' })
+      vim.api.nvim_set_hl(0, 'SnacksDashboardHeader', { bg = 'none' })
+      vim.api.nvim_set_hl(0, 'SnacksDashboardDesc', { bg = 'none' })
+      vim.api.nvim_set_hl(0, 'SnacksDashboardKey', { bg = 'none' })
+      vim.api.nvim_set_hl(0, 'SnacksDashboardIcon', { bg = 'none' })
     end,
   }
 }
