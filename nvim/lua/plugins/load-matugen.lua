@@ -1,4 +1,4 @@
--- ~/.config/nvim/lua/plugins/matugen.lua
+-- load the matugen theme
 local ok, theme = pcall(require, "matugen_theme")
 
 return {
