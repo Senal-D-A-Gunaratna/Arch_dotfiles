@@ -63,4 +63,3 @@ VSCodium/User/*
 
 #nvim
 !nvim
-nvim/lua/plugins/matugen.lua
