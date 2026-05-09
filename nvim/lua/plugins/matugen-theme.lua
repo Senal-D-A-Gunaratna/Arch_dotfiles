@@ -121,6 +121,7 @@ local function apply(c)
   hl("Normal",          { fg = c.on_surface,         bg = nil })
   hl("NormalNC",        { fg = c.on_surface_variant,  bg = nil })
   hl("NormalFloat",     { fg = c.on_surface,          bg = c.surface_container })
+  -- hl("Normal", { fg = c.on_surface, bg = c.surface })
 
   hl("FloatBorder",     { fg = c.primary,             bg = c.surface_container })
   hl("FloatTitle",      { fg = c.primary,             bg = c.surface_container, bold = true })
