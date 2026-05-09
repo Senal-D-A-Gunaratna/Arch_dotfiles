@@ -23,8 +23,9 @@ return {
     instructions_file = "avante.md",
 
     -- active provider
-    provider = "moonshot",
-    -- provider = "gemini",
+
+     provider = "gemini",
+    -- provider = "moonshot",
 
     providers = {
       moonshot = {
