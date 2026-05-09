@@ -66,6 +66,14 @@ return {
       set_hl_multiple({ 'Keyword', 'TSKeyword', 'TSKeywordFunction', 'TSRepeat' }, {
         fg = '{{colors.inverse_primary.default.hex}}',
       })
+
+      -- Fix snacks dashboard background tint
+      vim.api.nvim_set_hl(0, 'SnacksDashboardNormal', { link = 'Normal' })
+      vim.api.nvim_set_hl(0, 'SnacksDashboardFooter', { link = 'Normal' })
+      vim.api.nvim_set_hl(0, 'SnacksDashboardHeader', { link = 'Normal' })
+      vim.api.nvim_set_hl(0, 'SnacksDashboardDesc', { link = 'Normal' })
+      vim.api.nvim_set_hl(0, 'SnacksDashboardKey', { link = 'Normal' })
+      vim.api.nvim_set_hl(0, 'SnacksDashboardIcon', { link = 'Normal' })
     end,
   }
 }

@@ -19,53 +19,61 @@ return {
     priority = 1000,
     config = function()
       require('base16-colorscheme').setup({
-        base00 = "#181115",
-        base01 = "#130c0f",
-        base02 = "#211a1d",
-        base03 = "#504349",
-        base04 = "#d4c2c8",
-        base05 = "#eddfe3",
-        base06 = "#372e32",
-        base07 = "#40373a",
+        base00 = "#121318",
+        base01 = "#0d0e13",
+        base02 = "#1b1b21",
+        base03 = "#46464f",
+        base04 = "#c6c5d0",
+        base05 = "#e3e1e9",
+        base06 = "#303036",
+        base07 = "#38393f",
 
-        base08 = "#f0aa84",
-        base09 = "#f3ba9b",
-        base0A = "#dfbdcc",
-        base0B = "#fbb0d7",
-        base0C = "#643d26",
-        base0D = "#6c3454",
-        base0E = "#58404c",
-        base0F = "#ce9bb1",
+        base08 = "#dea7ce",
+        base09 = "#e5bad8",
+        base0A = "#c3c5dd",
+        base0B = "#b9c3ff",
+        base0C = "#5d3c55",
+        base0D = "#384379",
+        base0E = "#434659",
+        base0F = "#a2a6cb",
       })
 
       -- Make selected text stand out more
       vim.api.nvim_set_hl(0, 'Visual', {
-        bg = '#6c3454',
-        fg = '#ffd8e9',
+        bg = '#384379',
+        fg = '#dee1ff',
       })
 
       -- Make "string" text contrast better
       set_hl_multiple({ 'String', 'TSString' }, {
-        fg = '#eb8b57',
+        fg = '#d082b9',
       })
 
       -- Grey out comments
       set_hl_multiple({ 'TSComment', 'Comment' }, {
-        fg = '#9c8d93',
+        fg = '#90909a',
         italic = true,
       })
 
       set_hl_multiple({ 'TSMethod', 'Method' }, {
-        fg = '#f3ba9b',
+        fg = '#e5bad8',
       })
 
       set_hl_multiple({ 'TSFunction', 'Function' }, {
-        fg = '#dfbdcc',
+        fg = '#c3c5dd',
       })
 
       set_hl_multiple({ 'Keyword', 'TSKeyword', 'TSKeywordFunction', 'TSRepeat' }, {
-        fg = '#874b6c',
+        fg = '#505b92',
       })
+
+      -- Fix snacks dashboard background tint
+      vim.api.nvim_set_hl(0, 'SnacksDashboardNormal', { link = 'Normal' })
+      vim.api.nvim_set_hl(0, 'SnacksDashboardFooter', { link = 'Normal' })
+      vim.api.nvim_set_hl(0, 'SnacksDashboardHeader', { link = 'Normal' })
+      vim.api.nvim_set_hl(0, 'SnacksDashboardDesc', { link = 'Normal' })
+      vim.api.nvim_set_hl(0, 'SnacksDashboardKey', { link = 'Normal' })
+      vim.api.nvim_set_hl(0, 'SnacksDashboardIcon', { link = 'Normal' })
     end,
   }
 }
