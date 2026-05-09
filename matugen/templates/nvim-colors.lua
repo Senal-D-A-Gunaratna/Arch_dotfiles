@@ -89,5 +89,11 @@ return {
       vim.api.nvim_set_hl(0, 'SnacksDashboardKey', { bg = 'none' })
       vim.api.nvim_set_hl(0, 'SnacksDashboardIcon', { bg = 'none' })
     end,
-  }
+  },
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "base16-custom",
+    },
+  },
 }
