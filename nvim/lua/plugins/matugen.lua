@@ -19,7 +19,7 @@ return {
     priority = 1000,
     config = function()
       require('base16-colorscheme').setup({
-        base00 = "#181115",
+        --base00 = "#181115",
         base01 = "#130c0f",
         base02 = "#211a1d",
         base03 = "#504349",
@@ -68,7 +68,7 @@ return {
       })
 
       -- Fix snacks dashboard background tint
-      
+
       vim.api.nvim_set_hl(0, 'SnacksDashboardHeader', { link = 'Normal' })
     end,
   }
