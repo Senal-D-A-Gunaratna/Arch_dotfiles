@@ -2,8 +2,6 @@
 local ok, theme = pcall(require, "matugen_theme")
 
 return {
-  { "RRethy/nvim-base16", enabled = false },
-
   {
     "LazyVim/LazyVim",
     opts = {
@@ -18,7 +16,7 @@ return {
     lazy = false,
     priority = 1000,
     config = function()
-      require("plugins.matugen-theme").load()
+      require("plugins.matugen").load()
     end,
   },
 }
