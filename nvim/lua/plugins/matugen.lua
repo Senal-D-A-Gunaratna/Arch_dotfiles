@@ -19,52 +19,52 @@ return {
     priority = 1000,
     config = function()
       require('base16-colorscheme').setup({
-        base00 = "#181115",
-        base01 = "#130c0f",
-        base02 = "#211a1d",
-        base03 = "#504349",
-        base04 = "#d4c2c8",
-        base05 = "#eddfe3",
-        base06 = "#372e32",
-        base07 = "#40373a",
+        base00 = "#243034",
+        base01 = "#090f11",
+        base02 = "#171c1e",
+        base03 = "#3f484b",
+        base04 = "#bfc8cb",
+        base05 = "#dee3e5",
+        base06 = "#2c3133",
+        base07 = "#343a3c",
 
-        base08 = "#f0aa84",
-        base09 = "#f3ba9b",
-        base0A = "#dfbdcc",
-        base0B = "#fbb0d7",
-        base0C = "#643d26",
-        base0D = "#6c3454",
-        base0E = "#58404c",
-        base0F = "#ce9bb1",
+        base08 = "#abb4e5",
+        base09 = "#bec5eb",
+        base0A = "#b2cbd2",
+        base0B = "#84d2e6",
+        base0C = "#3e4565",
+        base0D = "#004e5c",
+        base0E = "#334a50",
+        base0F = "#92b5bf",
       })
 
       -- Make selected text stand out more
       vim.api.nvim_set_hl(0, 'Visual', {
-        bg = '#6c3454',
-        fg = '#ffd8e9',
+        bg = '#004e5c',
+        fg = '#aaedff',
       })
 
       -- Make "string" text contrast better
       set_hl_multiple({ 'String', 'TSString' }, {
-        fg = '#eb8b57',
+        fg = '#8491d9',
       })
 
       -- Grey out comments
       set_hl_multiple({ 'TSComment', 'Comment' }, {
-        fg = '#9c8d93',
+        fg = '#899295',
         italic = true,
       })
 
       set_hl_multiple({ 'TSMethod', 'Method' }, {
-        fg = '#f3ba9b',
+        fg = '#bec5eb',
       })
 
       set_hl_multiple({ 'TSFunction', 'Function' }, {
-        fg = '#dfbdcc',
+        fg = '#b2cbd2',
       })
 
       set_hl_multiple({ 'Keyword', 'TSKeyword', 'TSKeywordFunction', 'TSRepeat' }, {
-        fg = '#874b6c',
+        fg = '#006879',
       })
     end,
   }
