@@ -8,7 +8,6 @@ return {
       colorscheme = "matugen",
     },
   },
-
   {
     -- Dummy plugin entry just to trigger our theme on startup
     dir = vim.fn.stdpath("config"),
