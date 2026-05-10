@@ -27,7 +27,7 @@
     "when": "terminal.active"
   },
   {
-    "key": "shift+;",
+    "key": "contextmenu ;",
     "command": "workbench.action.showCommands"
   },
   {
