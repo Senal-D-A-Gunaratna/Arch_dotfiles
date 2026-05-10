@@ -289,6 +289,8 @@
     "telemetry.telemetryLevel": "off",
     "pascal.format.path": "/usr/bin/ptop",
     "window.commandCenter": false,
+    "workbench.colorTheme": "Dark Modern",
+    "window.restoreWindows": "none",
     "vim.normalModeKeyBindings": [
         {
             "before": [
@@ -300,6 +302,4 @@
             "silent": true
         }
     ],
-    "workbench.colorTheme": "Dark Modern",
-    "window.restoreWindows": "none"
 }
