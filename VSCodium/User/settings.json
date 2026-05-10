@@ -291,6 +291,7 @@
     "window.commandCenter": false,
     "workbench.colorTheme": "Dark Modern",
     "window.restoreWindows": "none",
+    "workbench.layoutControl.enabled": false,
     "vim.normalModeKeyBindings": [
         {
             "before": [
