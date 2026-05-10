@@ -1,10 +1,22 @@
 -- matugen.lua
--- Reads ~/.config/matugen/themes/code-colors.json at startup and on SIGUSR1
+-- Reads ~/.config/matugen/themes/code-colors.jsonc at startup and on SIGUSR1
 -- Applies a full Material You colorscheme to Neovim
 
 local M = {}
 
-local JSON_PATH = vim.fn.expand("~/.config/matugen/themes/code-colors.json")
+local JSON_PATH = vim.fn.expand("~/.config/matugen/themes/code-colors.jsonc")
+
+-- ---------------------------------------------------------------------------
+-- Strip // line comments and /* block comments */ from JSONC
+-- ---------------------------------------------------------------------------
+local function strip_jsonc(str)
+  -- Remove /* ... */ block comments (including multiline)
+  str = str:gsub("/%*.-%*/", "")
+  -- Remove // line comments, but not inside strings
+  -- Simple approach: skip // that are preceded by a colon+space (URLs like https://)
+  str = str:gsub('([^:])//[^\n]*', '%1')
+  return str
+end
 
 -- ---------------------------------------------------------------------------
 -- JSON parser (tiny, dependency-free)
@@ -19,7 +31,7 @@ local function parse_json(str)
 end
 
 -- ---------------------------------------------------------------------------
--- Load colors from JSON
+-- Load colors from JSONC
 -- ---------------------------------------------------------------------------
 local function load_colors()
   local f = io.open(JSON_PATH, "r")
@@ -30,7 +42,7 @@ local function load_colors()
   local raw = f:read("*a")
   f:close()
 
-  local data = parse_json(raw)
+  local data = parse_json(strip_jsonc(raw))
   if not data then return nil end
 
   local w = data["workbench.colorCustomizations"]
@@ -774,7 +786,6 @@ local function apply(c)
   hl("FzfLuaHeaderText",            { fg = c.on_surface_variant })
 
   -- ── LAYER 6: winblend for floats ────────────────────────────────────────
-  -- Set winblend on relevant float-like windows via autocmd
   vim.api.nvim_create_autocmd("FileType", {
     pattern = { "lazy", "mason", "lspinfo", "null-ls-info", "checkhealth" },
     callback = function()
