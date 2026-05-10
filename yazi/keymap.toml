@@ -14,7 +14,7 @@ prepend_keymap = [
 
   # Tabs and System
   { on = "T", run = "tab_close", desc = "Close tab" },
-  { on = ["CTRL", "T"], run = 'shell "setsid kitty" --workdir "$PWD" &', desc = "Open terminal here"},
+  { on = "<C-t>", run = 'shell "setsid kitty &" --block', desc = "Open terminal here" },
   { on = "B", run = 'shell "dragon-drop -x \"$@\"" --confirm', desc = "Drag and drop" },
 
 # Compression Selection Menu (c -> x)
