@@ -118,10 +118,10 @@ local function apply(c)
   -- ── LAYER 1: Core editor ────────────────────────────────────────────────
 
   -- Normal: no bg → transparency falls through to Kitty/Hyprland blur
-  hl("Normal",          { fg = c.on_surface,         bg = nil })
+  hl("Normal",          { fg = c.on_surface,          bg = nil })
   hl("NormalNC",        { fg = c.on_surface_variant,  bg = nil })
   hl("NormalFloat",     { fg = c.on_surface,          bg = c.surface_container })
-  -- hl("Normal", { fg = c.on_surface, bg = c.surface })
+  hl("Normal",          { fg = c.on_surface,          bg = c.surface })
 
   hl("FloatBorder",     { fg = c.primary,             bg = c.surface_container })
   hl("FloatTitle",      { fg = c.primary,             bg = c.surface_container, bold = true })
