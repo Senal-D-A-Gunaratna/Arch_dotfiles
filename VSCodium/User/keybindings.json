@@ -1,6 +1,6 @@
 [
   {
-    "key": "shift+q",
+    "key": "ctrl+shift+q",
     "command": "workbench.action.toggleMaximizedPanel",
     "when": "panelMaximized || panelVisible"
   },
