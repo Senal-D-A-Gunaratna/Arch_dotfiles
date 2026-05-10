@@ -1,7 +1,15 @@
 -- load the matugen theme
-local ok, theme = pcall(require, "matugen_theme")
+
+local enabled = true -- Set to false to go back to "Normal" mode
+
+if not enabled then
+  return {}
+end
 
 return {
+
+  --local ok, theme = pcall(require, "matugen_theme")
+
   {
     "LazyVim/LazyVim",
     opts = {
