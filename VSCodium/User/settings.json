@@ -300,5 +300,6 @@
             "silent": true
         }
     ],
-    "workbench.colorTheme": "Dark Modern"
+    "workbench.colorTheme": "Dark Modern",
+    "window.restoreWindows": "none"
 }
