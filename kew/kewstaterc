@@ -15,7 +15,7 @@ coverAnsi=0
 
 [visualizer]
 
-visualizerEnabled=0
+visualizerEnabled=1
 
 [chroma]
 
