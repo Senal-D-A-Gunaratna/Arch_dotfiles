@@ -18,7 +18,6 @@ video = [{ run = 'mpv "$@"', orphan = true, desc = "mpv" }]
 prepend_rules = [
   # Images (including WebP)
   { mime = "image/*", use = "image" },
-  { name = "*.webp", use = "image" },
 
   # Text/Code
   { mime = "text/*", use = "edit" },
@@ -38,5 +37,5 @@ prepend_rules = [
   { mime = "application/vnd.ms-powerpoint", use = "libreoffice" },
 
   # Fallback
-  { name = "*", use = "open" },
+  { mime = "*", use = "open" },
 ]
