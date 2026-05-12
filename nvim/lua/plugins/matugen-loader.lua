@@ -2,10 +2,6 @@
 
 if false then return {} end -- Set to false to go back to "Normal" mode
 
-if not enabled then
-  return {}
-end
-
 return {
   {
     "LazyVim/LazyVim",
