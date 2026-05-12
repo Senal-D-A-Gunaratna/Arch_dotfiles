@@ -1,6 +1,6 @@
 -- load the matugen theme
 
-local enabled = true -- Set to false to go back to "Normal" mode
+if true then return {} end -- Set to false to go back to "Normal" mode
 
 if not enabled then
   return {}

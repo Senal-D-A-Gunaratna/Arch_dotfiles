@@ -1,10 +1,6 @@
 --Catppuccin mocha color scheme
 
-local enabled = false -- Set to false to go back to "Normal" mode
-
-if not enabled then
-  return {}
-end
+if true then return {} end -- Set to false to go back to "Normal" mode
 
 return {
   {
