@@ -7,17 +7,13 @@ if not enabled then
 end
 
 return {
-
-  --local ok, theme = pcall(require, "matugen_theme")
-
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "matugen",
+      colorscheme = function() end, -- noop, matugen handles it
     },
   },
   {
-    -- Dummy plugin entry just to trigger our theme on startup
     dir = vim.fn.stdpath("config"),
     name = "matugen-theme",
     lazy = false,
