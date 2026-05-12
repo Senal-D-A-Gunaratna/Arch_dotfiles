@@ -1,14 +1,13 @@
 -- load the matugen theme
 
-if false then return {} end -- Set to false to go back to "Normal" mode
+local enabled = true -- Set to false to disable matugen theme
+
+if not enabled then
+  vim.notify("matugen: theme disabled", vim.log.levels.WARN)
+  return {}
+end
 
 return {
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = function() end, -- noop, matugen handles it
-    },
-  },
   {
     dir = vim.fn.stdpath("config"),
     name = "matugen-theme",
