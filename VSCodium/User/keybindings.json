@@ -14,7 +14,7 @@
     "when": "authLoggedIn && config.geminicodeassist.enable && editorTextFocus && shouldRegisterInEditorCommand && !inGeminiDiffView && !isInDiffEditor && !sidePanelVisible"
   },
   {
-    "key": "ctrl+p",
+    "key": "ctrl+;",
     "command": "workbench.action.quickOpenWithModes"
   },
   {
@@ -25,13 +25,5 @@
     "key": "ctrl+`",
     "command": "-workbench.action.terminal.toggleTerminal",
     "when": "terminal.active"
-  },
-  {
-    "key": "contextmenu ;",
-    "command": "workbench.action.showCommands"
-  },
-  {
-    "key": "ctrl+shift+p",
-    "command": "-workbench.action.showCommands"
   }
 ]
