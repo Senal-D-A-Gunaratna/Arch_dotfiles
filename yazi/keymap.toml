@@ -23,5 +23,17 @@ prepend_keymap = [
   { on = ["c", "c", "3"], run = 'shell "ouch compress \"$@\" \"$PWD/${1##*/}.7z\"" --confirm',     desc = "Create .7z" },
 
 # Extract archive (c -> x)
-{ on = ["c", "x"], run = 'shell "ouch decompress \"$@\" --yes" --confirm', desc = "Extract archive(s)" }
+{ on = ["c", "x"], run = '''shell "
+  for f in \"$@\"; do
+    base=$(basename \"$f\")
+    name=\"${base%%.*}\"
+    dest=\"$name\"
+    n=2
+    while [ -e \"$dest\" ]; do
+      dest=\"${name}-${n}\"
+      n=$((n+1))
+    done
+    ouch decompress \"$f\" --dir \"$dest\" --yes
+  done
+" --confirm''', desc = "Extract archive(s)" }
 ]
