@@ -40,6 +40,10 @@ input_path = "~/.config/matugen/templates/hyprland-colors.conf"
 output_path = "~/.config/matugen/themes/hyprland-colors.conf"
 post_hook = "sleep 0.01 && hyprctl keyword general:col.active_border $active_border && true"
 
+[templates.hyprland-lua]
+input_path = "~/.config/matugen/templates/hyprland-colors.lua"
+output_path = "~/.config/hypr/hyprland/colors.lua"
+
 [templates.clipse]
 input_path = '~/.config/matugen/templates/clipse_theme.json'
 output_path = '~/.config/clipse/custom_theme.json'
