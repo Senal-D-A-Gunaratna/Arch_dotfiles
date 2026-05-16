@@ -26,7 +26,7 @@ output_path = "~/.config/btop/themes/matugen.theme"
 post_hook = "pkill -USR2 btop || true"
 
 [templates.waybar]
-input_path = "~/.config/matugen/templates/waybar.css"
+input_path = "~/.config/matugen/templates/waybar-colors.css"
 output_path = "~/.config/matugen/themes/waybar-colors.css"
 post_hook = "pkill -SIGUSR2 waybar"
 
