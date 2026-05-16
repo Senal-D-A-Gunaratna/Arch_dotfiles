@@ -17,7 +17,7 @@ output_path = "~/.config/matugen/themes/gtk-colors.css"
 post_hook = "gsettings set org.gnome.desktop.interface gtk-theme && gsettings set org.gnome.desktop.interface gtk-theme 'adw-gtk3-dark'"
 
 [templates.qt-color-scheme]
-input_path = "~/.config/matugen/templates/Matugen.colors"
+input_path = "~/.config/matugen/templates/qt.colors"
 output_path = "~/.local/share/color-schemes/Matugen.colors"
 
 [templates.btop]
