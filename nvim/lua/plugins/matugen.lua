@@ -803,7 +803,7 @@ local function setup_signal_handler()
 
   local signal = vim.loop.new_signal()
   signal:start("sigusr1", vim.schedule_wrap(function()
-    vim.notify("matugen: reloading colorscheme…", vim.log.levels.INFO)
+    vim.notify("matugen: reloaded colorscheme…", vim.log.levels.INFO)
     local c = load_colors()
     if c then apply(c) end
   end))
