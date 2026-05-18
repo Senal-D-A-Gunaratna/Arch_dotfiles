@@ -1,6 +1,7 @@
 {
     "cSpell.words": [
         "autocmd",
+        "autofetch",
         "Avante",
         "bashls",
         "btop",
@@ -46,6 +47,7 @@
         "Popupmenu",
         "poweroff",
         "presentationml",
+        "ptop",
         "pulseaudio",
         "rofi",
         "RRGGBB",
