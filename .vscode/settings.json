@@ -1,0 +1,21 @@
+{
+    "cSpell.words": [
+        "ellisonleao",
+        "folke",
+        "hrsh",
+        "jsonls",
+        "keymap",
+        "lazyvim",
+        "lspconfig",
+        "neoconf",
+        "neodev",
+        "nvim",
+        "shellcheck",
+        "shfmt",
+        "williamboman",
+        "winblend"
+    ],
+    "Lua.diagnostics.globals": [
+        "vim"
+    ]
+}
