@@ -1,6 +1,6 @@
 [config]
 mode = "dark"
-awww = true   # Optional: if you use swww for wallpapers
+awww = true   # Optional: if you use awww for wallpapers
 
 [templates.rofi]
 input_path = "~/.config/matugen/templates/matugen.rasi"
