@@ -1,6 +1,6 @@
 [config]
 mode = "dark"
-awww = true # Optional: if you use swww for wallpapers
+awww = true   # Optional: if you use swww for wallpapers
 
 [templates.rofi]
 input_path = "~/.config/matugen/templates/matugen.rasi"
@@ -41,8 +41,8 @@ output_path = "~/.config/matugen/themes/hyprland-colors.conf"
 post_hook = "sleep 0.01 && hyprctl keyword general:col.active_border $active_border && true"
 
 [templates.clipse]
-input_path = '~/.config/matugen/templates/clipse_theme.json'
-output_path = '~/.config/matugen/themes/clipse_theme.json'
+input_path = '~/.config/matugen/templates/clipse-colors.json'
+output_path = '~/.config/matugen/themes/clipse-colors.json'
 
 [templates.dunst]
 input_path = '~/.config/matugen/templates/dunstrc-colors.txt'
