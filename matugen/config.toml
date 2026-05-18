@@ -42,7 +42,7 @@ post_hook = "sleep 0.01 && hyprctl keyword general:col.active_border $active_bor
 
 [templates.clipse]
 input_path = '~/.config/matugen/templates/clipse_theme.json'
-output_path = '~/.config/clipse/custom_theme.json'
+output_path = '~/.config/matugen/themes/clipse_theme.json'
 
 [templates.dunst]
 input_path = '~/.config/matugen/templates/dunstrc-colors.txt'

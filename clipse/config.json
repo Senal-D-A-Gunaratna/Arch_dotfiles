@@ -6,7 +6,7 @@
     "logFile": "clipse.log",
     "pollInterval": 50,
     "maxEntryLength": 65,
-    "themeFile": "custom_theme.json",
+    "themeFile": "~/.config/matugen/themes/clipse_theme.json",
     "tempDir": "tmp_files",
     "keyBindings": {
         "choose": "enter",
