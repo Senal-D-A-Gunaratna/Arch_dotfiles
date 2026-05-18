@@ -3,9 +3,9 @@
 
 # 2. Allow the ignore file itself
 !.gitignore
-!README.md
 
 # 3. Simple Directories (Whole folder tracked)
+!README.md
 !mpv
 !yazi
 !qt6ct
