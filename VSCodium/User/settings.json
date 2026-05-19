@@ -252,8 +252,7 @@
     },
     "workbench.editorAssociations": {
         "*.svg": "default",
-        "{git,gitlens,git-graph}:/**/*.qrc": "default",
-        "*.qrc": "qt-core.qrcEditor"
+        "{git}:/**/*.qrc": "default"
     },
     "cSpell.enabled": true,
     "files.autoSave": "afterDelay",
