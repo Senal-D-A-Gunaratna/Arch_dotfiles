@@ -130,7 +130,7 @@
         "scrollbarSlider.activeBackground": "#bfc2ffff",
         "button.background": "#bfc2ff",
         "button.foreground": "#272b60",
-        "button.hoverBackground": "#3e4278",
+        "button.hoverBackground": "#7b7fbb",
         "button.separator": "#918f9a",
         "button.secondaryBackground": "#444559",
         "button.secondaryForeground": "#e1e0f9",

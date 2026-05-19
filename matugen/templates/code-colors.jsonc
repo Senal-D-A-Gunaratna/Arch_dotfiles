@@ -168,7 +168,7 @@
         // ── Buttons ─────────────────────────────────────────────────────────
         "button.background":                              "{{colors.primary.default.hex}}",
         "button.foreground":                              "{{colors.on_primary.default.hex}}",
-        "button.hoverBackground":                         "{{colors.primary_container.default.hex}}",
+        "button.hoverBackground":                         "{{colors.primary_container.default.hex | lighten: 25.0 }}",
         "button.separator":                               "{{colors.outline.default.hex}}",
         "button.secondaryBackground":                     "{{colors.secondary_container.default.hex}}",
         "button.secondaryForeground":                     "{{colors.on_secondary_container.default.hex}}",
