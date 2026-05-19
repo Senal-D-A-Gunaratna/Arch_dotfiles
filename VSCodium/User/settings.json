@@ -258,6 +258,7 @@
     "cSpell.enabled": true,
     "files.autoSave": "afterDelay",
     "workbench.iconTheme": "material-icon-theme",
+    "window.dialogStyle": "custom",
     "editor.fontFamily": "'JetBrainsMono Nerd Font', monospace",
     "editor.fontSize": 14,
     "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font'",
