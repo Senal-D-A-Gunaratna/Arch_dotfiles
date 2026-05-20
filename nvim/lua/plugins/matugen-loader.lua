@@ -9,12 +9,12 @@ end
 
 return {
   {
+    "matugen-theme",
     dir = vim.fn.stdpath("config"),
-    name = "matugen-theme",
     lazy = false,
     priority = 1000,
     config = function()
-      require("plugins.matugen").load()
+      require("config.matugen").load()
     end,
   },
 }
