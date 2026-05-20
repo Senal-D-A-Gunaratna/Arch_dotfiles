@@ -278,5 +278,6 @@
     "pascal.format.path": "/usr/bin/ptop",
     "workbench.colorTheme": "Dark Modern",
     "window.restoreWindows": "none",
-    "window.commandCenter": false
+    "window.commandCenter": false,
+    "telemetry.feedback.enabled": false
 }
