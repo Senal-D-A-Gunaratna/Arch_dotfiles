@@ -267,7 +267,6 @@
     "git.path": "/usr/bin/git",
     "git.enableSmartCommit": true,
     "diffEditor.codeLens": true,
-    "workbench.secondarySideBar.defaultVisibility": "visible",
     "chat.viewSessions.orientation": "stacked",
     "editor.formatOnSave": true,
     "files.trimTrailingWhitespace": true,
@@ -282,5 +281,5 @@
     "telemetry.feedback.enabled": false,
     "window.titleBarStyle": "native",
     "window.menuBarVisibility": "toggle",
-    "workbench.layoutControl.enabled": false
+    "workbench.layoutControl.enabled": false,
 }
