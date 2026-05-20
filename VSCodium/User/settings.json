@@ -279,5 +279,8 @@
     "workbench.colorTheme": "Dark Modern",
     "window.restoreWindows": "none",
     "window.commandCenter": false,
-    "telemetry.feedback.enabled": false
+    "telemetry.feedback.enabled": false,
+    "window.titleBarStyle": "native",
+    "window.menuBarVisibility": "toggle",
+    "workbench.layoutControl.enabled": false
 }
