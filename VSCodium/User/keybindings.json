@@ -15,5 +15,10 @@
   {
     "key": "shift+space",
     "command": "workbench.action.quickOpen"
-  }
+  },
+  {
+    "key": "alt+e",
+    "command": "workbench.action.openRecent",
+    "when": "!isSessionsWindow"
+  },
 ]
