@@ -525,6 +525,17 @@ local function apply(c)
   hl("BlinkCmpSignatureHelpBorder", { fg = c.outline_variant,     bg = c.surface_container })
   hl("BlinkCmpSignatureHelpActiveParameter", { fg = c.primary,    bold = true, underline = true })
 
+  -- mason.nvim
+  hl("MasonHeader",                 { fg = c.on_primary,          bg = c.primary,           bold = true })
+  hl("MasonHighlight",              { fg = c.primary })
+  hl("MasonHighlightBlock",         { fg = c.on_primary,          bg = c.primary })
+  hl("MasonHighlightBlockBold",     { fg = c.on_primary,          bg = c.primary,           bold = true })
+  hl("MasonHighlightSecondary",     { fg = c.secondary })
+  hl("MasonMuted",                  { fg = c.outline })
+  hl("MasonMutedBlock",             { fg = c.outline,             bg = c.surface_high })
+  hl("MasonMutedBlockBold",         { fg = c.outline,             bg = c.surface_high,      bold = true })
+  hl("MasonError",                  { fg = c.error })
+
   -- noice
   hl("NoiceCmdline",                { fg = c.on_surface,          bg = c.surface_container })
   hl("NoiceCmdlineIcon",            { fg = c.primary })
