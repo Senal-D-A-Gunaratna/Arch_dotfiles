@@ -12,7 +12,6 @@ window#waybar {
 
 /* ALL modules base style - Added missing commas */
 #custom-media,
-#tray,
 #pulseaudio,
 #custom-monitor_brightness,
 #network,
@@ -24,6 +23,17 @@ window#waybar {
   padding: 2px 10px;
   margin: 4px 1px 0px 2px;
   border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  font-weight: bold;
+}
+
+/* tray */
+#tray {
+  background: @base-bg;
+  color: @primary-neon;
+  padding: 2px 3px;
+  margin: 4px 1px 0px 2px;
+  border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.05);
   font-weight: bold;
 }
