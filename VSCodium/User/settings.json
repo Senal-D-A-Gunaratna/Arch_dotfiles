@@ -262,7 +262,7 @@
     "editor.fontSize": 14,
     "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font'",
     "editor.smoothScrolling": true,
-    "workbench.browser.showInTitleBar": false,
+    "workbench.browser.showInTitleBar": true,
     "git.autofetch": true,
     "git.path": "/usr/bin/git",
     "git.enableSmartCommit": true,
@@ -279,7 +279,6 @@
     "window.restoreWindows": "none",
     "telemetry.feedback.enabled": false,
     "window.menuBarVisibility": "toggle",
-    "workbench.layoutControl.enabled": false,
     "window.titleBarStyle": "custom",
     "workbench.navigationControl.enabled": false,
     "window.commandCenter": false
