@@ -1,15 +1,10 @@
 return {
-  -- 1. Mason: non-LSP tools only (formatters, linters, DAP)
+  -- 1. Mason: Tools not covered by extras (linters, DAP)
   {
     "mason-org/mason.nvim",
     opts = {
       ensure_installed = {
-        "black",
-        "prettier",
-        "stylua",
-        "shfmt",
         "shellcheck",
-        "markdownlint",
         "debugpy",
         "js-debug-adapter",
         "codelldb",
@@ -17,27 +12,15 @@ return {
     },
   },
 
-  -- 2. mason-lspconfig: LSP servers — must declare deps for load order
+  -- 2. mason-lspconfig: LSP servers not covered by extras
   {
     "mason-org/mason-lspconfig.nvim",
-    dependencies = {
-      { "mason-org/mason.nvim", opts = {} },
-      "neovim/nvim-lspconfig",
-    },
     opts = {
       ensure_installed = {
-        "rust_analyzer",
-        "vtsls",
-        "pyright",
-        "ruff",
-        "lua_ls",
         "bashls",
-        "taplo",
         "cssls",
-        "jsonls",
-        "tailwindcss",
       },
-      automatic_enable = true,  -- v2 correct option (not automatic_installation)
+      automatic_enable = true, -- Mason v2 activation
     },
   },
 }
