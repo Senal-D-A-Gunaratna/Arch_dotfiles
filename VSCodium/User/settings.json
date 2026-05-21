@@ -280,7 +280,7 @@
     "telemetry.feedback.enabled": false,
     "window.menuBarVisibility": "toggle",
     "workbench.layoutControl.enabled": false,
-    "window.titleBarStyle": "custom",
+    "window.titleBarStyle": "native",
     "workbench.navigationControl.enabled": false,
     "window.commandCenter": false
 }
