@@ -39,5 +39,5 @@ prepend_keymap = [
     mv \"$tmp\"/*/* \"$dest\"/ 2>/dev/null || mv \"$tmp\"/* \"$dest\"/
     rm -rf \"$tmp\"
   done
-" --confirm''', desc = "Extract archive(s)" }
+  " --confirm''', desc = "Extract archive(s)" }
 ]
