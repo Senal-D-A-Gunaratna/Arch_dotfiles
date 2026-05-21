@@ -22,6 +22,7 @@ prepend_keymap = [
   { on = ["c", "c", "2"], run = 'shell "ouch compress \"$@\" \"$PWD/${1##*/}.zip\"" --confirm',    desc = "Create .zip" },
   { on = ["c", "c", "3"], run = 'shell "ouch compress \"$@\" \"$PWD/${1##*/}.7z\"" --confirm',     desc = "Create .7z" },
 
+# Extract archive (c -> x)
   { on = ["c", "x"], run = '''shell "
   for f in \"$@\"; do
     ouch decompress \"$f\" --yes
