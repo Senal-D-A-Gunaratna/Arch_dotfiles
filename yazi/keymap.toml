@@ -22,18 +22,9 @@ prepend_keymap = [
   { on = ["c", "c", "2"], run = 'shell "ouch compress \"$@\" \"$PWD/${1##*/}.zip\"" --confirm',    desc = "Create .zip" },
   { on = ["c", "c", "3"], run = 'shell "ouch compress \"$@\" \"$PWD/${1##*/}.7z\"" --confirm',     desc = "Create .7z" },
 
-# Extract archive (c -> x)
-{ on = ["c", "x"], run = '''shell "
+  { on = ["c", "x"], run = '''shell "
   for f in \"$@\"; do
-    base=$(basename \"$f\")
-    name=$(echo \"$base\" | sed 's/\\.tar\\.gz$//;s/\\.tar\\.bz2$//;s/\\.tar\\.xz$//;s/\\.tar\\.zst$//;s/\\.tar$//;s/\\.zip$//;s/\\.7z$//;s/\\.rar$//')
-    dest=\"$name\"
-    n=2
-    while [ -e \"$dest\" ]; do
-      dest=\"${name}-${n}\"
-      n=$((n+1))
-    done
-    ouch decompress \"$f\" --dir \"$dest\" --yes
+    ouch decompress \"$f\" --yes
   done
-" --confirm''', desc = "Extract archive(s)" }
+  " --confirm''', desc = "Extract archive(s)" }
 ]
