@@ -25,7 +25,19 @@ prepend_keymap = [
 # Extract archive (c -> x)
   { on = ["c", "x"], run = '''shell "
   for f in \"$@\"; do
-    ouch decompress \"$f\" --yes
+    base=$(basename \"$f\")
+    name=$(echo \"$base\" | sed 's/\\.tar\\.gz$//;s/\\.tar\\.bz2$//;s/\\.tar\\.xz$//;s/\\.tar\\.zst$//;s/\\.tar$//;s/\\.zip$//;s/\\.7z$//;s/\\.rar$//')
+    dest=\"$name\"
+    n=2
+    while [ -e \"$dest\" ]; do
+      dest=\"${name}${n}\"
+      n=$((n+1))
+    done
+    tmp=\"${dest}__tmp\"
+    ouch decompress \"$f\" --dir \"$tmp\" --yes
+    mkdir -p \"$dest\"
+    mv \"$tmp\"/*/* \"$dest\"/ 2>/dev/null || mv \"$tmp\"/* \"$dest\"/
+    rm -rf \"$tmp\"
   done
-  " --confirm''', desc = "Extract archive(s)" }
+" --confirm''', desc = "Extract archive(s)" }
 ]
