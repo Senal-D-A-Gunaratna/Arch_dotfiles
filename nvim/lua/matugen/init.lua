@@ -67,50 +67,7 @@ local function load_colors(json_path)
   end
 
   -- Build a clean color table mirroring M3 roles
-  return {
-    -- Core surfaces
-    surface = hex("editor.background"), -- #121318
-    surface_low = hex("sideBar.background"), -- #1b1b21
-    surface_container = hex("statusBar.background"), -- #1f1f25
-    surface_high = hex("sideBarSectionHeader.background"), -- #292a2f
-    surface_highest = hex("terminal.inactiveSelectionBackground"), -- #34343a
-
-    -- Text
-    on_surface = hex("editor.foreground"), -- #e3e1e9
-    on_surface_variant = hex("statusBar.foreground"), -- #c6c5d0
-    outline = hex("editorLineNumber.foreground"), -- #90909a
-    outline_variant = hex("editorWidget.border"), -- #46464f
-
-    -- Primary (periwinkle blue)
-    primary = hex("editorLineNumber.activeForeground"), -- #b9c3ff
-    on_primary = hex("button.foreground"), -- #212c61
-    primary_container = hex("editorSuggestWidget.selectedBackground"), -- #384379
-    on_primary_container = hex("editorSuggestWidget.selectedForeground"), -- #dee1ff
-
-    -- Secondary (cool grey-blue)
-    secondary = hex("editorWidget.border") ~= hex("editorWarning.foreground") and hex("editorWarning.foreground")
-      or "#c3c5dd", -- #c3c5dd
-    secondary_container = hex("statusBarItem.remoteBackground"), -- #434659
-    on_secondary_container = hex("statusBarItem.remoteForeground"), -- #dfe1f9
-
-    -- Tertiary (dusty rose)
-    tertiary = hex("editorInfo.foreground"), -- #e5bad8
-    tertiary_container = hex("terminal.ansiBrightGreen"), -- #5d3c55
-
-    -- Error
-    error = hex("editorError.foreground"), -- #ffb4ab
-    error_container = hex("terminal.ansiBrightRed"), -- #93000a
-
-    -- Selection / highlights
-    selection_bg = hex("editor.selectionBackground"), -- #b9c3ff33 → use primary + blend
-    word_highlight = hex("editor.wordHighlightBackground"), -- secondary tint
-    word_highlight_strong = hex("editor.wordHighlightStrongBackground"), -- tertiary tint
-
-    -- Git
-    git_added = hex("editorGutter.addedBackground"), -- #b9c3ff
-    git_modified = hex("editorGutter.modifiedBackground"), -- #c3c5dd
-    git_deleted = hex("editorGutter.deletedBackground"), -- #ffb4ab
-  }
+  return require("matugen.colors").get_colors(hex)
 end
 
 -- ---------------------------------------------------------------------------
