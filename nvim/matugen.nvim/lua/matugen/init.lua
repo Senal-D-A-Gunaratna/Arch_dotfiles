@@ -1,24 +1,32 @@
-local M = { opts = {} }
+local M = {
+  opts = {
+    json_path = vim.fn.expand("~/.cache/matugen/colors.json"), -- default path
+  },
+}
 
 local function notify(msg, lvl)
   vim.notify("matugen: " .. msg, lvl or vim.log.levels.INFO)
 end
 
 function M.load()
-  local f = io.open(M.opts.json_path or "", "r")
-  if not f then return notify("cannot open " .. (M.opts.json_path or ""), 3) end
+  local path = M.opts.json_path
+  local f = io.open(path, "r")
+  if not f then
+    return notify("cannot open " .. path .. ". Make sure matugen has generated the colors.json file.", 3)
+  end
   local raw = f:read("*a"):gsub("/%*.-%*/", ""):gsub("([^:])//[^\n]*", "%1")
   f:close()
 
   local ok, data = pcall(vim.json.decode, raw)
   local w = ok and data and data["workbench.colorCustomizations"]
-  if not w then return notify("failed to parse JSONC", 3) end
+  if not w then return notify("failed to parse JSONC from " .. path, 3) end
 
   local function hex(v) return v and (#v == 9 and v:sub(1, 7) or v) end
   local c, templates, hl = nil, {}, function(g, o) vim.api.nvim_set_hl(0, g, o) end
 
-  for _, file in ipairs(vim.api.nvim_get_runtime_file("lua/templates/**/*.lua", true)) do
-    local mod = file:match("lua/(templates/.*)%.lua$"):gsub("/", ".")
+  -- Use namespaced template path
+  for _, file in ipairs(vim.api.nvim_get_runtime_file("lua/matugen/templates/**/*.lua", true)) do
+    local mod = file:match("lua/(matugen/templates/.*)%.lua$"):gsub("/", ".")
     package.loaded[mod] = nil
     local res = require(mod)
     if type(res) == "function" then
@@ -28,7 +36,7 @@ function M.load()
     end
   end
 
-  if not c then return notify("palette not found", 3) end
+  if not c then return notify("palette not found in templates", 3) end
 
   vim.cmd("highlight clear")
   if vim.fn.exists("syntax_on") == 1 then vim.cmd("syntax reset") end
@@ -37,8 +45,7 @@ function M.load()
 end
 
 function M.setup(opts)
-  M.opts = opts or {}
-  M.load()
+  M.opts = vim.tbl_deep_extend("force", M.opts, opts or {})
 end
 
 return M

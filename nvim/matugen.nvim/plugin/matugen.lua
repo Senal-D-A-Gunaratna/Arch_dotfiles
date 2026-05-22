@@ -1,4 +1,4 @@
-local matugen = require("logic")
+local matugen = require("matugen")
 
 vim.api.nvim_create_user_command("MatugenReload", function()
   matugen.load()

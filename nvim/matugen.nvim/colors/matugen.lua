@@ -1,1 +1,1 @@
-require("logic").load()
+require("matugen").load()
