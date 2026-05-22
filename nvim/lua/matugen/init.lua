@@ -129,7 +129,10 @@ end
 local function apply_templates(c)
   local files = vim.api.nvim_get_runtime_file("lua/matugen/templates/**/*.lua", true)
   for _, file in ipairs(files) do
-    local modname = file:match("lua/(matugen/templates/.*)%.lua$")
+    -- We want to turn ".../lua/matugen/templates/foo/bar.lua" into "matugen.templates.foo.bar"
+    -- Normalize separators for matching
+    local normalized = file:gsub("\\", "/")
+    local modname = normalized:match("lua/(matugen/templates/.*)%.lua$")
     if modname then
       modname = modname:gsub("/", ".")
       package.loaded[modname] = nil
