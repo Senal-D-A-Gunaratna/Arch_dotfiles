@@ -14,7 +14,7 @@ A Material You colorscheme for Neovim that dynamically loads colors from `matuge
 
 ```lua
 {
-  "matugen-nvim", -- Or the path to your local repo
+  "matugen.nvim", -- Or the path to your local repo
   dir = vim.fn.stdpath("config") .. "/matugen.nvim", -- If local
   lazy = false,
   priority = 1000,
