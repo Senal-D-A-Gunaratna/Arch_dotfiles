@@ -17,8 +17,8 @@ function M.load()
   local function hex(v) return v and (#v == 9 and v:sub(1, 7) or v) end
   local c, templates, hl = nil, {}, function(g, o) vim.api.nvim_set_hl(0, g, o) end
 
-  for _, file in ipairs(vim.api.nvim_get_runtime_file("lua/matugen/templates/**/*.lua", true)) do
-    local mod = file:match("lua/(matugen/templates/.*)%.lua$"):gsub("/", ".")
+  for _, file in ipairs(vim.api.nvim_get_runtime_file("lua/templates/**/*.lua", true)) do
+    local mod = file:match("lua/(templates/.*)%.lua$"):gsub("/", ".")
     package.loaded[mod] = nil
     local res = require(mod)
     if type(res) == "function" then
