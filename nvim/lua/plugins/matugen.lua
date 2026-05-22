@@ -1,7 +1,7 @@
 return {
   {
-    "matugen",
-    dir = vim.fn.stdpath("config") .. "/lua/matugen",
+    "matugen.nvim",
+    dir = vim.fn.stdpath("config") .. "/matugen.nvim",
     lazy = false,
     priority = 1000,
     opts = {
@@ -9,6 +9,7 @@ return {
     },
     config = function(_, opts)
       require("matugen").setup(opts)
+      vim.cmd.colorscheme("matugen")
     end,
   },
 }

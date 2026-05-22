@@ -17,8 +17,8 @@ function M.load()
   local function hex(v) return v and (#v == 9 and v:sub(1, 7) or v) end
   local c, templates, hl = nil, {}, function(g, o) vim.api.nvim_set_hl(0, g, o) end
 
-  for _, file in ipairs(vim.api.nvim_get_runtime_file("lua/matugen/templates/**/*.lua", true)) do
-    local mod = file:match("lua/(matugen/templates/.*)%.lua$"):gsub("/", ".")
+  for _, file in ipairs(vim.api.nvim_get_runtime_file("colors/templates/**/*.lua", true)) do
+    local mod = file:match("colors/(templates/.*)%.lua$"):gsub("/", ".")
     package.loaded[mod] = nil
     local res = require(mod)
     if type(res) == "function" then
@@ -39,17 +39,6 @@ end
 function M.setup(opts)
   M.opts = opts or {}
   M.load()
-
-  local signal = (vim.uv or vim.loop).new_signal()
-  signal:start("sigusr1", vim.schedule_wrap(function()
-    M.load()
-    notify("theme reloaded")
-  end))
-
-  vim.api.nvim_create_autocmd("FileType", {
-    pattern = { "lazy", "mason", "lspinfo", "null-ls-info", "checkhealth" },
-    callback = function() vim.wo.winblend = 10 end,
-  })
 end
 
 return M
