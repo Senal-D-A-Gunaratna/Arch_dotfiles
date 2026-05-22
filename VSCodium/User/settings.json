@@ -281,5 +281,6 @@
     "window.menuBarVisibility": "toggle",
     "window.titleBarStyle": "custom",
     "workbench.navigationControl.enabled": false,
-    "window.commandCenter": false
+    "window.commandCenter": false,
+    "material-icon-theme.hidesExplorerArrows": true
 }
