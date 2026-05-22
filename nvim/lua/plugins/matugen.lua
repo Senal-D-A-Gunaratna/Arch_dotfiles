@@ -7,5 +7,8 @@ return {
     opts = {
       json_path = vim.fn.expand("~/.config/matugen/themes/code-colors.jsonc"),
     },
+    config = function(_, opts)
+      require("matugen").setup(opts)
+    end,
   },
 }
