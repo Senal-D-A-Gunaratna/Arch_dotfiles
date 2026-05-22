@@ -1,7 +1,7 @@
 return {
   {
-    "matugen.nvim",
-    dir = vim.fn.stdpath("config") .. "/matugen.nvim",
+    "matugen",
+    dir = vim.fn.stdpath("config") .. "/matugen",
     lazy = false,
     priority = 1000,
     opts = {
