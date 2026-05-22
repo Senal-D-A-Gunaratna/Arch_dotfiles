@@ -14,7 +14,7 @@ function M.load()
   local w = data and data["workbench.colorCustomizations"]
   if not w then return end
 
-  local c = require("matugen.colors").get_colors(function(k) return hex(w[k]) end)
+  local c = require("matugen.templates.palette").get_colors(function(k) return hex(w[k]) end)
 
   vim.cmd("highlight clear")
   if vim.fn.exists("syntax_on") == 1 then vim.cmd("syntax reset") end
