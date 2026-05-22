@@ -426,10 +426,14 @@ local function apply(c)
 
   -- ── LAYER 5: Plugins (Automated Templates) ──────────────────────────────
   local template_path = debug.getinfo(1).source:match("@?(.*)init.lua$") .. "templates"
-  local files = vim.fn.globpath(template_path, "*.lua", false, true)
+  local files = vim.fn.globpath(template_path, "/**/*.lua", false, true)
   for _, file in ipairs(files) do
-    local name = vim.fn.fnamemodify(file, ":t:r")
-    local modname = "matugen.templates." .. name
+    -- Convert absolute path to relative module suffix
+    -- rel_path will be something like "mason.lua" or "subdir/file.lua"
+    local rel_path = file:sub(#template_path + 2)
+    local mod_suffix = rel_path:gsub("%.lua$", ""):gsub("/", ".")
+    local modname = "matugen.templates." .. mod_suffix
+
     package.loaded[modname] = nil
     local ok, template = pcall(require, modname)
     if ok and type(template) == "function" then
