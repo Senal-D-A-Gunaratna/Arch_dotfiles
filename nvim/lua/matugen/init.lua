@@ -14,19 +14,28 @@ function M.load()
   local w = data and data["workbench.colorCustomizations"]
   if not w then return end
 
-  local c = require("matugen.templates.palette").get_colors(function(k) return hex(w[k]) end)
+  local c, templates = nil, {}
+  for _, file in ipairs(vim.api.nvim_get_runtime_file("lua/matugen/templates/**/*.lua", true)) do
+    local mod = file:match("lua/(matugen/templates/.*)%.lua$"):gsub("/", ".")
+    package.loaded[mod] = nil
+    local ok, res = pcall(require, mod)
+    if ok then
+      if type(res) == "function" then
+        table.insert(templates, res)
+      elseif mod:find("palette$") then
+        c = res.get_colors(function(k) return hex(w[k]) end)
+      end
+    end
+  end
+
+  if not c then return end
 
   vim.cmd("highlight clear")
   if vim.fn.exists("syntax_on") == 1 then vim.cmd("syntax reset") end
   vim.g.colors_name = "matugen"
 
   local hl = function(g, o) vim.api.nvim_set_hl(0, g, o) end
-  for _, file in ipairs(vim.api.nvim_get_runtime_file("lua/matugen/templates/**/*.lua", true)) do
-    local mod = file:match("lua/(matugen/templates/.*)%.lua$"):gsub("/", ".")
-    package.loaded[mod] = nil
-    local ok, template = pcall(require, mod)
-    if ok and type(template) == "function" then template(c, hl) end
-  end
+  for _, template in ipairs(templates) do template(c, hl) end
 end
 
 function M.setup(opts)
