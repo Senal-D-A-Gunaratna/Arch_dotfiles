@@ -124,6 +124,27 @@ local function hl(group, opts)
 end
 
 -- ---------------------------------------------------------------------------
+-- Apply all templates from the templates directory
+-- ---------------------------------------------------------------------------
+local function apply_templates(c)
+  local template_path = debug.getinfo(1).source:match("@?(.*)init.lua$") .. "templates"
+  local files = vim.fn.globpath(template_path, "/**/*.lua", false, true)
+  for _, file in ipairs(files) do
+    -- Convert absolute path to relative module suffix
+    -- rel_path will be something like "mason.lua" or "subdir/file.lua"
+    local rel_path = file:sub(#template_path + 2)
+    local mod_suffix = rel_path:gsub("%.lua$", ""):gsub("/", ".")
+    local modname = "matugen.templates." .. mod_suffix
+
+    package.loaded[modname] = nil
+    local ok, template = pcall(require, modname)
+    if ok and type(template) == "function" then
+      template(c, hl)
+    end
+  end
+end
+
+-- ---------------------------------------------------------------------------
 -- Apply all highlights
 -- ---------------------------------------------------------------------------
 local function apply(c)
@@ -425,21 +446,7 @@ local function apply(c)
   hl("LspSignatureActiveParameter", { fg = c.primary, bold = true, underline = true })
 
   -- ── LAYER 5: Plugins (Automated Templates) ──────────────────────────────
-  local template_path = debug.getinfo(1).source:match("@?(.*)init.lua$") .. "templates"
-  local files = vim.fn.globpath(template_path, "/**/*.lua", false, true)
-  for _, file in ipairs(files) do
-    -- Convert absolute path to relative module suffix
-    -- rel_path will be something like "mason.lua" or "subdir/file.lua"
-    local rel_path = file:sub(#template_path + 2)
-    local mod_suffix = rel_path:gsub("%.lua$", ""):gsub("/", ".")
-    local modname = "matugen.templates." .. mod_suffix
-
-    package.loaded[modname] = nil
-    local ok, template = pcall(require, modname)
-    if ok and type(template) == "function" then
-      template(c, hl)
-    end
-  end
+  apply_templates(c)
 
   -- ── LAYER 6: winblend for floats ────────────────────────────────────────
   vim.api.nvim_create_autocmd("FileType", {
