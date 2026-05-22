@@ -43,7 +43,7 @@ function M.setup(opts)
   local signal = (vim.uv or vim.loop).new_signal()
   signal:start("sigusr1", vim.schedule_wrap(function()
     M.load()
-    notify("reloaded")
+    notify("theme reloaded")
   end))
 
   vim.api.nvim_create_autocmd("FileType", {
