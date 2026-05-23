@@ -16,8 +16,7 @@ This allows you to maintain a consistent color theme across both VSCode and Neov
 
 ```lua
 {
-  "matugen.nvim", -- Or the path to your local repo
-  dir = vim.fn.stdpath("config") .. "/matugen.nvim", -- If local
+  "Senal-D-A-Gunaratna/matugen.nvim",
   lazy = false,
   priority = 1000,
   opts = {
