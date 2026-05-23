@@ -10,7 +10,7 @@ function M.load()
   local path = M.opts.json_path
   local f = io.open(path, "r")
   if not f then
-    return notify("cannot open " .. path .. ". Make sure matugen has generated the colors.json file.", 3)
+    return notify("cannot open " .. path .. ". Make sure matugen has generated the code-colors.jsonc file.", 3)
   end
   local raw = f:read("*a"):gsub("/%*.-%*/", ""):gsub("([^:])//[^\n]*", "%1")
   f:close()
