@@ -7,7 +7,7 @@ local function notify(msg, lvl)
 end
 
 function M.load()
-  local path = M.opts.jsonc_path or vim.fn.expand("~/.cache/matugen/colors.json")
+  local path = M.opts.jsonc_path
   local f = io.open(path, "r")
   if not f then
     return notify("Could not open color file at: " .. path .. ". Check that the file exists.", 3)
