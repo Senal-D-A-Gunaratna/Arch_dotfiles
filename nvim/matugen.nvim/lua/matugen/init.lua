@@ -1,7 +1,5 @@
 local M = {
-  opts = {
-    json_path = vim.fn.expand("~/.cache/matugen/colors.json"), -- default path
-  },
+  opts = {},
 }
 
 local function notify(msg, lvl)
