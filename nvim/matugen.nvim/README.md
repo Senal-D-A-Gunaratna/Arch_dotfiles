@@ -10,6 +10,10 @@ This plugin bridges the gap between Material You colors and your Neovim environm
 
 This allows you to maintain a consistent color theme across both VSCode and Neovim using the same generated output.
 
+## Creating Custom Templates
+
+If you'd like to extend the plugin or add support for your own plugins, you can [create your own templates](doc/TEMPLATES.md).
+
 ## Installation
 
 ### [lazy.nvim](https://github.com/folke/lazy.nvim)
