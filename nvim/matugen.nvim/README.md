@@ -2,11 +2,11 @@
 
 A Material You colorscheme for Neovim that dynamically loads colors from `matugen`.
 
-## Features
-- Dynamic color loading from `matugen` JSONC output.
-- Support for multiple plugins (Blink, Bufferline, Gitsigns, LSP, Lualine, etc.).
-- Auto-reloading on `SIGUSR1` signal (great for scripts that update your wallpaper and colors).
-- Standard Neovim colorscheme integration.
+## Integration
+
+This plugin bridges the gap between Material You colors and your Neovim environment. It reads a `JSONC` file—formatted exactly like VSCode's `workbench.colorCustomizations`—and maps those color keys to Neovim's highlight groups.
+
+This allows you to maintain a consistent color theme across both VSCode and Neovim using the same generated output.
 
 ## Installation
 
