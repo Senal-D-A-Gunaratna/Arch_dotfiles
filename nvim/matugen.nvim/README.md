@@ -3,7 +3,7 @@
 A Material You colorscheme for Neovim that dynamically loads colors from `matugen`.
 
 ## Features
-- Dynamic color loading from `matugen` JSON output.
+- Dynamic color loading from `matugen` JSONC output.
 - Support for multiple plugins (Blink, Bufferline, Gitsigns, LSP, Lualine, etc.).
 - Auto-reloading on `SIGUSR1` signal (great for scripts that update your wallpaper and colors).
 - Standard Neovim colorscheme integration.
