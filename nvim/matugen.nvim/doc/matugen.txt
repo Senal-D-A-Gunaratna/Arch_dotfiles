@@ -1,4 +1,5 @@
 *matugen.txt*	Material You colorscheme for Neovim
+*Author: Senal-D-A-Gunaratna*
 
 ==============================================================================
 CONTENTS					*matugen-contents*
