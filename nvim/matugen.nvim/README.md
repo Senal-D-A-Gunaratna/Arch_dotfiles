@@ -45,5 +45,5 @@ Reload the theme manually:
 ## Signal Support
 The plugin listens for `SIGUSR1`. You can trigger a reload from your terminal or script:
 ```bash
-kill -SIGUSR1 $(pgrep nvim)
+pkill -SIGUSR1 nvim
 ```
