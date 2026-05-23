@@ -6,7 +6,6 @@ edit = [
   { run = 'setsid nvim "$@"', block = true, desc = "Neovim" },
   { run = 'setsid codium "$@" &', block = false, desc = "VS Code" },
 ]
-open = [{ run = 'setsid xdg-open "$@" &', block = false }]
 image = [{ run = 'setsid pix "$@"', block = false, desc = "gThumb" }]
 onlyoffice = [
   { run = 'setsid onlyoffice "$@" &', block = false, desc = "onlyoffice" },
