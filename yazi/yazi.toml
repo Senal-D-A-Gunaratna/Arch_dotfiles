@@ -8,8 +8,8 @@ edit = [
 ]
 open = [{ run = 'setsid xdg-open "$@" &', block = false }]
 image = [{ run = 'setsid pix "$@"', block = false, desc = "gThumb" }]
-libreoffice = [
-  { run = 'setsid libreoffice "$@" &', block = false, desc = "LibreOffice" },
+onlyoffice = [
+  { run = 'setsid onlyoffice "$@" &', block = false, desc = "onlyoffice" },
 ]
 music = [{ run = 'mpv "$@"', orphan = true, desc = "mpv" }]
 video = [{ run = 'mpv "$@"', orphan = true, desc = "mpv" }]
@@ -29,12 +29,13 @@ prepend_rules = [
   { mime = "video/*", use = "video" },
 
   # Office Documents
-  { mime = "application/vnd.openxmlformats-officedocument.wordprocessingml.document", use = "libreoffice" },
-  { mime = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", use = "libreoffice" },
-  { mime = "application/vnd.openxmlformats-officedocument.presentationml.presentation", use = "libreoffice" },
-  { mime = "application/msword", use = "libreoffice" },
-  { mime = "application/vnd.ms-excel", use = "libreoffice" },
-  { mime = "application/vnd.ms-powerpoint", use = "libreoffice" },
+  { mime = "application/vnd.openxmlformats-officedocument.wordprocessingml.document", use = "onlyoffice" },
+  { mime = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", use = "onlyoffice" },
+  { mime = "application/vnd.openxmlformats-officedocument.presentationml.presentation", use = "onlyoffice" },
+  { mime = "application/msword", use = "onlyoffice" },
+  { mime = "application/vnd.ms-excel", use = "onlyoffice" },
+  { mime = "application/vnd.ms-powerpoint", use = "onlyoffice" },
+  { mime = "text/csv", use = "onlyoffice" },
 
   # Fallback
   { mime = "*", use = "open" },
