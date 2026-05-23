@@ -6,7 +6,7 @@ A Material You colorscheme for Neovim that dynamically loads colors from `matuge
 
 ## Integration
 
-This plugin bridges the gap between Material You colors and your Neovim environment. It reads a `JSONC` file—formatted exactly like VSCode's `workbench.colorCustomizations`—and maps those color keys to Neovim's highlight groups.
+This plugin bridges the gap between Material You colors and your Neovim environment. It reads a `JSONC` file—which is a custom template designed to match VSCode's `workbench.colorCustomizations` format—and maps those color keys to Neovim's highlight groups.
 
 This allows you to maintain a consistent color theme across both VSCode and Neovim using the same generated output.
 
