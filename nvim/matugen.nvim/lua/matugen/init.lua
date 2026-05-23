@@ -7,10 +7,10 @@ local function notify(msg, lvl)
 end
 
 function M.load()
-  local path = M.opts.json_path
+  local path = M.opts.jsonc_path or vim.fn.expand("~/.cache/matugen/colors.json")
   local f = io.open(path, "r")
   if not f then
-    return notify("cannot open " .. path .. ". Make sure matugen has generated the code-colors.jsonc file.", 3)
+    return notify("Could not open color file at: " .. path .. ". Check that the file exists.", 3)
   end
   local raw = f:read("*a"):gsub("/%*.-%*/", ""):gsub("([^:])//[^\n]*", "%1")
   f:close()
