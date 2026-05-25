@@ -35,7 +35,4 @@ prepend_rules = [
   { mime = "application/vnd.ms-excel", use = "onlyoffice" },
   { mime = "application/vnd.ms-powerpoint", use = "onlyoffice" },
   { mime = "text/csv", use = "onlyoffice" },
-
-  # Fallback
-  { mime = "*", use = "open" },
 ]
