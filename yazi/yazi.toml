@@ -7,9 +7,7 @@ edit = [
   { run = 'setsid codium "$@"', block = false, desc = "VS Code" },
 ]
 image = [{ run = 'setsid pix "$@"', block = false, desc = "gThumb" }]
-onlyoffice = [
-  { run = 'setsid onlyoffice "$@"', block = false, desc = "onlyoffice" },
-]
+onlyoffice = [{ run = 'setsid onlyoffice "$@"', block = false, desc = "onlyoffice" },]
 music = [{ run = 'mpv "$@"', orphan = true, desc = "mpv" }]
 video = [{ run = 'mpv "$@"', orphan = true, desc = "mpv" }]
 
