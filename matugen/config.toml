@@ -33,7 +33,7 @@ post_hook = "pkill -SIGUSR2 waybar"
 [templates.code]
 input_path = "~/.config/matugen/templates/code-colors.jsonc"
 output_path = "~/.config/matugen/themes/code-colors.jsonc"
-post_hook = "~/.config/scripts/merge-vscode & pkill -SIGUSR1 nvim"
+post_hook = "python /home/senal/.config/scripts/merge-vscode.py & pkill -SIGUSR1 nvim"
 
 [templates.hyprland]
 input_path = "~/.config/matugen/templates/hyprland-colors.conf"
