@@ -236,6 +236,14 @@
         "charts.lines": "#90909a88",
         "charts.foreground": "#e3e1e9"
     },
+    "telemetry.telemetryLevel": "off",
+    "pascal.format.path": "/usr/bin/ptop",
+    "workbench.colorTheme": "Dark Modern",
+    "window.restoreWindows": "none",
+    "telemetry.feedback.enabled": false,
+    "window.titleBarStyle": "custom",
+    "workbench.navigationControl.enabled": false,
+    "window.commandCenter": false,
     "material-icon-theme.hidesExplorerArrows": true,
     "explorer.fileNesting.patterns": {
         "*.ts": "${capture}.js",
@@ -273,13 +281,5 @@
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
     "editor.bracketPairColorization.enabled": true,
-    "editor.guides.bracketPairs": "active",
-    "telemetry.telemetryLevel": "off",
-    "pascal.format.path": "/usr/bin/ptop",
-    "workbench.colorTheme": "Dark Modern",
-    "window.restoreWindows": "none",
-    "telemetry.feedback.enabled": false,
-    "window.titleBarStyle": "custom",
-    "workbench.navigationControl.enabled": false,
-    "window.commandCenter": false
+    "editor.guides.bracketPairs": "active"
 }
