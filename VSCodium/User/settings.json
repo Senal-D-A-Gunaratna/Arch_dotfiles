@@ -236,6 +236,7 @@
         "charts.lines": "#90909a88",
         "charts.foreground": "#e3e1e9"
     },
+    "material-icon-theme.hidesExplorerArrows": true,
     "explorer.fileNesting.patterns": {
         "*.ts": "${capture}.js",
         "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
@@ -280,6 +281,5 @@
     "telemetry.feedback.enabled": false,
     "window.titleBarStyle": "custom",
     "workbench.navigationControl.enabled": false,
-    "window.commandCenter": false,
-    "material-icon-theme.hidesExplorerArrows": true
+    "window.commandCenter": false
 }
