@@ -18,9 +18,9 @@ prepend_keymap = [
   { on = "B", run = 'shell "dragon-drop -x \"$@\"" --confirm', desc = "Drag and drop" },
 
 # Compression Selection Menu (c -> c)
-  { on = ["c", "c", "1"], run = 'shell "tar -czf \"$PWD/${1##*/}.tar.gz\" -- \"$@\"" --confirm', desc = "Create .tar.gz" },
-  { on = ["c", "c", "2"], run = 'shell "zip -r \"$PWD/${1##*/}.zip\" -- \"$@\"" --confirm',    desc = "Create .zip" },
-  { on = ["c", "c", "3"], run = 'shell "7z a \"$PWD/${1##*/}.7z\" -- \"$@\"" --confirm',     desc = "Create .7z" },
+  { on = ["c", "c", "1"], run = 'shell "tar -czf \"$PWD/${1##*/}.tar.gz\" -C \"$PWD\" -- \"${@##*/}\"" --confirm', desc = "Create .tar.gz" },
+  { on = ["c", "c", "2"], run = 'shell "cd \"$PWD\" && zip -r \"$PWD/${1##*/}.zip\" -- \"${@##*/}\"" --confirm',    desc = "Create .zip" },
+  { on = ["c", "c", "3"], run = 'shell "cd \"$PWD\" && 7z a \"$PWD/${1##*/}.7z\" -- \"${@##*/}\"" --confirm',     desc = "Create .7z" },
 
 # Extract archive (c -> x)
   { on = ["c", "x"], run = '''shell "
