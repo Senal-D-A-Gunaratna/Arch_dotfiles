@@ -36,7 +36,7 @@ prepend_keymap = [
     tmp=\"${dest}__tmp\"
     ouch decompress \"$f\" --dir \"$tmp\" --yes
     mkdir -p \"$dest\"
-    mv \"$tmp\"/*/* \"$dest\"/ 2>/dev/null || mv \"$tmp\"/* \"$dest\"/
+    (shopt -s dotglob; mv \"$tmp\"/*/* \"$dest\"/ 2>/dev/null || mv \"$tmp\"/* \"$dest\"/)
     rm -rf \"$tmp\"
   done
   " --confirm''', desc = "Extract archive(s)" }
