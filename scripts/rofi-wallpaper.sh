@@ -3,6 +3,7 @@
 WALL_DIR="$HOME/Pictures/wallpapers"
 THUMB_DIR="$HOME/.cache/wallpaper-thumbs"
 ROFI_THEME="$HOME/.config/rofi/wallpaper-grid.rasi"
+THEMING_DELAY="1"
 
 mkdir -p "$THUMB_DIR"
 
@@ -46,7 +47,7 @@ fi
 FULL_PATH="$WALL_DIR/$CHOICE"
 
 # Apply wallpaper using awww with center transition and 2s duration
-awww img --transition-type center --transition-duration 1.5 "$FULL_PATH"
+awww img --transition-type center --transition-duration $THEMING_DELAY "$FULL_PATH"
 
 # Update system colors using matugen
-sleep 1.5 && matugen image "$FULL_PATH" --source-color-index 0
+$THEMING_DELAY && matugen image "$FULL_PATH" --source-color-index 0
