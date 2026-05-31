@@ -2,7 +2,6 @@
 
 WALL_DIR="$HOME/Pictures/wallpapers"
 THUMB_DIR="$HOME/.cache/wallpaper-thumbs"
-MATUGEN_SCRIPT="$HOME/.config/scripts/matugen-wall.sh"
 ROFI_THEME="$HOME/.config/rofi/wallpaper-grid.rasi"
 
 mkdir -p "$THUMB_DIR"
@@ -46,8 +45,8 @@ fi
 
 FULL_PATH="$WALL_DIR/$CHOICE"
 
-if [ -x "$MATUGEN_SCRIPT" ]; then
-    "$MATUGEN_SCRIPT" "$FULL_PATH"
-else
-    notify-send "Wallpaper Picker" "Error: $MATUGEN_SCRIPT missing or not executable."
-fi
+# Apply wallpaper using awww
+awww img "$FULL_PATH"
+
+# Update system colors using matugen
+matugen image "$FULL_PATH" --source-color-index 0
