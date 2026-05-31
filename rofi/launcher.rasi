@@ -10,7 +10,7 @@
     spacing:    0px;
 }
 window {
-    background-color:   rgba(0, 0, 0, 0.3);
+    background-color:   transparent;
     border-color:       var(primary-color);
     location:   center;
     width:      480px;
@@ -18,7 +18,7 @@ window {
     border-radius:      10px;
 }
 inputbar {
-    background-color:   rgba(0, 0, 0, 0);
+    background-color:   transparent;
     padding:    8px 12px;
     spacing:    12px;
     children:   [ prompt, entry ];
@@ -34,6 +34,7 @@ listview {
     columns:    1;
     fixed-height:   false;
     background-color: transparent;
+    scrollbar:  false;
 }
 element {
     padding:    8px;
