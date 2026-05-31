@@ -45,8 +45,8 @@ fi
 
 FULL_PATH="$WALL_DIR/$CHOICE"
 
-# Apply wallpaper using awww
-awww img "$FULL_PATH"
+# Apply wallpaper using awww with center transition and 2s duration
+awww img --transition-type center --transition-duration 2 "$FULL_PATH"
 
 # Update system colors using matugen
 matugen image "$FULL_PATH" --source-color-index 0
