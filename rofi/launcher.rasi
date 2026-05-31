@@ -1,18 +1,17 @@
 /* ROFI VERTICAL THEME - MATUGEN */
-@theme "~/.config/matugen/themes/colors.rasi"
 
 * {
     font:               "JetBrains Mono 12";
     background-color:   transparent;
-    text-color:         @text-color;
-    accent-color:       @accent-color;
+    text-color:         var(text-color);
+    accent-color:       var(accent-color);
     margin:     0px;
     padding:    0px;
     spacing:    0px;
 }
 window {
     background-color:   rgba(0, 0, 0, 0.3);
-    border-color:       @primary-color;
+    border-color:       var(primary-color);
     location:   center;
     width:      480px;
     border:     1px;
@@ -28,7 +27,7 @@ prompt, entry, element-text, element-icon {
     vertical-align: 0.5;
 }
 prompt {
-    text-color: @primary-color;
+    text-color: var(primary-color);
 }
 listview {
     lines:      8;
@@ -42,25 +41,25 @@ element {
     background-color: transparent;
 }
 element normal urgent {
-    text-color: @error-color;
+    text-color: var(error-color);
 }
 element normal active {
-    text-color: @primary-color;
+    text-color: var(primary-color);
 }
 element alternate active {
-    text-color: @primary-color;
+    text-color: var(primary-color);
 }
 element selected {
-    text-color: @on-primary-container-color;
+    text-color: var(on-primary-container-color);
 }
 element selected normal {
-    background-color:   @primary-container-color;
+    background-color:   var(primary-container-color);
 }
 element selected urgent {
-    background-color:   @error-container-color;
+    background-color:   var(error-container-color);
 }
 element selected active {
-    background-color:   @primary-container-color;
+    background-color:   var(primary-container-color);
 }
 element-icon {
     size:   0.75em;
