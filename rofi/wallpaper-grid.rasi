@@ -15,13 +15,13 @@ window {
 /* Force listview into a grid layout */
 listview {
     columns: 3;
-    lines: 3;
+    lines: 2;
     cycle: true;
     dynamic: true;
     layout: vertical;
     flow: horizontal;
     fixed-columns: true;
-    spacing: 15px;
+    spacing: 5px;
 }
 
 element {
