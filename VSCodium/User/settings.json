@@ -21,6 +21,7 @@
         "editorGutter.deletedBackground": "#ffb4ab",
         "editorIndentGuide.background1": "#31353933",
         "editorIndentGuide.activeBackground1": "#8ecff2aa",
+        "editorWhitespace.foreground": "#8ecff244",
         "editorStickyScroll.background": "#0f1417",
         "editorStickyScrollHover.background": "#1b2023",
         "editorWidget.background": "#0f1417",

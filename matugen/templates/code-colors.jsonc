@@ -27,7 +27,7 @@
         // ── Indent guides & whitespace ──────────────────────────────────────
         "editorIndentGuide.background1":                  "{{colors.surface_container_highest.default.hex}}33",
         "editorIndentGuide.activeBackground1":            "{{colors.primary.default.hex}}aa",
-        //"editorWhitespace.foreground":                    "{{colors.outline_variant.default.hex}}44",  //the editor halite dots
+        "editorWhitespace.foreground":                    "{{colors.primary.default.hex}}44",  //the editor halite dots
 
         // ── Sticky scroll ───────────────────────────────────────────────────
         "editorStickyScroll.background":                  "{{colors.surface.default.hex}}",
