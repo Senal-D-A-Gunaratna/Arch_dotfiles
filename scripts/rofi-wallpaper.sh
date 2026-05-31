@@ -50,4 +50,4 @@ FULL_PATH="$WALL_DIR/$CHOICE"
 awww img --transition-type center --transition-duration $THEMING_DELAY "$FULL_PATH"
 
 # Update system colors using matugen
-$THEMING_DELAY && matugen image "$FULL_PATH" --source-color-index 0
+sleep $THEMING_DELAY && matugen image "$FULL_PATH" --source-color-index 0
