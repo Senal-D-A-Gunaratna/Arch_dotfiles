@@ -7,5 +7,5 @@ configuration {
     display-drun: "Search";
     lines: 8;
 }
-@import "~/.config/matugen/themes/colors.rasi"
 @import "~/.config/rofi/launcher.rasi"
+@import "~/.config/matugen/themes/colors.rasi"
