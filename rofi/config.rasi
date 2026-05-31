@@ -8,4 +8,4 @@ configuration {
     lines: 8;
 }
 @import "~/.config/matugen/themes/colors.rasi"
-@theme "~/.config/rofi/launcher.rasi"
+@import "~/.config/rofi/launcher.rasi"
