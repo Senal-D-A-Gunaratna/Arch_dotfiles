@@ -49,4 +49,4 @@ FULL_PATH="$WALL_DIR/$CHOICE"
 awww img --transition-type center --transition-duration 1.5 "$FULL_PATH"
 
 # Update system colors using matugen
-matugen image "$FULL_PATH" --source-color-index 0
+sleep 1.5 && matugen image "$FULL_PATH" --source-color-index 0
