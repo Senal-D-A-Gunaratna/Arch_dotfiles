@@ -7,4 +7,4 @@ configuration {
     display-drun: "Search";
     lines: 8;
 }
-@theme "~/.config/matugen/themes/matugen.rasi"
+@theme "~/.config/rofi/launcher.rasi"

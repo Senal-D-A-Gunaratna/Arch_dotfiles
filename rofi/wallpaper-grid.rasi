@@ -1,0 +1,43 @@
+configuration {
+    show-icons: true;
+    icon-theme: "Papirus";
+}
+
+@theme "~/.config/rofi/config.rasi" /* Inherit your global styles/colors */
+
+window {
+    width: 900px;
+    height: 650px;
+    location: center;
+    anchor: center;
+}
+
+/* Force listview into a grid layout */
+listview {
+    columns: 3;
+    lines: 3;
+    cycle: true;
+    dynamic: true;
+    layout: vertical;
+    flow: horizontal;
+    fixed-columns: true;
+    spacing: 15px;
+}
+
+element {
+    orientation: vertical;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Make icons large enough to show the wallpaper aspect ratio */
+element-icon {
+    size: 140px;
+    horizontal-align: 0.5;
+}
+
+element-text {
+    horizontal-align: 0.5;
+    vertical-align: 0.5;
+    margin: 5px 0px 0px 0px;
+}
