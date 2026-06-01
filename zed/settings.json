@@ -15,7 +15,7 @@
     "favorite_models": [],
     "model_parameters": []
   },
-  "vim_mode": true,
+  "vim_mode": false,
   "terminal": {
     "font_family": "JetBrainsMono Nerd Font"
   },
