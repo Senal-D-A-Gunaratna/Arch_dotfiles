@@ -415,7 +415,7 @@
                 "created.border": "{{colors.on_tertiary_container.light.hex}}",
                 "deleted": "{{colors.error.light.hex}}",
                 "deleted.background": "{{colors.error_container.light.hex}}80",
-                "deleted.border": "{{colors.on_error_container.dark.hex}}",
+                "deleted.border": "{{colors.on_error_container.light.hex}}",
                 "error": "{{colors.error.light.hex}}",
                 "error.background": "{{colors.error_container.light.hex}}",
                 "error.border": "{{colors.on_error_container.light.hex}}",
