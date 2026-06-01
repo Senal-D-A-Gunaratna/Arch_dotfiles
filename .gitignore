@@ -62,5 +62,9 @@ VSCodium/User/*
 !VSCodium/User/settings.json
 !VSCodium/User/keybindings.json
 
+#zed
+!zed
+zed/themes
+
 #nvim
 !nvim
