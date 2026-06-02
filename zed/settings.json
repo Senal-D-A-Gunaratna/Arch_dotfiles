@@ -23,6 +23,7 @@
     "show_nav_history_buttons": false
   },
   "project_panel": {
+    "git_status_indicator": true,
     "dock": "left"
   },
   "agent": {
