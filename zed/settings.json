@@ -7,6 +7,9 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "vim": {
+    "toggle_relative_line_numbers": true
+  },
   "close_on_file_delete": true,
   "tabs": {
     "show_diagnostics": "errors",
@@ -42,7 +45,7 @@
     "favorite_models": [],
     "model_parameters": []
   },
-  "vim_mode": false,
+  "vim_mode": true,
   "terminal": {
     "show_count_badge": true,
     "font_family": "JetBrainsMono Nerd Font"
