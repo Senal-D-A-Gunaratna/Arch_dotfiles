@@ -34,6 +34,7 @@
   },
   "vim_mode": false,
   "terminal": {
+    "show_count_badge": true,
     "font_family": "JetBrainsMono Nerd Font"
   },
   "telemetry": {
