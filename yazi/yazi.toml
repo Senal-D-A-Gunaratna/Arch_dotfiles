@@ -4,6 +4,7 @@ ratio = [1, 2, 2]
 [opener]
 edit = [
   { run = 'nvim "$@"', block = true, desc = "Neovim" },
+  { run = 'setsid zeditor "$@"', block = false, desc = "Zed" },
   { run = 'setsid codium "$@"', block = false, desc = "VS Code" },
 ]
 image = [{ run = 'setsid pix "$@"', block = false, desc = "gThumb" }]
