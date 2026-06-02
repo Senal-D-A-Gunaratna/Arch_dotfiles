@@ -8,6 +8,7 @@
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
   "tabs": {
+    "show_diagnostics": "errors",
     "file_icons": true,
     "git_status": true
   },
