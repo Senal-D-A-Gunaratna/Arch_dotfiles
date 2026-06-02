@@ -7,6 +7,10 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "scrolling": {
+    "pixel_behavior": "smooth",
+    "speed_multiplier": 1.0
+  },
   "tab_bar": {
     "show_nav_history_buttons": false
   },
