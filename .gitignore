@@ -23,6 +23,8 @@
 !kitty
 !.vscode
 !autostart
+!codebook.toml
+!.luarc.json
 
 # 4. Selective Tracking (Riced apps)
 
