@@ -4,3 +4,8 @@
 
 --Snacks explorer mousescroll set to 1 line pre tick
 vim.opt.mousescroll = "ver:1,hor:6"
+
+local npm_global = vim.fn.expand("$HOME") .. "/.npm-global/bin"
+if not vim.env.PATH:find(npm_global, 1, true) then
+  vim.env.PATH = npm_global .. ":" .. vim.env.PATH
+end
