@@ -1,3 +1,20 @@
+-- Fix for the dimming issue in image_8afe44.png
+-- We hook into the ColorScheme event so it reliably overrides any theme settings.
+vim.api.nvim_create_autocmd("ColorScheme", {
+  pattern = "*",
+  callback = function()
+    -- Force hidden and untracked files to use standard text highlights
+    vim.api.nvim_set_hl(0, "SnacksPickerPathHidden", { link = "Normal" })
+    vim.api.nvim_set_hl(0, "SnacksPickerGitStatusUntracked", { link = "Normal" })
+
+    -- Keep truly git-ignored files dimmed out like in VS Code
+    vim.api.nvim_set_hl(0, "SnacksPickerPathIgnored", { link = "Comment" })
+  end,
+})
+
+-- Trigger it once immediately in case the colorscheme is already loaded
+vim.cmd([[doautocmd ColorScheme]])
+
 return {
   "folke/snacks.nvim",
   opts = {
@@ -21,12 +38,11 @@ return {
       },
     },
 
-    -- Add your picker configurations here
     picker = {
       sources = {
         explorer = {
-          ignored = true, -- Shows git-ignored files by default (like VS Code)
-          hidden = true, -- Optional: Shows dotfiles like .env, .gitignore, etc.
+          ignored = true, -- Shows git-ignored files
+          hidden = true, -- Shows dotfiles
         },
       },
     },
