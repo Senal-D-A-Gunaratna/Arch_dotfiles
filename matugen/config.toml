@@ -46,7 +46,3 @@ output_path = '~/.config/matugen/themes/clipse-colors.json'
 input_path = '~/.config/matugen/templates/dunstrc-colors.txt'
 output_path = '~/.config/dunst/dunstrc'
 post_hook = 'dunstctl reload'
-
-[templates.zed]
-input_path = '~/.config/matugen/templates/zed-colors.json'
-output_path = '~/.config/zed/themes/matugen.json'
