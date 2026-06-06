@@ -2,9 +2,9 @@
 x-scheme-handler/about=brave-browser.desktop
 x-scheme-handler/unknown=brave-browser.desktop
 text/plain=org.kde.kwrite.desktop
-audio/mpeg=kew.desktop
-audio/flac=kew.desktop
-audio/ogg=kew.desktop
+audio/mpeg=mpv.desktop
+audio/flac=mpv.desktop
+audio/ogg=mpv.desktop
 application/pdf=org.kde.okular.desktop
 image/jpeg=org.kde.gwenview.desktop
 image/png=org.kde.gwenview.desktop
@@ -12,9 +12,9 @@ image/webp=org.gnome.gThumb.desktop
 x-scheme-handler/mailto=userapp-Thunderbird-9S4PN3.desktop
 message/rfc822=userapp-Thunderbird-9S4PN3.desktop
 x-scheme-handler/mid=userapp-Thunderbird-9S4PN3.desktop
-audio/x-wav=kew.desktop
-audio/opus=kew.desktop
-audio/mp4=kew.desktop
+audio/x-wav=mpv.desktop
+audio/opus=mpv.desktop
+audio/mp4=mpv.desktop
 
 [Added Associations]
 text/plain=org.kde.kwrite.desktop;
