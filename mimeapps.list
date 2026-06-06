@@ -8,7 +8,7 @@ audio/ogg=mpv.desktop
 application/pdf=org.kde.okular.desktop
 image/jpeg=org.kde.gwenview.desktop
 image/png=org.kde.gwenview.desktop
-image/webp=org.gnome.gThumb.desktop
+image/webp=pix.desktop
 x-scheme-handler/mailto=userapp-Thunderbird-9S4PN3.desktop
 message/rfc822=userapp-Thunderbird-9S4PN3.desktop
 x-scheme-handler/mid=userapp-Thunderbird-9S4PN3.desktop
@@ -20,5 +20,5 @@ audio/mp4=mpv.desktop
 text/plain=org.kde.kwrite.desktop;
 x-scheme-handler/mailto=userapp-Thunderbird-9S4PN3.desktop;
 x-scheme-handler/mid=userapp-Thunderbird-9S4PN3.desktop;
-image/webp=org.gnome.gThumb.desktop;
+image/webp=pix.desktop;
 
