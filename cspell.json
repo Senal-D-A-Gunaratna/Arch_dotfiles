@@ -148,7 +148,7 @@
     "habamax",
     "augroup",
     "Linecap",
-    "os"
+    "os",
+    "doautocmd"
   ]
 }
-
