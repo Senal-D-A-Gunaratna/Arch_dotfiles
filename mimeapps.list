@@ -1,7 +1,7 @@
 [Default Applications]
 x-scheme-handler/about=brave-browser.desktop
 x-scheme-handler/unknown=brave-browser.desktop
-text/plain=org.kde.kwrite.desktop
+text/plain=nvim.desktop
 audio/mpeg=mpv.desktop
 audio/flac=mpv.desktop
 audio/ogg=mpv.desktop
@@ -17,7 +17,7 @@ audio/opus=mpv.desktop
 audio/mp4=mpv.desktop
 
 [Added Associations]
-text/plain=org.kde.kwrite.desktop;
+text/plain=nvim.desktop;
 x-scheme-handler/mailto=userapp-Thunderbird-9S4PN3.desktop;
 x-scheme-handler/mid=userapp-Thunderbird-9S4PN3.desktop;
 image/webp=pix.desktop;
