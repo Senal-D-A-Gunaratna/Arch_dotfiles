@@ -1,5 +1,6 @@
 return {
   "supermaven-inc/supermaven-nvim",
+  event = "InsertEnter", -- Lazy loads the plugin when you enter insert mode
   config = function()
     require("supermaven-nvim").setup({
       keymaps = {
