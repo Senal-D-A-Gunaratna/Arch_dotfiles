@@ -1,0 +1,27 @@
+[Default Applications]
+text/html=zen.desktop
+x-scheme-handler/http=zen.desktop
+x-scheme-handler/https=zen.desktop
+x-scheme-handler/about=brave-browser.desktop
+x-scheme-handler/unknown=brave-browser.desktop
+text/plain=org.kde.kwrite.desktop
+audio/mpeg=kew.desktop
+audio/flac=kew.desktop
+audio/ogg=kew.desktop
+application/pdf=org.kde.okular.desktop
+image/jpeg=org.kde.gwenview.desktop
+image/png=org.kde.gwenview.desktop
+image/webp=org.gnome.gThumb.desktop
+x-scheme-handler/mailto=userapp-Thunderbird-9S4PN3.desktop
+message/rfc822=userapp-Thunderbird-9S4PN3.desktop
+x-scheme-handler/mid=userapp-Thunderbird-9S4PN3.desktop
+audio/x-wav=kew.desktop
+audio/opus=kew.desktop
+audio/mp4=kew.desktop
+
+[Added Associations]
+text/plain=org.kde.kwrite.desktop;
+x-scheme-handler/mailto=userapp-Thunderbird-9S4PN3.desktop;
+x-scheme-handler/mid=userapp-Thunderbird-9S4PN3.desktop;
+image/webp=org.gnome.gThumb.desktop;
+

@@ -27,6 +27,7 @@
 !.luarc.json
 !(~)stuff
 !kdeglobals
+!mimeapps.list
 
 # 4. Selective Tracking (Riced apps)
 
