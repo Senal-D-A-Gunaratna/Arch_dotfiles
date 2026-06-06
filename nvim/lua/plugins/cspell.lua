@@ -1,8 +1,8 @@
 return {
   {
     "neovim/nvim-lspconfig",
-    opts = function()
-      vim.lsp.enable("cspell_ls")
+    opts = {},
+    config = function()
       vim.lsp.config("cspell_ls", {
         cmd = { "cspell-lsp", "--stdio" },
         filetypes = {
@@ -19,6 +19,7 @@ return {
         },
         root_markers = { ".git" },
       })
+      vim.lsp.enable("cspell_ls")
     end,
   },
 }
