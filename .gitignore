@@ -26,6 +26,7 @@
 !cspell.json
 !.luarc.json
 !(~)stuff
+!kdeglobals
 
 # 4. Selective Tracking (Riced apps)
 
