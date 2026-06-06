@@ -25,6 +25,7 @@
 !autostart
 !cspell.json
 !.luarc.json
+!(~)stuff
 
 # 4. Selective Tracking (Riced apps)
 
