@@ -15,4 +15,4 @@ vim.keymap.set("n", "<leader>ai", function()
 
   -- Start in terminal insert mode immediately
   vim.cmd("startinsert")
-end, { desc = "Open Antigravity CLI (1/4 Total Screen)" })
+end, { desc = "Antigravity CLI" })
