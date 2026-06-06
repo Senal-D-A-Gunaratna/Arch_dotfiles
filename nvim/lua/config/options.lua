@@ -5,3 +5,5 @@
 --Snacks explorer mousescroll set to 1 line pre tick
 vim.opt.mousescroll = "ver:1,hor:6"
 
+--npm global bin path
+vim.env.PATH = vim.env.PATH .. ":/home/senal/.npm-global/bin"

@@ -4,7 +4,7 @@ return {
     opts = {},
     config = function()
       vim.lsp.config("cspell_ls", {
-        cmd = { "cspell-lsp", "--stdio" },
+        cmd = { "/home/senal/.npm-global/bin/cspell-lsp", "--stdio" },
         filetypes = {
           "lua",
           "python",
@@ -21,5 +21,15 @@ return {
       })
       vim.lsp.enable("cspell_ls")
     end,
+  },
+
+  -- Map <leader>ca to code actions
+  {
+    "folke/which-key.nvim",
+    opts = {
+      spec = {
+        { "<leader>ca", vim.lsp.buf.code_action, desc = "Code Action", mode = { "n", "v" } },
+      },
+    },
   },
 }
