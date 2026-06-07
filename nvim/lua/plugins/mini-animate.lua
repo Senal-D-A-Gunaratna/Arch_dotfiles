@@ -37,6 +37,10 @@ return {
 
       local animate = require("mini.animate")
       return vim.tbl_deep_extend("force", opts, {
+        -- Added this block to disable cursor animations entirely
+        cursor = {
+          enable = false,
+        },
         resize = {
           timing = animate.gen_timing.linear({ duration = 50, unit = "total" }),
         },
