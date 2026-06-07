@@ -149,6 +149,10 @@
     "augroup",
     "Linecap",
     "os",
-    "doautocmd"
+    "doautocmd",
+    "echasnovski",
+    "startinsert",
+    "botright",
+    "vsplit"
   ]
 }
