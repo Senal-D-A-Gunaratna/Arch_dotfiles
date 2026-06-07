@@ -4,7 +4,7 @@ return {
     "nvim-mini/mini.map",
     version = false,
     keys = {
-      { "<leader>mm", "<cmd>lua MiniMap.toggle()<cr>", desc = "Toggle Minimap" },
+      { "<leader>uM", "<cmd>lua MiniMap.toggle()<cr>", desc = "Toggle Minimap" },
     },
     opts = function()
       local map = require("mini.map")
