@@ -15,11 +15,11 @@ x-scheme-handler/mid=userapp-Thunderbird-9S4PN3.desktop
 audio/x-wav=mpv.desktop
 audio/opus=mpv.desktop
 audio/mp4=mpv.desktop
-inode/directory=yazi.desktop
+inode/directory=codium.desktop
 
 [Added Associations]
 text/plain=nvim.desktop;
 x-scheme-handler/mailto=userapp-Thunderbird-9S4PN3.desktop;
 x-scheme-handler/mid=userapp-Thunderbird-9S4PN3.desktop;
 image/webp=pix.desktop;
-inode/directory=yazi.desktop
+inode/directory=codium.desktop
