@@ -11,4 +11,7 @@ return {
       load_theme = true,
     },
   },
+
+  --made matugen my default colorscheme so it loads faster
+  { "LazyVim/LazyVim", opts = { colorscheme = "matugen" } },
 }
