@@ -107,15 +107,14 @@ if [[ ! -d $ZSH_CACHE_DIR ]]; then
   mkdir $ZSH_CACHE_DIR
 fi
 
+# Load plugins BEFORE OMZ initializes compinit
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh 
+
 source $ZSH/oh-my-zsh.sh
 
 #npm global pkg path fix
 export PATH="$HOME/.npm-global/bin:$PATH"
 
-#plugins
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/share/zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
-
 #alias
 alias ff='fastfetch'
-
