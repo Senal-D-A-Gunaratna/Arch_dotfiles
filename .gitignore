@@ -16,7 +16,7 @@
 !kwalletrc
 !user-dirs.dirs
 !nwg-look
-!stuff
+!(stuff)
 !waybar
 !rofi
 !hypr
@@ -25,7 +25,6 @@
 !autostart
 !cspell.json
 !.luarc.json
-!(~)stuff
 !kdeglobals
 !mimeapps.list
 !systemd
