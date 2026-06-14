@@ -28,6 +28,7 @@
 !(~)stuff
 !kdeglobals
 !mimeapps.list
+!systemd
 
 # 4. Selective Tracking (Riced apps)
 
