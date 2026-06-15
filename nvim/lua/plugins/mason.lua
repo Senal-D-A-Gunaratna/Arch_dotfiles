@@ -7,7 +7,6 @@ return {
         "shellcheck",
         "debugpy",
         "js-debug-adapter",
-        "codelldb",
       },
     },
   },
