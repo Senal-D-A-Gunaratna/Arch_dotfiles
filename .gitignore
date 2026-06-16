@@ -59,17 +59,5 @@ dunst/dunstrc
 kew/themes
 kew/library.dat
 
-# VSCodium / Code (The logic fix)
-!VSCodium
-VSCodium/*
-!VSCodium/User
-VSCodium/User/*
-!VSCodium/User/settings.json
-!VSCodium/User/keybindings.json
-
-#zed
-!zed
-zed/themes
-
 #nvim
 !nvim
