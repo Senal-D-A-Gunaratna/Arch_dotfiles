@@ -78,4 +78,4 @@ vim.keymap.set("n", "<leader>cA", function()
   end
 
   vim.notify("Added " .. added .. " words to " .. config_path, vim.log.levels.INFO)
-end, { desc = "Cspell: Add all words in file to workspace dictionary" })
+end, { desc = "Cspell: Add all to dict" })
