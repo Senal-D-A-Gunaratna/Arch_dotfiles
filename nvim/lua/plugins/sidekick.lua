@@ -25,7 +25,7 @@ return {
       function()
         require("sidekick.cli").toggle({ name = "antigravity", focus = true })
       end,
-      desc = "Toggle Antigravity",
+      desc = "Toggle Antigravity CLI",
     },
     {
       "<leader>at",
