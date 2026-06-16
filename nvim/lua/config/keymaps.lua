@@ -68,5 +68,14 @@ vim.keymap.set("n", "<leader>cA", function()
   file:write(json)
   file:close()
 
+  -- restart cspell so it picks up the new words
+  local client = vim.lsp.get_clients({ name = "cspell_ls" })[1]
+  if client then
+    vim.lsp.stop_client(client.id)
+    vim.defer_fn(function()
+      vim.cmd("edit")
+    end, 200)
+  end
+
   vim.notify("Added " .. added .. " words to " .. config_path, vim.log.levels.INFO)
 end, { desc = "cSpell: Add all words in file to workspace dict" })
