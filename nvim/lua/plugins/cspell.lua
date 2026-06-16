@@ -28,7 +28,7 @@ return {
     "folke/which-key.nvim",
     opts = {
       spec = {
-        { "<leader>ca", vim.lsp.buf.code_action, desc = "Code Action", mode = { "n", "v" } },
+        { "<leader>ca", vim.lsp.buf.code_action, desc = "Cspell: Code Action", mode = { "n", "v" } },
       },
     },
   },
