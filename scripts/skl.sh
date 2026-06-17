@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 
-# Single file to store original values in RAM
 STATE_FILE="/dev/shm/skl_state"
 
-# Helper functions to fetch current states
+# Helper functions to fetch current states safely
 get_current_brightness() {
-  ddcutil getvcp 10 | awk -F', text=' '{print $1}' | awk -F'current value =' '{print $2}' | tr -d ' '
+  # Use --terse to get "VCP 10 C <current> <max>" and extract the 4th field
+  ddcutil getvcp 10 --terse | awk '{print $4}'
 }
 
 get_current_volume() {
@@ -20,9 +20,15 @@ apply)
   fi
 
   echo "Saving current states to RAM..."
-  # Grab values and save them on a single line: "brightness volume"
   CURRENT_B=$(get_current_brightness)
   CURRENT_V=$(get_current_volume)
+
+  # Fail-safe check: Ensure we actually grabbed a valid brightness number
+  if [[ -z "$CURRENT_B" || ! "$CURRENT_B" =~ ^[0-9]+$ ]]; then
+    echo "Error: Failed to parse current brightness from ddcutil."
+    exit 1
+  fi
+
   echo "$CURRENT_B $CURRENT_V" >"$STATE_FILE"
 
   echo "Applying custom presets..."
@@ -38,7 +44,6 @@ revert)
   fi
 
   echo "Restoring original states from RAM..."
-  # Read both values from the single file
   read -r ORIG_BRIGHTNESS ORIG_VOLUME <"$STATE_FILE"
 
   ddcutil setvcp 10 "$ORIG_BRIGHTNESS"
