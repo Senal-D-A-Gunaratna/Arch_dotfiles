@@ -1,4 +1,4 @@
-# skl posthook
+# skl posthook script
 
 # dsiplay brightness
 ddcutil setvcp 10 35
