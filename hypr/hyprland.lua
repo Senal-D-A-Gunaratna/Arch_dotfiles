@@ -22,6 +22,7 @@ require("hyprland/looks")
 require("hyprland/input")
 require("hyprland/rules")
 require("hyprland/environment")
+require("hyprland/border")
 
 -------------------
 ---- AUTOSTART ----

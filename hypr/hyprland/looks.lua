@@ -9,13 +9,6 @@ hl.config({
 
 		border_size = 1,
 
-		col = {
-			-- active_border references your matugen color variable $active_border.
-			-- Replace the colour below with the one matugen generates, or wire it
-			-- up via a shared Lua variable loaded before this file.
-			active_border = "rgba(33ccffee)",
-		},
-
 		resize_on_border = false,
 		allow_tearing = false,
 		layout = "dwindle",
