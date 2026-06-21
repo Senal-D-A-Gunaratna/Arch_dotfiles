@@ -7,21 +7,21 @@
 
 -- See https://wiki.hypr.land/Configuring/Basics/Monitors/
 hl.monitor({
-    output   = "",
-    mode     = "preferred",
-    position = "auto",
-    scale    = "auto",
+	output = "",
+	mode = "preferred",
+	position = "auto",
+	scale = "auto",
 })
 
 -- Load matugen color theme (source equivalent)
 -- require("themes.hyprland-colors")  -- adjust path to your matugen output
 
 -- Load split config modules
-require("keybinds")
-require("looks")
-require("input")
-require("rules")
-require("environment")
+require("hyprland/keybinds")
+require("hyprland/looks")
+require("hyprland/input")
+require("hyprland/rules")
+require("hyprland/environment")
 
 -------------------
 ---- AUTOSTART ----
@@ -29,9 +29,9 @@ require("environment")
 
 -- See https://wiki.hypr.land/Configuring/Basics/Autostart/
 hl.on("hyprland.start", function()
-    hl.exec_cmd("hyprlock")
-    hl.exec_cmd("awww-daemon")
-    hl.exec_cmd("clipse -listen")
+	hl.exec_cmd("hyprlock")
+	hl.exec_cmd("awww-daemon")
+	hl.exec_cmd("clipse -listen")
 end)
 
 -----------------------
