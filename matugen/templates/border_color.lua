@@ -1,0 +1,8 @@
+hl.config({
+	general = {
+		col = {
+			active_border = "rgba({{colors.primary.default.hex_stripped}})",
+		},
+	},
+})
+-- "rgba(33ccffee)"

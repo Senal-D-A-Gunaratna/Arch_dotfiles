@@ -35,6 +35,10 @@ output_path = "~/.config/matugen/themes/code-colors.jsonc"
 post_hook = "python /home/senal/.config/scripts/merge-vscode.py & pkill -SIGUSR1 nvim"
 
 [templates.hyprland]
+input_path = "~/.config/matugen/templates/border_color.lua"
+output_path = "~/.config/hypr/hyprland/border_color.lua"
+
+[templates.hyprlock]
 input_path = "~/.config/matugen/templates/hyprland-colors.conf"
 output_path = "~/.config/matugen/themes/hyprland-colors.conf"
 
