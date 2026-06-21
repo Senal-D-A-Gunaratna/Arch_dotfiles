@@ -19,7 +19,6 @@
 !(stuff)
 !waybar
 !rofi
-!hypr
 !kitty
 !.vscode
 !autostart
@@ -61,3 +60,7 @@ kew/library.dat
 
 #nvim
 !nvim
+
+#hypr
+!hypr
+hypr/hyprland/border_color.lua
