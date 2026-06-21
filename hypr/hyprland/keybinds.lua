@@ -29,8 +29,8 @@ hl.bind(mainMod .. "+up", hl.dsp.focus({ direction = "up" }))
 hl.bind(mainMod .. "+down", hl.dsp.focus({ direction = "down" }))
 
 -- Custom keybinds variables / overrides
-local kitty_override = "kitty -e --override window_padding_width=0"
-local float_kitty = "[float;center;size 650 800] kitty -e"
+local kitty_override = "kitty --override window_padding_width=0 -e"
+local float_kitty = "[float;center;size 650 800] kitty --override window_padding_width=0 -e"
 
 -- Applications
 hl.bind(mainMod .. "+Q", hl.dsp.exec_cmd("kitty"))
