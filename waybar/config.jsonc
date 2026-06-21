@@ -4,10 +4,7 @@
   "height": 22,
 
   "modules-center": ["hyprland/window"],
-  "modules-left": [
-    "hyprland/workspaces",
-    "tray"
-  ],
+  "modules-left": ["hyprland/workspaces", "tray"],
 
   "modules-right": [
     "custom/media",
@@ -16,32 +13,32 @@
     "network",
     "cpu",
     "memory",
-    "clock"
+    "clock",
   ],
 
   "hyprland/window": {
     "max-length": 50,
     "separate-outputs": true,
-    "tooltip": false
+    "tooltip": false,
   },
 
   "hyprland/workspaces": {
     "format": "{name}",
     "tooltip": false,
-    "disable-scroll": true
+    "disable-scroll": true,
   },
 
   "tray": {
     "icon-size": 18,
     "spacing": 10,
-    "tooltip": false
+    "tooltip": false,
   },
 
   "custom/media": {
     "format": " {}",
     "max-length": 40,
     "exec": "playerctl metadata --format '{{title}}' --follow",
-    "tooltip": false
+    "tooltip": false,
   },
 
   "custom/monitor_brightness": {
@@ -51,14 +48,14 @@
     "on-scroll-up": "/home/senal/.config/waybar/brightness up && pkill -RTMIN+8 waybar",
     "on-scroll-down": "/home/senal/.config/waybar/brightness down && pkill -RTMIN+8 waybar",
     "signal": 8,
-    "tooltip": false
+    "tooltip": false,
   },
 
   "pulseaudio": {
     "format": "  {volume}%",
     "format-muted": " muted",
     "tooltip": false,
-    "on-click": "setsid hyprctl dispatch exec '[float;center;size 650 800]' 'kitty -e wiremix'"
+    //"on-click": "setsid hyprctl dispatch exec '[float;center;size 650 800]' 'kitty -e wiremix'"
   },
 
   "network": {
@@ -67,26 +64,26 @@
     "format-disconnected": "⚠",
     "tooltip": false,
     "interval": 1,
-    "on-click": "setsid hyprctl dispatch exec '[float;center;size 650 800]' 'kitty -e impala'"
+    //"on-click": "setsid hyprctl dispatch exec '[float;center;size 650 800]' 'kitty -e impala'"
   },
 
   "cpu": {
     "format": "  {usage}%",
     "tooltip": false,
-    "interval": 1
+    "interval": 1,
   },
 
   "memory": {
     "format": "  {percentage}%",
     "tooltip": false,
-    "interval": 1
+    "interval": 1,
   },
 
   "clock": {
-  "format": "{:%H:%M}",
-  "tooltip-format": "{:%A, %d %B %Y}",
-  "tooltip": true,
-  "interval": 1,
-  "on-click": "setsid kitty -e calcurse"
-  }
+    "format": "{:%H:%M}",
+    "tooltip-format": "{:%A, %d %B %Y}",
+    "tooltip": true,
+    "interval": 1,
+    "on-click": "setsid kitty -e calcurse",
+  },
 }
