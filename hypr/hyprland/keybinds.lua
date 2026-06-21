@@ -30,22 +30,23 @@ hl.bind(mainMod .. "+down", hl.dsp.focus({ direction = "down" }))
 
 -- Custom keybinds variables / overrides
 local kitty_override = "kitty -e --override window_padding_width=0"
+local float_kitty = "[float;center;size 650 800] kitty -e"
 
 -- Applications
 hl.bind(mainMod .. "+Q", hl.dsp.exec_cmd("kitty"))
 hl.bind(mainMod .. "+W", hl.dsp.exec_cmd("rofi -show drun"))
 hl.bind(mainMod .. "+E", hl.dsp.exec_cmd(kitty_override .. " yazi"))
 hl.bind(mainMod .. "+A", hl.dsp.exec_cmd("brave"))
-hl.bind(mainMod .. "+Z", hl.dsp.exec_cmd("hyprctl dispatch exec '[float;center;size 650 800]' 'kitty -e kew'"))
+hl.bind(mainMod .. "+Z", hl.dsp.exec_cmd(float_kitty .. " kew"))
 hl.bind(mainMod .. "+T", hl.dsp.exec_cmd(kitty_override .. " btop"))
 hl.bind(mainMod .. "+D", hl.dsp.exec_cmd("~/.config/scripts/rofi-wallpaper.sh"))
-hl.bind(mainMod .. "+M", hl.dsp.exec_cmd("hyprctl dispatch exec '[float;center;size 650 800]' 'kitty -e wiremix'"))
-hl.bind(mainMod .. "+N", hl.dsp.exec_cmd("hyprctl dispatch exec '[float;center;size 650 800]' 'kitty -e impala'"))
+hl.bind(mainMod .. "+M", hl.dsp.exec_cmd(float_kitty .. " wiremix"))
+hl.bind(mainMod .. "+N", hl.dsp.exec_cmd(float_kitty .. " impala"))
 hl.bind(mainMod .. "+O", hl.dsp.exec_cmd(kitty_override .. " nvim"))
 hl.bind(mainMod .. "+I", hl.dsp.exec_cmd(kitty_override .. " gh dash"))
 hl.bind(mainMod .. "+B", hl.dsp.exec_cmd("~/.config/scripts/toggle-sunset.sh"))
-hl.bind(mainMod .. "+P", hl.dsp.exec_cmd("~/.config/scripts/powermenu.sh")) -- Power menu
-hl.bind(mainMod .. "+V", hl.dsp.exec_cmd("hyprctl dispatch exec '[float;center;size 650 800]' 'kitty -e clipse'")) -- Clipboard
+hl.bind(mainMod .. "+P", hl.dsp.exec_cmd("~/.config/scripts/powermenu.sh"))
+hl.bind(mainMod .. "+V", hl.dsp.exec_cmd(float_kitty .. " clipse"))
 
 -- Lock screen
 hl.bind(mainMod .. "+CTRL+L", hl.dsp.exec_cmd("hyprlock"))
