@@ -7,7 +7,7 @@ local mainMod = "SUPER" -- "Windows" key
 -- Window management
 hl.bind(mainMod .. "+C", hl.dsp.window.close())
 hl.bind(mainMod .. "+F", hl.dsp.window.float({ action = "toggle" }))
-hl.bind(mainMod .. "+CTRL+P", hl.dsp.window.pseudo())
+hl.bind(mainMod .. "+CTRL+U", hl.dsp.window.pseudo()) -- dwindle
 hl.bind(mainMod .. "+U", hl.dsp.layout("togglesplit")) -- dwindle
 
 -- Move focus (vim style)
@@ -28,27 +28,24 @@ hl.bind(mainMod .. "+right", hl.dsp.focus({ direction = "right" }))
 hl.bind(mainMod .. "+up", hl.dsp.focus({ direction = "up" }))
 hl.bind(mainMod .. "+down", hl.dsp.focus({ direction = "down" }))
 
--- Power menu
-hl.bind(mainMod .. "+P", hl.dsp.exec_cmd("~/.config/scripts/powermenu.sh"))
+-- Custom keybinds variables / overrides
+local kitty_override = "kitty -e --override window_padding_width=0"
 
 -- Applications
 hl.bind(mainMod .. "+Q", hl.dsp.exec_cmd("kitty"))
 hl.bind(mainMod .. "+W", hl.dsp.exec_cmd("rofi -show drun"))
-hl.bind(mainMod .. "+E", hl.dsp.exec_cmd("kitty -e yazi"))
+hl.bind(mainMod .. "+E", hl.dsp.exec_cmd(kitty_override .. " yazi"))
 hl.bind(mainMod .. "+A", hl.dsp.exec_cmd("brave"))
-hl.bind(mainMod .. "+I", hl.dsp.exec_cmd("kitty -e nvim"))
 hl.bind(mainMod .. "+Z", hl.dsp.exec_cmd("hyprctl dispatch exec '[float;center;size 650 800]' 'kitty -e kew'"))
-hl.bind(mainMod .. "+T", hl.dsp.exec_cmd("kitty btop"))
-hl.bind(mainMod .. "+D", hl.dsp.exec_cmd("waypaper"))
+hl.bind(mainMod .. "+T", hl.dsp.exec_cmd(kitty_override .. " btop"))
+hl.bind(mainMod .. "+D", hl.dsp.exec_cmd("~/.config/scripts/rofi-wallpaper.sh"))
 hl.bind(mainMod .. "+M", hl.dsp.exec_cmd("hyprctl dispatch exec '[float;center;size 650 800]' 'kitty -e wiremix'"))
 hl.bind(mainMod .. "+N", hl.dsp.exec_cmd("hyprctl dispatch exec '[float;center;size 650 800]' 'kitty -e impala'"))
-hl.bind(mainMod .. "+R", hl.dsp.exec_cmd("thunderbird"))
-hl.bind(mainMod .. "+S", hl.dsp.exec_cmd("codium"))
-hl.bind(mainMod .. "+O", hl.dsp.exec_cmd("kitty gh dash"))
+hl.bind(mainMod .. "+O", hl.dsp.exec_cmd(kitty_override .. " nvim"))
+hl.bind(mainMod .. "+I", hl.dsp.exec_cmd(kitty_override .. " gh dash"))
 hl.bind(mainMod .. "+B", hl.dsp.exec_cmd("~/.config/scripts/toggle-sunset.sh"))
-
--- Clipboard
-hl.bind(mainMod .. "+V", hl.dsp.exec_cmd("hyprctl dispatch exec '[float;center;size 650 800]' 'kitty -e clipse'"))
+hl.bind(mainMod .. "+P", hl.dsp.exec_cmd("~/.config/scripts/powermenu.sh")) -- Power menu
+hl.bind(mainMod .. "+V", hl.dsp.exec_cmd("hyprctl dispatch exec '[float;center;size 650 800]' 'kitty -e clipse'")) -- Clipboard
 
 -- Lock screen
 hl.bind(mainMod .. "+CTRL+L", hl.dsp.exec_cmd("hyprlock"))
@@ -62,8 +59,8 @@ for i = 1, 10 do
 end
 
 -- Special workspace (scratchpad)
-hl.bind(mainMod .. "+Y", hl.dsp.workspace.toggle_special("magic"))
-hl.bind(mainMod .. "+SHIFT+Y", hl.dsp.window.move({ workspace = "special:magic" }))
+hl.bind(mainMod .. "+S", hl.dsp.workspace.toggle_special("magic"))
+hl.bind(mainMod .. "+SHIFT+S", hl.dsp.window.move({ workspace = "special:magic" }))
 
 -- Scroll through workspaces with mainMod + scroll
 hl.bind(mainMod .. "+mouse_down", hl.dsp.focus({ workspace = "e+1" }))
@@ -117,6 +114,8 @@ hl.bind("SHIFT+left", hl.dsp.exec_cmd("playerctl previous"))
 hl.bind("CTRL+SHIFT+slash", hl.dsp.exec_cmd("playerctl play-pause"))
 
 -- Screenshots (hyprshot)
-hl.bind("Print", hl.dsp.exec_cmd("hyprshot -m output -m active -o ~/Pictures/Screenshots"))
-hl.bind(mainMod .. "+Print", hl.dsp.exec_cmd("hyprshot -m window -m active -o ~/Pictures/Screenshots"))
-hl.bind(mainMod .. "+SHIFT+Print", hl.dsp.exec_cmd("hyprshot -m region -o ~/Pictures/Screenshots"))
+local screenshots_dir = "~/Pictures/Screenshots"
+
+hl.bind("Print", hl.dsp.exec_cmd("hyprshot -m output -m active -o " .. screenshots_dir))
+hl.bind(mainMod .. "+Print", hl.dsp.exec_cmd("hyprshot -m window -m active -o " .. screenshots_dir))
+hl.bind(mainMod .. "+SHIFT+Print", hl.dsp.exec_cmd("hyprshot -m region -o " .. screenshots_dir))
