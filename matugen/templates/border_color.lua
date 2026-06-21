@@ -6,3 +6,4 @@ hl.config({
 	},
 })
 -- "rgba(33ccffee)"
+--{{colors.primary.default.hex_stripped}}
