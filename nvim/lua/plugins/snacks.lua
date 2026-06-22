@@ -19,9 +19,6 @@ return {
   "folke/snacks.nvim",
   opts = {
 
-    --disable scroll for mini.animate
-    scroll = { enabled = false },
-
     -- display images in editor
     image = { enabled = true },
 
