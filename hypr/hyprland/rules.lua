@@ -43,17 +43,19 @@ hl.window_rule({
 })
 
 -- Opacity rules
+local opacity = 0.7
+
 hl.window_rule({
 	match = { class = "codium" },
-	opacity = "0.8",
+	opacity = opacity,
 })
 
 hl.window_rule({
 	match = { class = "localsend" },
-	opacity = "0.75",
+	opacity = opacity,
 })
 
 hl.window_rule({
 	match = { class = "kitty", title = "nvim" },
-	opacity = "0.7",
+	opacity = opacity,
 })
