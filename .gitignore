@@ -60,6 +60,7 @@ kew/library.dat
 
 #nvim
 !nvim
+nvim/lazy-lock.json
 
 #hypr
 !hypr
