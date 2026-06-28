@@ -10,7 +10,7 @@ return {
       },
       tools = {
         antigravity = {
-          cmd = { "agy" },
+          cmd = { "/home/senal/.local/bin/agy" },
         },
       },
       picker = "snacks",
