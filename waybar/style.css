@@ -1,16 +1,74 @@
 @import url("/home/senal/.config/matugen/themes/waybar-colors.css");
 
+/* --- Global Styles --- */
 * {
-  font-family: "JetBrainsMono Nerd Font", "Noto Color Emoji";
-  font-size: 12px;
+  font-family: "Iosevka", "JetBrainsMono Nerd Font", "Noto Color Emoji";
+  font-weight: 800;
+  font-size: 13px;
+  color: #c4a7e7;
   border: none;
 }
 
 window#waybar {
-  background: transparent;
+  background: #141221;
 }
 
-/* ALL modules base style - Added missing commas */
+/* --- Layout Edge Spacing --- */
+.modules-left {
+  margin-left: 4px;
+}
+
+.modules-right {
+  margin-right: 4px;
+}
+
+/* --- Workspaces --- */
+#workspaces button {
+  padding: 0px 1px;
+  margin: 3px 2px;
+  border-radius: 0;
+  background: transparent;
+  color: #5b4950;
+  min-width: 22px;
+  min-height: 22px;
+  box-shadow: inherit;
+  text-shadow: inherit;
+}
+
+#workspaces button.active {
+  background: transparent;
+  border-bottom: 2px solid #c4a7e7;
+  color: #c4a7e7;
+}
+
+#workspaces button:hover {
+  background: #1e1e1e;
+  color: @text-main;
+}
+
+#workspaces button.urgent {
+  background: #5b4950;
+  color: #e0def4;
+}
+
+/* --- Window Title --- */
+#window {
+  color: @primary-neon;
+  margin: 4px 1px 0px 2px;
+  font-weight: bold;
+}
+
+/* --- Media / Audio --- */
+#mpris {
+  font-weight: 700;
+  padding: 0 4px;
+}
+
+#wireplumber.muted {
+  opacity: 0.6;
+}
+
+/* --- All Standard Modules Base Style --- */
 #custom-media,
 #pulseaudio,
 #custom-monitor_brightness,
@@ -27,7 +85,18 @@ window#waybar {
   font-weight: bold;
 }
 
-/* tray */
+/* --- System / Hardware States --- */
+#battery.warning {
+  background: rgba(246, 193, 119, 0.15);
+  padding: 1px 4px;
+}
+
+#battery.critical {
+  background: rgba(235, 111, 146, 0.18);
+  padding: 1px 4px;
+}
+
+/* --- System Tray --- */
 #tray {
   background: @base-bg;
   color: @primary-neon;
@@ -38,38 +107,28 @@ window#waybar {
   font-weight: bold;
 }
 
-/* edge spacing */
-.modules-left {
-  margin-left: 4px;
+/* --- Custom Modules --- */
+#custom-launcher {
+  /* Ready for properties */
 }
 
-.modules-right {
-  margin-right: 4px;
-}
-
-#window {
-  color:  @primary-neon;
-  margin: 4px 1px 0px 2px;
+#custom-cpucat {
+  font-family: "Waycat", monospace;
+  font-size: 20px;
   font-weight: bold;
+  color: #ffffff;
+  padding-left: 5px;
+  padding-right: 8px;
 }
 
-/* WORKSPACES */
-#workspaces button {
-  background: @base-bg;
-  color: @surface-variant;
-  margin: 4px 1px 0px 2px;
-  padding: 2px 8px;
-  min-width: 22px;
-  min-height: 22px;
-  border-radius: 12px;
+/* --- Tooltips --- */
+tooltip {
+  background: #111111;
+  border: 1px solid #333333;
+  border-radius: 4px;
 }
 
-#workspaces button.active {
-  background: @base-bg;
-  color: @primary-neon;
-}
-
-#workspaces button:hover {
-  background: @surface-variant;
-  color: @text-main;
+tooltip label {
+  color: #e0def4;
+  font-size: 11px;
 }
