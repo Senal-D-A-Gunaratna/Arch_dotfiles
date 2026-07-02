@@ -1,134 +1,100 @@
-@import url("/home/senal/.config/matugen/themes/waybar-colors.css");
-
 /* --- Global Styles --- */
 * {
   font-family: "Iosevka", "JetBrainsMono Nerd Font", "Noto Color Emoji";
   font-weight: 800;
   font-size: 13px;
-  color: #c4a7e7;
+  color: white;
   border: none;
+  background: transparent;
 }
 
 window#waybar {
-  background: #141221;
+  background: transparent;
 }
 
 /* --- Layout Edge Spacing --- */
 .modules-left {
-  margin-left: 4px;
+  margin-left: 10px;
 }
 
 .modules-right {
-  margin-right: 4px;
+  margin-right: 10px;
 }
 
 /* --- Workspaces --- */
 #workspaces button {
-  padding: 0px 1px;
-  margin: 3px 2px;
+  padding: 0px 6px;
+  margin: 0px;
   border-radius: 0;
-  background: transparent;
-  color: #5b4950;
-  min-width: 22px;
-  min-height: 22px;
-  box-shadow: inherit;
-  text-shadow: inherit;
+  color: rgba(255, 255, 255, 0.4);
+  box-shadow: none;
+  text-shadow: none;
 }
 
 #workspaces button.active {
-  background: transparent;
-  border-bottom: 2px solid #c4a7e7;
-  color: #c4a7e7;
+  color: white;
+  border-bottom: 2px solid white;
 }
 
 #workspaces button:hover {
-  background: #1e1e1e;
-  color: @text-main;
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
 }
 
 #workspaces button.urgent {
-  background: #5b4950;
-  color: #e0def4;
+  color: #ff5555; /* Fallback for critical visibility */
 }
 
 /* --- Window Title --- */
 #window {
-  color: @primary-neon;
-  margin: 4px 1px 0px 2px;
   font-weight: bold;
 }
 
-/* --- Media / Audio --- */
-#mpris {
-  font-weight: 700;
-  padding: 0 4px;
-}
-
-#wireplumber.muted {
-  opacity: 0.6;
-}
-
-/* --- All Standard Modules Base Style --- */
+/* --- Unified Modules Base Style (No Pills) --- */
 #custom-media,
 #pulseaudio,
 #custom-monitor_brightness,
 #network,
 #cpu,
 #memory,
-#clock {
-  background: @base-bg;
-  color: @primary-neon;
-  padding: 2px 10px;
-  margin: 4px 3px 0px 2px;
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.05);
+#clock,
+#mpris,
+#tray {
+  padding: 0px 8px;
+  margin: 0px;
   font-weight: bold;
 }
 
-/* --- System / Hardware States --- */
+#wireplumber.muted {
+  opacity: 0.4;
+}
+
+/* --- System States --- */
 #battery.warning {
-  background: rgba(246, 193, 119, 0.15);
-  padding: 1px 4px;
+  color: #ffb86c;
 }
 
 #battery.critical {
-  background: rgba(235, 111, 146, 0.18);
-  padding: 1px 4px;
-}
-
-/* --- System Tray --- */
-#tray {
-  background: @base-bg;
-  color: @primary-neon;
-  padding: 2px 3px;
-  margin: 4px 1px 0px 2px;
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  font-weight: bold;
+  color: #ff5555;
 }
 
 /* --- Custom Modules --- */
-#custom-launcher {
-  /* Ready for properties */
-}
-
 #custom-cpucat {
   font-family: "Waycat", monospace;
   font-size: 20px;
   font-weight: bold;
-  color: #ffffff;
   padding-left: 5px;
   padding-right: 8px;
 }
 
 /* --- Tooltips --- */
 tooltip {
-  background: #111111;
-  border: 1px solid #333333;
+  background: rgba(0, 0, 0, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 4px;
 }
 
 tooltip label {
-  color: #e0def4;
+  color: white;
   font-size: 11px;
 }
