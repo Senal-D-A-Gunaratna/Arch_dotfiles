@@ -39,11 +39,6 @@ window#waybar {
   border-bottom: 2px solid @primary-neon;
 }
 
-#workspaces button:hover {
-  color: @text-main;
-  background: @surface-variant;
-}
-
 #workspaces button.urgent {
   color: #ff5555;
   background: @surface-variant;
