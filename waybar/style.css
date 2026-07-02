@@ -1,14 +1,17 @@
+@import url("/home/senal/.config/matugen/themes/waybar-colors.css");
+
 /* --- Global Styles --- */
 * {
   font-family: "Iosevka", "JetBrainsMono Nerd Font", "Noto Color Emoji";
   font-weight: 800;
-  font-size: 11px; /* Slightly dropped to match the thinner layout */
-  color: white;
+  font-size: 11px;
+  color: @text-main; /* Uses theme main text color */
   border: none;
   background: transparent;
 }
 
 window#waybar {
+  /* Translucent base bar color using theme background */
   background: rgba(20, 18, 33, 0.65);
 }
 
@@ -23,35 +26,37 @@ window#waybar {
 
 /* --- Workspaces --- */
 #workspaces button {
-  margin: 0px 1px; /* Removed top margin to flatten the bar */
-  padding: 0px 6px; /* Reduced vertical padding */
+  margin: 0px 1px;
+  padding: 0px 6px;
   border-radius: 0;
-  color: rgba(255, 255, 255, 0.4);
+  color: @surface-variant; /* Inactive workspace color from theme */
   box-shadow: none;
   text-shadow: none;
 }
 
 #workspaces button.active {
-  color: white;
-  border-bottom: 2px solid white;
+  color: @primary-neon; /* Highlighted active workspace */
+  border-bottom: 2px solid @primary-neon;
 }
 
 #workspaces button:hover {
-  color: white;
-  background: rgba(255, 255, 255, 0.1);
+  color: @text-main;
+  background: @surface-variant;
 }
 
 #workspaces button.urgent {
   color: #ff5555;
+  background: @surface-variant;
 }
 
 /* --- Window Title --- */
 #window {
+  color: @primary-neon;
   margin: 0px 1px;
   font-weight: bold;
 }
 
-/* --- Unified Modules Base Style (Ultra Thin) --- */
+/* --- Unified Modules Base Style (Ultra Thin & Theme Colored) --- */
 #custom-media,
 #pulseaudio,
 #custom-monitor_brightness,
@@ -59,8 +64,9 @@ window#waybar {
 #cpu,
 #memory,
 #clock {
-  padding: 1px 6px; /* Tight vertical padding, compact horizontal space */
-  margin: 0px 2px; /* Removed top/bottom margins completely */
+  color: @primary-neon; /* Text/Icon color from theme */
+  padding: 1px 6px;
+  margin: 0px 2px;
   font-weight: bold;
 }
 
@@ -79,6 +85,7 @@ window#waybar {
 
 /* --- System Tray --- */
 #tray {
+  color: @primary-neon;
   padding: 1px 3px;
   margin: 0px 1px;
   font-weight: bold;
@@ -87,20 +94,21 @@ window#waybar {
 /* --- Custom Modules --- */
 #custom-cpucat {
   font-family: "Waycat", monospace;
-  font-size: 16px; /* Scaled down proportionally */
+  font-size: 16px;
   font-weight: bold;
+  color: @text-main;
   padding-left: 4px;
   padding-right: 4px;
 }
 
 /* --- Tooltips --- */
 tooltip {
-  background: rgba(0, 0, 0, 0.85);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: @base-bg; /* Uses theme background for tooltips */
+  border: 1px solid @surface-variant;
   border-radius: 4px;
 }
 
 tooltip label {
-  color: white;
+  color: @text-main;
   font-size: 11px;
 }
