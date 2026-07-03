@@ -5,14 +5,17 @@
   font-family: "Iosevka", "JetBrainsMono Nerd Font", "Noto Color Emoji";
   font-weight: 800;
   font-size: 11px;
-  color: @text-main; /* Uses theme main text color */
+  color: @text-main;
   border: none;
+  border-radius: 0;
+  box-shadow: none;
+  text-shadow: none;
   background: transparent;
+  transition: color 0.2s ease-in-out;
 }
 
 window#waybar {
-  /* Translucent base bar color using theme background */
-  background: rgba(20, 18, 33, 0.65);
+  background: alpha(@base-bg, 0.65);
 }
 
 /* --- Layout Edge Spacing --- */
@@ -28,20 +31,22 @@ window#waybar {
 #workspaces button {
   margin: 0px 1px;
   padding: 0px 6px;
-  border-radius: 0;
-  color: @surface-variant; /* Inactive workspace color from theme */
-  box-shadow: none;
-  text-shadow: none;
+  color: @surface-variant;
+}
+
+#workspaces button:hover {
+  color: @text-main;
+  background: alpha(@surface-variant, 0.25);
 }
 
 #workspaces button.active {
-  color: @primary-neon; /* Highlighted active workspace */
+  color: @primary-neon;
   border-bottom: 2px solid @primary-neon;
 }
 
 #workspaces button.urgent {
-  color: #ff5555;
-  background: @surface-variant;
+  color: @base-bg;
+  background: @primary-neon;
 }
 
 /* --- Window Title --- */
@@ -51,31 +56,53 @@ window#waybar {
   font-weight: bold;
 }
 
-/* --- Unified Modules Base Style (Ultra Thin & Theme Colored) --- */
+/* --- Unified Modules Base Style --- */
 #custom-media,
 #pulseaudio,
 #custom-monitor_brightness,
 #network,
 #cpu,
 #memory,
+#battery,
 #clock {
-  color: @primary-neon; /* Text/Icon color from theme */
+  color: @primary-neon;
   padding: 1px 6px;
   margin: 0px 2px;
   font-weight: bold;
 }
 
-#wireplumber.muted {
-  opacity: 0.4;
+#custom-media:hover,
+#pulseaudio:hover,
+#custom-monitor_brightness:hover,
+#network:hover,
+#cpu:hover,
+#memory:hover,
+#battery:hover,
+#clock:hover {
+  color: @text-main;
+  background: alpha(@surface-variant, 0.2);
 }
 
-/* --- System States --- */
+/* --- Audio States --- */
+#pulseaudio.muted {
+  color: @surface-variant;
+  opacity: 0.6;
+}
+
+/* --- Battery States (theme-derived, no hardcoded hex) --- */
 #battery.warning {
-  color: #ffb86c;
+  color: @text-main;
+  background: alpha(@surface-variant, 0.35);
 }
 
 #battery.critical {
-  color: #ff5555;
+  color: @base-bg;
+  background: @primary-neon;
+}
+
+#battery.charging {
+  color: @primary-neon;
+  font-weight: bolder;
 }
 
 /* --- System Tray --- */
@@ -84,6 +111,15 @@ window#waybar {
   padding: 1px 3px;
   margin: 0px 1px;
   font-weight: bold;
+}
+
+#tray > .passive {
+  color: @surface-variant;
+}
+
+#tray > .needs-attention {
+  color: @base-bg;
+  background: @primary-neon;
 }
 
 /* --- Custom Modules --- */
@@ -98,7 +134,7 @@ window#waybar {
 
 /* --- Tooltips --- */
 tooltip {
-  background: @base-bg; /* Uses theme background for tooltips */
+  background: @base-bg;
   border: 1px solid @surface-variant;
   border-radius: 4px;
 }
