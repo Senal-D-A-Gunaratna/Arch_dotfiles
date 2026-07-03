@@ -114,6 +114,30 @@ window#waybar {
   padding-right: 4px;
 }
 
+/* --- Tray Context Menu (popup) --- */
+menu {
+  background-color: @base-bg;
+  border: 1px solid @surface-variant;
+  border-radius: 4px;
+  padding: 4px;
+}
+
+menuitem {
+  color: @text-main;
+  padding: 4px 8px;
+  border-radius: 2px;
+}
+
+menuitem:hover {
+  color: @primary-neon;
+  background-color: alpha(@surface-variant, 0.3);
+}
+
+menuitem separator {
+  background-color: @surface-variant;
+  margin: 4px 0;
+}
+
 /* --- Tooltips --- */
 tooltip {
   background: @base-bg;
