@@ -1,7 +1,7 @@
 
 [miscellaneous]
 
-allowNotifications=2
+allowNotifications=1
 
 alwaysCrossfade=0
 
@@ -17,7 +17,7 @@ coverAnsi=0
 
 [visualizer]
 
-visualizerColortype=2
+visualizerColortype=4
 
 [chroma]
 
@@ -25,7 +25,6 @@ chromaPreset=-1
 
 [colors]
 
-colorMode=1
+colorMode=0
 
 theme=
-
