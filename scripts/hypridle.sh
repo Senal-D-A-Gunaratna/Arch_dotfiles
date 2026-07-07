@@ -8,9 +8,6 @@ get_current_brightness() {
   ddcutil getvcp 10 --terse | awk '{print $4}'
 }
 
-get_current_volume() {
-  wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{print $2}'
-}
 
 case "$1" in
 apply)
@@ -21,7 +18,6 @@ apply)
 
   echo "Saving current states to RAM..."
   CURRENT_B=$(get_current_brightness)
-  CURRENT_V=$(get_current_volume)
 
   # Fail-safe check: Ensure we actually grabbed a valid brightness number
   if [[ -z "$CURRENT_B" || ! "$CURRENT_B" =~ ^[0-9]+$ ]]; then
@@ -29,11 +25,10 @@ apply)
     exit 1
   fi
 
-  echo "$CURRENT_B $CURRENT_V" >"$STATE_FILE"
+  echo "$CURRENT_B" >"$STATE_FILE"
 
   echo "Applying custom presets..."
   ddcutil setvcp 10 10
-  wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.30
   echo "Done."
   ;;
 
@@ -44,10 +39,9 @@ revert)
   fi
 
   echo "Restoring original states from RAM..."
-  read -r ORIG_BRIGHTNESS ORIG_VOLUME <"$STATE_FILE"
+  read -r ORIG_BRIGHTNESS <"$STATE_FILE"
 
   ddcutil setvcp 10 "$ORIG_BRIGHTNESS"
-  wpctl set-volume @DEFAULT_AUDIO_SINK@ "$ORIG_VOLUME"
 
   echo "Clearing RAM data..."
   rm -f "$STATE_FILE"
