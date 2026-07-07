@@ -66,4 +66,50 @@ return {
       }
     end,
   },
+
+  {
+    "nitinbhat972/kitty-font.nvim",
+    event = "VeryLazy",
+    opts = {
+      font_family = "JetBrainsMono Nerd Font",
+      font_size = 12,
+      restore_on_exit = true,
+    },
+    keys = {
+      {
+        "<leader>k=",
+        function()
+          local kf = require("kitty-font")
+          kf.config.font_size = (kf.config.font_size or 12) + 1
+          kf.apply({ silent = true })
+          vim.notify("Kitty font size: " .. kf.config.font_size)
+        end,
+        desc = "Kitty font size +1",
+      },
+      {
+        "<leader>k-",
+        function()
+          local kf = require("kitty-font")
+          kf.config.font_size = math.max(4, (kf.config.font_size or 12) - 1)
+          kf.apply({ silent = true })
+          vim.notify("Kitty font size: " .. kf.config.font_size)
+        end,
+        desc = "Kitty font size -1",
+      },
+      {
+        "<leader>kr",
+        function()
+          require("kitty-font").reset()
+        end,
+        desc = "Reset Kitty font",
+      },
+      {
+        "<leader>kp",
+        function()
+          require("kitty-font").pick()
+        end,
+        desc = "Pick Kitty font",
+      },
+    },
+  },
 }
