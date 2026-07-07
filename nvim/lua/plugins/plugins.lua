@@ -4,12 +4,16 @@ return {
     opts = {
       spec = {
         { "<leader>a", group = "AI", icon = "󰚩" },
+        { "<leader>at", desc = "Toggle AI Completion", icon = "" },
       },
     },
   },
 
   {
     "supermaven-inc/supermaven-nvim",
+    keys = {
+      { "<leader>at", "<cmd>SupermavenToggle<cr>", desc = "Toggle AI Completion" },
+    },
     config = function()
       require("supermaven-nvim").setup({
         keymaps = {
