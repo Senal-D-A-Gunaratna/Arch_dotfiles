@@ -104,7 +104,7 @@ return {
         desc = "Reset Kitty font",
       },
       {
-        "<leader>kp",
+        "<leader>kf",
         function()
           require("kitty-font").pick()
         end,
