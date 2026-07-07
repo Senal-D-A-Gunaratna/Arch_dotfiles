@@ -9,8 +9,8 @@ return {
         split = { width = 60 },
       },
       tools = {
-        antigravity = {
-          cmd = { "/home/senal/.local/bin/agy" },
+        opencode = {
+          cmd = { "/usr/bin/opencode" },
         },
       },
       picker = "snacks",
@@ -23,9 +23,9 @@ return {
     {
       "<leader>ai",
       function()
-        require("sidekick.cli").toggle({ name = "antigravity", focus = true })
+        require("sidekick.cli").toggle({ name = "opencode", focus = true })
       end,
-      desc = "Toggle Antigravity CLI",
+      desc = "Toggle Opencode CLI",
     },
     {
       "<leader>at",
@@ -33,14 +33,14 @@ return {
         require("sidekick.cli").send({ msg = "{this}" })
       end,
       mode = { "x", "n" },
-      desc = "Send This to Antigravity",
+      desc = "Send This to Opencode",
     },
     {
       "<leader>af",
       function()
         require("sidekick.cli").send({ msg = "{file}" })
       end,
-      desc = "Send File to Antigravity",
+      desc = "Send File to Opencode",
     },
     {
       "<leader>av",
@@ -48,7 +48,7 @@ return {
         require("sidekick.cli").send({ msg = "{selection}" })
       end,
       mode = { "x" },
-      desc = "Send Selection to Antigravity",
+      desc = "Send Selection to Opencode",
     },
   },
 }
