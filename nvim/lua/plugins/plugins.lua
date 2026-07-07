@@ -5,6 +5,7 @@ return {
       spec = {
         { "<leader>a", group = "AI", icon = "󰚩" },
         { "<leader>at", desc = "Toggle AI Completion", icon = "" },
+        { "<leader>k", desc = "Kitty", icon = "󰍹" },
       },
     },
   },
