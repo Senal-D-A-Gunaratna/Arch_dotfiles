@@ -101,7 +101,7 @@ return {
         function()
           require("kitty-font").reset()
         end,
-        desc = "Reset Kitty font",
+        desc = "Kitty reset to defaults",
       },
       {
         "<leader>kf",
