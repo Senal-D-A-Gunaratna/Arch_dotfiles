@@ -2,14 +2,23 @@
 mode = "dark"
 awww = true   # Optional: if you use awww for wallpapers
 
-[templates.rofi_colors]
-input_path = "~/.config/matugen/templates/colors.rasi"
-output_path = "~/.config/matugen/themes/colors.rasi"
+[templates.hyprland]
+input_path = "~/.config/matugen/templates/border_color.lua"
+output_path = "~/.config/hypr/hyprland/border_color.lua"
+
+[templates.waybar]
+input_path = "~/.config/matugen/templates/waybar-colors.css"
+output_path = "~/.config/matugen/themes/waybar-colors.css"
+post_hook = "pkill -SIGUSR2 waybar"
 
 [templates.kitty]
 input_path = "~/.config/matugen/templates/kitty-colors.conf"
 output_path = "~/.config/matugen/themes/kitty-colors.conf"
 post_hook = "pkill -USR1 kitty"
+
+[templates.rofi_colors]
+input_path = "~/.config/matugen/templates/colors.rasi"
+output_path = "~/.config/matugen/themes/colors.rasi"
 
 [templates.gtk]
 input_path = "~/.config/matugen/templates/gtk-colors.css"
@@ -18,25 +27,6 @@ output_path = "~/.config/matugen/themes/gtk-colors.css"
 [templates.qt-color-scheme]
 input_path = "~/.config/matugen/templates/qt.colors"
 output_path = "~/.local/share/color-schemes/Matugen.colors"
-
-[templates.btop]
-input_path = "~/.config/matugen/templates/btop.theme"
-output_path = "~/.config/btop/themes/matugen.theme"
-post_hook = "pkill -USR2 btop || true"
-
-[templates.waybar]
-input_path = "~/.config/matugen/templates/waybar-colors.css"
-output_path = "~/.config/matugen/themes/waybar-colors.css"
-post_hook = "pkill -SIGUSR2 waybar"
-
-[templates.code]
-input_path = "~/.config/matugen/templates/code-colors.jsonc"
-output_path = "~/.config/matugen/themes/code-colors.jsonc"
-post_hook = "python /home/senal/.config/scripts/merge-vscode.py"
-
-[templates.hyprland]
-input_path = "~/.config/matugen/templates/border_color.lua"
-output_path = "~/.config/hypr/hyprland/border_color.lua"
 
 [templates.hyprlock]
 input_path = "~/.config/matugen/templates/hyprland-colors.conf"
@@ -51,6 +41,11 @@ input_path = '~/.config/matugen/templates/dunstrc-colors.txt'
 output_path = '~/.config/dunst/dunstrc'
 post_hook = 'dunstctl reload'
 
+[templates.btop]
+input_path = "~/.config/matugen/templates/btop.theme"
+output_path = "~/.config/btop/themes/matugen.theme"
+post_hook = "pkill -USR2 btop || true"
+
 [templates.neovim]
 input_path = "~/.config/matugen/templates/nvim-colors.json"
 output_path = "~/.config/matugen/themes/nvim-colors.json"
@@ -59,3 +54,8 @@ post_hook = "pkill -SIGUSR1 nvim"
 [templates.opencode]
 input_path = '~/.config/matugen/templates/opencode-colors.json'
 output_path = '~/.config/opencode/themes/matugen.json'
+
+[templates.code]
+input_path = "~/.config/matugen/templates/code-colors.jsonc"
+output_path = "~/.config/matugen/themes/code-colors.jsonc"
+post_hook = "python /home/senal/.config/scripts/merge-vscode.py"
