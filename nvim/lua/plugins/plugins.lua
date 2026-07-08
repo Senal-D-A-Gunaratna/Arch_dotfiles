@@ -73,7 +73,7 @@ return {
     event = "VeryLazy",
     opts = {
       font_family = "JetBrainsMono Nerd Font",
-      font_size = 12,
+      font_size = 11.8,
       restore_on_exit = true,
     },
     keys = {
