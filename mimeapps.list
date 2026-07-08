@@ -16,6 +16,11 @@ audio/x-wav=mpv.desktop
 audio/opus=mpv.desktop
 audio/mp4=mpv.desktop
 inode/directory=codium.desktop
+x-scheme-handler/webcal=userapp-Thunderbird-39WMR3.desktop
+x-scheme-handler/webcals=userapp-Thunderbird-39WMR3.desktop
+text/calendar=userapp-Thunderbird-39WMR3.desktop
+application/x-extension-ics=userapp-Thunderbird-39WMR3.desktop
+x-scheme-handler/net.thunderbird=userapp-Thunderbird-ZJ55R3.desktop
 
 [Added Associations]
 text/plain=nvim.desktop;
@@ -23,3 +28,8 @@ x-scheme-handler/mailto=userapp-Thunderbird-9S4PN3.desktop;
 x-scheme-handler/mid=userapp-Thunderbird-9S4PN3.desktop;
 image/webp=pix.desktop;
 inode/directory=codium.desktop
+x-scheme-handler/webcal=userapp-Thunderbird-39WMR3.desktop;
+x-scheme-handler/webcals=userapp-Thunderbird-39WMR3.desktop;
+text/calendar=userapp-Thunderbird-39WMR3.desktop;
+application/x-extension-ics=userapp-Thunderbird-39WMR3.desktop;
+x-scheme-handler/net.thunderbird=userapp-Thunderbird-ZJ55R3.desktop;
