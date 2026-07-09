@@ -70,7 +70,8 @@ return {
 
   {
     "nitinbhat972/kitty-font.nvim",
-    event = "VeryLazy",
+    lazy = false,
+    priority = 1000,
     opts = {
       font_family = "JetBrainsMono Nerd Font",
       font_size = 11.8,
