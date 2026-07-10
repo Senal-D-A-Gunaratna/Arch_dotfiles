@@ -99,11 +99,22 @@ return {
         desc = "Kitty font size -1",
       },
       {
+        "<leader>kk",
+        function()
+          local kf = require("kitty-font")
+          kf.config.font_family = "JetBrainsMono Nerd Font"
+          kf.config.font_size = 11.8
+          kf.apply({ silent = true })
+          vim.notify("Kitty font: JetBrainsMono Nerd Font @ 11.8")
+        end,
+        desc = "Reset to preset font",
+      },
+      {
         "<leader>kr",
         function()
           require("kitty-font").reset()
         end,
-        desc = "Kitty reset to defaults",
+        desc = "Reset to kitty config",
       },
       {
         "<leader>kf",
