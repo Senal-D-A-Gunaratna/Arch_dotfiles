@@ -110,18 +110,18 @@ return {
         desc = "Reset to preset font",
       },
       {
-        "<leader>kr",
-        function()
-          require("kitty-font").reset()
-        end,
-        desc = "Reset to kitty config",
-      },
-      {
         "<leader>kf",
         function()
           require("kitty-font").pick()
         end,
         desc = "Pick Kitty font",
+      },
+      {
+        "<leader>kr",
+        function()
+          require("kitty-font").reset()
+        end,
+        desc = "Reset to kitty config",
       },
     },
   },
