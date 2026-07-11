@@ -38,7 +38,7 @@ return {
           kf.apply({ silent = true })
           vim.notify("Kitty font: JetBrainsMono Nerd Font @ 11.8")
         end,
-        desc = "Reset to editor deafaults",
+        desc = "Reset to editor defaults",
       },
       {
         "<leader>kf",
