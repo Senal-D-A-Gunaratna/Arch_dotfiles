@@ -13,7 +13,7 @@ return {
         "<leader>k=",
         function()
           local kf = require("kitty-font")
-          kf.config.font_size = (kf.config.font_size or 12) + 1
+          kf.config.font_size = kf.config.font_size + 1
           kf.apply({ silent = true })
           vim.notify("Kitty font size: " .. kf.config.font_size)
         end,
@@ -23,7 +23,7 @@ return {
         "<leader>k-",
         function()
           local kf = require("kitty-font")
-          kf.config.font_size = math.max(4, (kf.config.font_size or 12) - 1)
+          kf.config.font_size = math.max(4, kf.config.font_size - 1)
           kf.apply({ silent = true })
           vim.notify("Kitty font size: " .. kf.config.font_size)
         end,
