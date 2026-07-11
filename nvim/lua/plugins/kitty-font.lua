@@ -36,7 +36,7 @@ return {
           kf.config.font_family = "JetBrainsMono Nerd Font"
           kf.config.font_size = 11.8
           kf.apply({ silent = true })
-          vim.notify("Kitty font: JetBrainsMono Nerd Font @ 11.8")
+          vim.notify("Reset to editor defaults")
         end,
         desc = "Reset to editor defaults",
       },
