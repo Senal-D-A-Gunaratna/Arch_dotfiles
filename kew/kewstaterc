@@ -25,9 +25,9 @@ chromaPreset=-1
 
 [colors]
 
-colorMode=2
+colorMode=4
 
-theme=pewter.theme
+theme=
 
-currentSongId=185
-currentSongSeconds=83.160737
+currentSongId=180
+currentSongSeconds=60.849122
