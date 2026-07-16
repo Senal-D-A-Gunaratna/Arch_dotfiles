@@ -54,8 +54,3 @@ post_hook = "pkill -SIGUSR1 nvim"
 [templates.opencode]
 input_path = '~/.config/matugen/templates/opencode-colors.json'
 output_path = '~/.config/opencode/themes/matugen.json'
-
-[templates.code]
-input_path = "~/.config/matugen/templates/code-colors.jsonc"
-output_path = "~/.config/matugen/themes/code-colors.jsonc"
-post_hook = "python /home/senal/.config/scripts/merge-vscode.py & pkill -SIGUSR1 nvim"
