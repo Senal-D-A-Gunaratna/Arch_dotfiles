@@ -17,7 +17,7 @@ coverAnsi=0
 
 [visualizer]
 
-visualizerColortype=2
+visualizerColortype=0
 
 [chroma]
 
@@ -29,5 +29,5 @@ colorMode=4
 
 theme=
 
-currentSongId=180
-currentSongSeconds=60.849122
+currentSongId=585
+currentSongSeconds=89.471763
