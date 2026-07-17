@@ -84,6 +84,6 @@
     "tooltip-format": "{:%A, %d %B %Y}",
     "tooltip": true,
     "interval": 1,
-    "on-click": "setsid kitty -e calcurse",
+    "on-click": "kitty --detach calcurse",
   },
 }
