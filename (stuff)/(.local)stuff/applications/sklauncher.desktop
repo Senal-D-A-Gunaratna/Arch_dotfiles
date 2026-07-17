@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=SKlauncher
+Exec=/home/senal/.local/bin/SKlauncher-4.0.36-x86_64.AppImage
+Terminal=false
+Type=Application
+Icon=/home/senal/.local/share/applications/icons/sklauncher.png
+StartupWMClass=SKlauncher
+X-AppImage-Version=4.0.18
+Keywords=Minecraft;Launcher;Mojang;Games;
+GenericName=Game Launcher
+Comment=SKlauncher is a free Minecraft launcher for managing instances, mods, and accounts.
+Categories=Game;

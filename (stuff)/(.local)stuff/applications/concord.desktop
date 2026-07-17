@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Concord
+GenericName=Discord TUI Client
+Comment=Feature-rich Discord terminal client written in Rust
+Exec=kitty concord
+Terminal=false
+Icon=/home/senal/.local/share/applications/icons/discord.webp
+Categories=Network;InstantMessaging;
+Keywords=discord;tui;terminal;chat;
