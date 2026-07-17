@@ -62,7 +62,7 @@ return {
     },
     init = function()
       vim.g.neominimap = {
-        auto_enable = false,
+        auto_enable = true,
       }
     end,
   },
