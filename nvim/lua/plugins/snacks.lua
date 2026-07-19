@@ -44,6 +44,14 @@ return {
         explorer = {
           ignored = true, -- Shows git-ignored files
           hidden = true, -- Shows dotfiles
+          win = {
+            list = {
+              wo = {
+                number = true,
+                relativenumber = true,
+              },
+            },
+          },
         },
       },
     },
