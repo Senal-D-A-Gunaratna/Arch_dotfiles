@@ -4,7 +4,7 @@ return {
     opts = {},
     config = function()
       vim.lsp.config("cspell_ls", {
-        cmd = { "/home/senal/.npm-global/bin/cspell-lsp", "--stdio" },
+        cmd = { "cspell-lsp", "--stdio" },
         filetypes = {
           "lua",
           "python",
