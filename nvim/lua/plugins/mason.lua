@@ -7,10 +7,11 @@ return {
         "shellcheck",
         "debugpy",
         "js-debug-adapter",
+        "cspell",
+        "cspell-lsp",
       },
     },
   },
-
   -- 2. mason-lspconfig: LSP servers not covered by extras
   {
     "mason-org/mason-lspconfig.nvim",
