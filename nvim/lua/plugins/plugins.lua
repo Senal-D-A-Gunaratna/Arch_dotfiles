@@ -53,6 +53,18 @@ return {
   { "LazyVim/LazyVim", opts = { colorscheme = "matugen" } },
 
   {
+    "Senal-D-A-Gunaratna/bunson.nvim",
+    dependencies = {
+        "mason-org/mason.nvim",
+    },
+    config = function()
+        require("bunson").setup({
+            patch_version_lookup = true,
+        })
+    end,
+},
+
+  {
     "Isrothy/neominimap.nvim",
     version = "v3.*",
     enabled = true,
