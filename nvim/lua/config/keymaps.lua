@@ -2,6 +2,7 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 
+-- cSpell
 vim.keymap.set("n", "<leader>cA", function()
   local diagnostics = vim.diagnostic.get(0, { source = "cSpell" })
   if #diagnostics == 0 then
@@ -79,3 +80,9 @@ vim.keymap.set("n", "<leader>cA", function()
 
   vim.notify("Added " .. added .. " words to " .. config_path, vim.log.levels.INFO)
 end, { desc = "Cspell: Add all to dict" })
+
+local map = vim.keymap.set
+
+-- Cycle to next/previous buffer
+map("n", "<Tab>", "<cmd>BufferLineCycleNext<cr>", { desc = "Next Buffer" })
+map("n", "<S-Tab>", "<cmd>BufferLineCyclePrev<cr>", { desc = "Prev Buffer" })
