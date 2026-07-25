@@ -8,21 +8,21 @@ output_path = "~/.config/hypr/hyprland/border_color.lua"
 
 [templates.waybar]
 input_path = "~/.config/matugen/templates/waybar-colors.css"
-output_path = "~/.config/matugen/themes/waybar-colors.css"
+output_path = "~/.cache/matugen/themes/waybar-colors.css"
 post_hook = "pkill -SIGUSR2 waybar"
 
 [templates.kitty]
 input_path = "~/.config/matugen/templates/kitty-colors.conf"
-output_path = "~/.config/matugen/themes/kitty-colors.conf"
+output_path = "~/.cache/matugen/themes/kitty-colors.conf"
 post_hook = "pkill -USR1 kitty"
 
 [templates.rofi_colors]
 input_path = "~/.config/matugen/templates/colors.rasi"
-output_path = "~/.config/matugen/themes/colors.rasi"
+output_path = "~/.cache/matugen/themes/colors.rasi"
 
 [templates.gtk]
 input_path = "~/.config/matugen/templates/gtk-colors.css"
-output_path = "~/.config/matugen/themes/gtk-colors.css"
+output_path = "~/.cache/matugen/themes/gtk-colors.css"
 
 [templates.qt-color-scheme]
 input_path = "~/.config/matugen/templates/qt.colors"
@@ -30,11 +30,11 @@ output_path = "~/.local/share/color-schemes/Matugen.colors"
 
 [templates.hyprlock]
 input_path = "~/.config/matugen/templates/hyprland-colors.conf"
-output_path = "~/.config/matugen/themes/hyprland-colors.conf"
+output_path = "~/.cache/matugen/themes/hyprland-colors.conf"
 
 [templates.clipse]
 input_path = '~/.config/matugen/templates/clipse-colors.json'
-output_path = '~/.config/matugen/themes/clipse-colors.json'
+output_path = '~/.cache/matugen/themes/clipse-colors.json'
 
 [templates.dunst]
 input_path = '~/.config/matugen/templates/dunstrc-colors.txt'
@@ -48,7 +48,7 @@ post_hook = "pkill -USR2 btop || true"
 
 [templates.neovim]
 input_path = "~/.config/matugen/templates/nvim-colors.json"
-output_path = "~/.config/matugen/themes/nvim-colors.json"
+output_path = "~/.cache/matugen/themes/nvim-colors.json"
 post_hook = "pkill -SIGUSR1 nvim"
 
 [templates.opencode]
