@@ -9,18 +9,9 @@ return {
         "js-debug-adapter",
         "cspell",
         "cspell-lsp",
+        -- "yaml-language-server",
+        -- "css-lsp",
       },
-    },
-  },
-  -- 2. mason-lspconfig: LSP servers not covered by extras
-  {
-    "mason-org/mason-lspconfig.nvim",
-    opts = {
-      ensure_installed = {
-        "bashls",
-        "cssls",
-      },
-      automatic_enable = true, -- Mason v2 activation
     },
   },
 }
