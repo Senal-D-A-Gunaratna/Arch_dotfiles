@@ -9,4 +9,4 @@ configuration {
     lines: 8;
 }
 @import "~/.config/rofi/launcher.rasi"
-@import "~/.cache/matugen/themes/colors.rasi"
+@import "~/.cache/matugen/colors.rasi"
