@@ -47,7 +47,6 @@ hl.bind(mainMod .. "+I", hl.dsp.exec_cmd(kitty_override .. " gh dash"))
 hl.bind(mainMod .. "+B", hl.dsp.exec_cmd("~/.config/scripts/toggle-sunset.sh"))
 hl.bind(mainMod .. "+P", hl.dsp.exec_cmd("~/.config/scripts/powermenu.sh"))
 hl.bind(mainMod .. "+V", hl.dsp.exec_cmd(float_kitty .. " clipse"))
-hl.bind(mainMod .. "+R", hl.dsp.exec_cmd("thunderbird"))
 
 -- Lock screen
 hl.bind(mainMod .. "+CTRL+L", hl.dsp.exec_cmd("hyprlock"))
