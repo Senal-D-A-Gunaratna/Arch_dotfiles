@@ -18,20 +18,20 @@ return {
     },
   },
 
-{
+  {
     "Senal-D-A-Gunaratna/swapson.nvim",
     opts = {
-        npm = {
-            enabled = true,
-            tool = "bun",
-            patch_version_lookup = true,
-        },
-        pip = {
-            enabled = true,
-            tool = "uv",
-        },
+      npm = {
+        enabled = true,
+        tool = "bun",
+        patch_version_lookup = true,
+      },
+      pip = {
+        enabled = true,
+        tool = "uv",
+      },
     },
-}
+  },
 
   {
     "folke/which-key.nvim",
