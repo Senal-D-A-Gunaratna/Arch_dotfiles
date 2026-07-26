@@ -20,9 +20,6 @@ return {
 
 {
     "Senal-D-A-Gunaratna/swapson.nvim",
-    dependencies = {
-        "mason-org/mason.nvim",
-    },
     opts = {
         npm = {
             enabled = true,
