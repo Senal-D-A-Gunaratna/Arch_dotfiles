@@ -13,33 +13,28 @@ return {
         "css-lsp",
         "taplo",
         "pyright",
+        "oxlint",
       },
     },
   },
 
-  {
+{
     "Senal-D-A-Gunaratna/swapson.nvim",
     dependencies = {
-      "mason-org/mason.nvim",
+        "mason-org/mason.nvim",
     },
-    config = function()
-      require("swapson").setup({
+    opts = {
         npm = {
-          enabled = true, -- set false to skip npm->bun patching
-          tool = "bun", -- the bun binary name/path
-          -- Whether to also patch mason's npm version-lookup client
-          -- (npm view --json) — needed on systems with NO npm
-          -- installed at all, since version lookups would
-          -- otherwise still shell out to npm
-          patch_version_lookup = true,
+            enabled = true,
+            tool = "bun",
+            patch_version_lookup = true,
         },
         pip = {
-          enabled = true, -- set false to skip pip->uv patching
-          tool = "uv", -- the uv binary name/path
+            enabled = true,
+            tool = "uv",
         },
-      })
-    end,
-  },
+    },
+}
 
   {
     "folke/which-key.nvim",
