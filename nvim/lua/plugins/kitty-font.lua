@@ -1,13 +1,12 @@
 return {
   {
-    "nitinbhat972/kitty-font.nvim",
+    "Senal-D-A-Gunaratna/kitty-font.nvim",
     lazy = false,
     priority = 1000,
     opts = {
       font_family = "JetBrainsMono Nerd Font",
       font_size = 11.8,
-      padding = "-1 -4", -- default nil, uses kitty.conf; accepts 1–4 values (CSS-style)
-      padding_step = 1,
+      padding = "0 0", -- default nil, uses kitty.conf; accepts 1–4 values (CSS-style)
       restore_on_exit = true,
     },
     keys = {
