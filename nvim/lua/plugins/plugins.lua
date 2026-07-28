@@ -13,6 +13,7 @@ return {
         "css-lsp",
         "taplo",
         "pyright",
+        "ruff",
         "oxlint",
       },
     },
