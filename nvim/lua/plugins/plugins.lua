@@ -40,12 +40,7 @@ return {
     priority = 1000,
     opts = {
       opacity = 0.7, -- normal editing opacity
-      term_names = { -- process names to recognise as terminals
-        "kitty",
-        "alacritty",
-        "foot",
-        "wezterm",
-      },
+      term_names = { "kitty" },
     },
     keys = {
       { "<leader>uo", "<cmd>HyprfadeToggle<cr>", desc = "Toggle window opacity" },
