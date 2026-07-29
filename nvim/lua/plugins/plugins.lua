@@ -46,9 +46,6 @@ return {
         "foot",
         "wezterm",
       },
-      set_on_enter = true, -- apply opacity as soon as setup() runs, if available
-      reset_on_leave = true, -- reset to fully opaque on VimLeavePre, if available
-      notify_on_missing = true, -- warn via vim.notify when hyprctl/pid isn't available
     },
     keys = {
       { "<leader>uo", "<cmd>HyprFadeToggle<cr>", desc = "Toggle window opacity" },
