@@ -48,7 +48,7 @@ return {
       },
     },
     keys = {
-      { "<leader>uo", "<cmd>HyprFadeToggle<cr>", desc = "Toggle window opacity" },
+      { "<leader>uo", "<cmd>HyprfadeToggle<cr>", desc = "Toggle window opacity" },
     },
   },
 
