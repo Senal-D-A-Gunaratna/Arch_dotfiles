@@ -46,11 +46,6 @@ hl.window_rule({
 local opacity = 0.7
 
 hl.window_rule({
-	match = { class = "kitty", title = "nvim" },
-	opacity = opacity,
-})
-
-hl.window_rule({
 	match = { class = "localsend" },
 	opacity = opacity,
 })
