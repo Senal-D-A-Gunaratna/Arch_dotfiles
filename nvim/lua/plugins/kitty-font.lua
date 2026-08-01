@@ -1,6 +1,6 @@
 return {
   {
-    "Senal-D-A-Gunaratna/kitty-font.nvim",
+    "nitinbhat972/kitty-font.nvim",
     lazy = false,
     priority = 1000,
     opts = {
