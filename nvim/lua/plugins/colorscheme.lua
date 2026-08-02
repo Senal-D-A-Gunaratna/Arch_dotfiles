@@ -12,4 +12,18 @@ return {
   },
   --made matugen my default colorscheme so it loads faster
   { "LazyVim/LazyVim", opts = { colorscheme = "matugen" } },
+
+  {
+    "Senal-D-A-Gunaratna/hyprfade.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {
+      opacity = 0.7, -- normal editing opacity
+      opacity_inactive = 0.75, -- opacity for inactive windows
+      term_names = { "kitty" },
+    },
+    keys = {
+      { "<leader>uo", "<cmd>HyprfadeToggle<cr>", desc = "Toggle window opacity" },
+    },
+  },
 }
