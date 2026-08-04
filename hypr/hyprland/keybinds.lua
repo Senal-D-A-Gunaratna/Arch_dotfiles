@@ -36,7 +36,7 @@ local float_kitty = "[float;center;size 650 800] kitty --override window_padding
 hl.bind(mainMod .. "+Q", hl.dsp.exec_cmd("kitty"))
 hl.bind(mainMod .. "+W", hl.dsp.exec_cmd("rofi -show drun"))
 hl.bind(mainMod .. "+E", hl.dsp.exec_cmd(kitty_override .. " yazi"))
-hl.bind(mainMod .. "+A", hl.dsp.exec_cmd("brave"))
+hl.bind(mainMod .. "+A", hl.dsp.exec_cmd("brave-origin"))
 hl.bind(mainMod .. "+Z", hl.dsp.exec_cmd("[float;center;size 650 800] kitty -e kew"))
 hl.bind(mainMod .. "+T", hl.dsp.exec_cmd(kitty_override .. " btop"))
 hl.bind(mainMod .. "+D", hl.dsp.exec_cmd("~/.config/scripts/rofi-wallpaper.sh"))

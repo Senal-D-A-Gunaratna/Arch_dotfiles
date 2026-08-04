@@ -1,6 +1,6 @@
 [Default Applications]
-x-scheme-handler/about=brave-browser.desktop
-x-scheme-handler/unknown=brave-browser.desktop
+x-scheme-handler/about=brave-origin.desktop
+x-scheme-handler/unknown=brave-origin.desktop
 text/plain=nvim.desktop
 audio/mpeg=mpv.desktop
 audio/flac=mpv.desktop
@@ -21,6 +21,9 @@ x-scheme-handler/webcals=userapp-Thunderbird-39WMR3.desktop
 text/calendar=userapp-Thunderbird-39WMR3.desktop
 application/x-extension-ics=userapp-Thunderbird-39WMR3.desktop
 x-scheme-handler/net.thunderbird=userapp-Thunderbird-ZJ55R3.desktop
+text/html=brave-origin.desktop
+x-scheme-handler/http=brave-origin.desktop
+x-scheme-handler/https=brave-origin.desktop
 
 [Added Associations]
 text/plain=nvim.desktop;
