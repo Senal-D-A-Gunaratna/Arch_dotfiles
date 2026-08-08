@@ -2,6 +2,10 @@
 
 STATE_FILE="/dev/shm/skl_state"
 
+# Presets
+BRIGHTNESS="40"
+VOLUME="0.30"
+
 # Helper functions to fetch current states safely
 get_current_brightness() {
   # Use --terse to get "VCP 10 C <current> <max>" and extract the 4th field
@@ -32,8 +36,8 @@ apply)
   echo "$CURRENT_B $CURRENT_V" >"$STATE_FILE"
 
   echo "Applying custom presets..."
-  ddcutil setvcp 10 35
-  wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.30
+  ddcutil setvcp 10 $BRIGHTNESS
+  wpctl set-volume @DEFAULT_AUDIO_SINK@ $VOLUME
   echo "Done."
   ;;
 
