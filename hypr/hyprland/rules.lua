@@ -25,6 +25,12 @@ hl.window_rule({
 	no_focus = true,
 })
 
+-- waybar blur
+hl.layer_rule({
+	match = { namespace = "waybar" },
+	blur = true,
+})
+
 -- hyprland-run float rule
 hl.window_rule({
 	name = "move-hyprland-run",
