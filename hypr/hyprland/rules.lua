@@ -31,6 +31,12 @@ hl.layer_rule({
 	blur = true,
 })
 
+-- rofi blur
+hl.layer_rule({
+	match = { namespace = "rofi" },
+	blur = true,
+})
+
 -- hyprland-run float rule
 hl.window_rule({
 	name = "move-hyprland-run",
