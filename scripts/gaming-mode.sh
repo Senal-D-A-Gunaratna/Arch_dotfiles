@@ -4,7 +4,7 @@ STATE_FILE="/dev/shm/skl_state"
 
 # Presets
 BRIGHTNESS="40"
-VOLUME="0.30"
+VOLUME="0.40"
 
 # Helper functions to fetch current states safely
 get_current_brightness() {
