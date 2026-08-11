@@ -4,7 +4,7 @@ STATE_FILE="/dev/shm/skl_state"
 
 # Presets
 BRIGHTNESS="40"
-VOLUME="0.40"
+VOLUME="40"
 
 # Helper functions to fetch current states safely
 get_current_brightness() {
@@ -37,7 +37,7 @@ apply)
 
   echo "Applying custom presets..."
   ddcutil setvcp 10 $BRIGHTNESS
-  wpctl set-volume @DEFAULT_AUDIO_SINK@ $VOLUME
+  wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.$VOLUME
   echo "Done."
   ;;
 
