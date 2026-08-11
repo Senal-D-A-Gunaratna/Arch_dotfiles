@@ -1,10 +1,9 @@
 #!/usr/bin/env bash
 
-STATE_FILE="/dev/shm/skl_state"
-
 # Presets
 BRIGHTNESS="40"
 VOLUME="40"
+STATE_FILE="/dev/shm/skl_state"
 
 # Helper functions to fetch current states safely
 get_current_brightness() {
