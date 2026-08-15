@@ -65,3 +65,8 @@ nvim/lazy-lock.json
 #hypr
 !hypr
 hypr/hyprland/border_color.lua
+
+# Concord
+!concord
+concord
+!concord/config.toml
