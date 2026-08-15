@@ -68,5 +68,5 @@ hypr/hyprland/border_color.lua
 
 # Concord
 !concord
-concord
+concord/*
 !concord/config.toml
