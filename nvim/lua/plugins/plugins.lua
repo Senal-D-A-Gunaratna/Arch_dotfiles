@@ -14,6 +14,7 @@ return {
         "taplo",
         "pyright",
         "ruff",
+        "rust-analyzer",
         "oxlint",
       },
     },
