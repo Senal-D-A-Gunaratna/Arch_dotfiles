@@ -5,33 +5,3 @@ ratio = [1, 2, 2]
 edit = [
   { run = 'nvim "$@"', block = true, desc = "Neovim" },
 ]
-image = [{ run = 'setsid pix "$@"', block = false, desc = "gThumb" }]
-music = [{ run = 'mpv "$@"', orphan = true, desc = "mpv" }]
-video = [{ run = 'mpv "$@"', orphan = true, desc = "mpv" }]
-onlyoffice = [
-  { run = 'setsid onlyoffice "$@"', block = false, desc = "onlyoffice" },
-]
-
-[open]
-prepend_rules = [
-  # Images (including WebP)
-  { mime = "image/*", use = "image" },
-
-  # Text/Code
-  { mime = "text/*", use = "edit" },
-
-  #Audio
-  { mime = "audio/*", use = "music" },
-
-  #Video
-  { mime = "video/*", use = "video" },
-
-  # Office Documents
-  { mime = "application/vnd.openxmlformats-officedocument.wordprocessingml.document", use = "onlyoffice" },
-  { mime = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", use = "onlyoffice" },
-  { mime = "application/vnd.openxmlformats-officedocument.presentationml.presentation", use = "onlyoffice" },
-  { mime = "application/msword", use = "onlyoffice" },
-  { mime = "application/vnd.ms-excel", use = "onlyoffice" },
-  { mime = "application/vnd.ms-powerpoint", use = "onlyoffice" },
-  { mime = "text/csv", use = "onlyoffice" },
-]
