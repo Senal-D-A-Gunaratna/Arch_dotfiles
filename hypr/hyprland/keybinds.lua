@@ -49,7 +49,7 @@ hl.bind(mainMod .. "+P", hl.dsp.exec_cmd("~/.config/scripts/powermenu.sh"))
 hl.bind(mainMod .. "+V", hl.dsp.exec_cmd(float_kitty .. " clipse"))
 
 -- Lock screen
-hl.bind(mainMod .. "+CTRL+L", hl.dsp.exec_cmd("hyprlock"))
+hl.bind(mainMod .. "+ALT+L", hl.dsp.exec_cmd("hyprlock"))
 
 -- Switch workspaces with mainMod + [0-9]
 -- Move active window to a workspace with mainMod + SHIFT + [0-9]
