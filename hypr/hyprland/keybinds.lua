@@ -22,7 +22,7 @@ hl.bind(mainMod .. "+SHIFT+L", hl.dsp.window.swap({ direction = "right" }))
 hl.bind(mainMod .. "+SHIFT+K", hl.dsp.window.swap({ direction = "up" }))
 hl.bind(mainMod .. "+SHIFT+J", hl.dsp.window.swap({ direction = "down" }))
 
--- Resize windows with keyboard (vim-style hjkl)
+-- Resize windows with keyboard (vim-style)
 hl.bind(mainMod .. "+CTRL+H", hl.dsp.window.resize({ x = -40, y = 0, relative = true }), { repeating = true })
 hl.bind(mainMod .. "+CTRL+L", hl.dsp.window.resize({ x = 40, y = 0, relative = true }), { repeating = true })
 hl.bind(mainMod .. "+CTRL+K", hl.dsp.window.resize({ x = 0, y = -40, relative = true }), { repeating = true })
@@ -33,6 +33,12 @@ hl.bind(mainMod .. "+left", hl.dsp.focus({ direction = "left" }))
 hl.bind(mainMod .. "+right", hl.dsp.focus({ direction = "right" }))
 hl.bind(mainMod .. "+up", hl.dsp.focus({ direction = "up" }))
 hl.bind(mainMod .. "+down", hl.dsp.focus({ direction = "down" }))
+
+-- Resize to grid
+hl.bind(mainMod .. "+CTRL+R", function()
+	hl.dispatch(hl.dsp.window.float({ action = "toggle" }))
+	hl.dispatch(hl.dsp.window.float({ action = "toggle" }))
+end)
 
 -- Custom keybinds variables / overrides
 local kitty_override = "kitty --override window_padding_width=0 -e"
