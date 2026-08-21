@@ -22,6 +22,12 @@ hl.bind(mainMod .. "+SHIFT+L", hl.dsp.window.swap({ direction = "right" }))
 hl.bind(mainMod .. "+SHIFT+K", hl.dsp.window.swap({ direction = "up" }))
 hl.bind(mainMod .. "+SHIFT+J", hl.dsp.window.swap({ direction = "down" }))
 
+-- Resize windows with keyboard (vim-style hjkl)
+hl.bind(mainMod .. "+CTRL+H", hl.dsp.window.resize({ x = -40, y = 0, relative = true }), { repeating = true })
+hl.bind(mainMod .. "+CTRL+L", hl.dsp.window.resize({ x = 40, y = 0, relative = true }), { repeating = true })
+hl.bind(mainMod .. "+CTRL+K", hl.dsp.window.resize({ x = 0, y = -40, relative = true }), { repeating = true })
+hl.bind(mainMod .. "+CTRL+J", hl.dsp.window.resize({ x = 0, y = 40, relative = true }), { repeating = true })
+
 -- Move focus with arrow keys
 hl.bind(mainMod .. "+left", hl.dsp.focus({ direction = "left" }))
 hl.bind(mainMod .. "+right", hl.dsp.focus({ direction = "right" }))
