@@ -40,10 +40,13 @@ window#waybar {
   color: @surface-variant;
 }
 
+#workspaces button:hover {
+  background: alpha(@primary-neon, 0.15);
+}
+
 #workspaces button:hover,
 #workspaces button:hover label {
   color: @text-main;
-  background: alpha(@primary-neon, 0.15);
 }
 
 #workspaces button.active,
