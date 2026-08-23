@@ -28,29 +28,41 @@ window#waybar {
 }
 
 /* --- Workspaces --- */
-#workspaces button {
+/* NOTE: #workspaces is a box, each entry is a <button> which itself wraps
+   an unnamed <label>. The global `*` rule above matches that inner label
+   directly, and a directly-matched rule always beats an inherited one -
+   so `label` has to be targeted explicitly alongside `button` or the
+   text stays @text-main no matter what color the button gets. */
+#workspaces button,
+#workspaces button label {
   margin: 0px 1px;
   padding: 0px 6px;
   color: @surface-variant;
 }
 
-#workspaces button:hover {
+#workspaces button:hover,
+#workspaces button:hover label {
   color: @text-main;
   background: alpha(@surface-variant, 0.25);
 }
 
-#workspaces button.active {
+#workspaces button.active,
+#workspaces button.active label {
   color: @primary-neon;
   border-bottom: 2px solid @primary-neon;
 }
 
-#workspaces button.urgent {
+#workspaces button.urgent,
+#workspaces button.urgent label {
   color: @base-bg;
   background: @primary-neon;
 }
 
 /* --- Window Title --- */
-#window {
+/* Same story: hyprland/window renders as box#window > image + label,
+   so #window alone only sets an inherited color the label ignores. */
+#window,
+#window label {
   color: @primary-neon;
   margin: 0px 1px;
   font-weight: bold;
