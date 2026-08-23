@@ -64,7 +64,7 @@ window#waybar {
 #window label {
   color: @primary-neon;
   margin: 0px 1px;
-  font-weight: bold;
+  font-weight: 900;
 }
 
 /* --- Unified Modules Base Style --- */
