@@ -15,7 +15,6 @@ prepend_keymap = [
   # Tabs and System
   { on = "T", run = "tab_close", desc = "Close tab" },
   { on = "<C-t>", run = 'shell "setsid kitty &" --block', desc = "Open terminal here" },
-  { on = "B", run = 'shell "dragon-drop -x \"$@\"" --confirm', desc = "Drag and drop" },
 
 # Compression Selection Menu (c -> c)
   { on = ["c", "c", "1"], run = 'shell "tar -czf \"$PWD/${1##*/}.tar.gz\" -C \"$PWD\" -- \"${@##*/}\"" --confirm', desc = "Create .tar.gz" },
