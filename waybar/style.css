@@ -43,7 +43,7 @@ window#waybar {
 #workspaces button:hover,
 #workspaces button:hover label {
   color: @text-main;
-  background: alpha(@surface-variant, 0.25);
+  background: alpha(@primary-neon, 0.15);
 }
 
 #workspaces button.active,
@@ -89,7 +89,7 @@ window#waybar {
 #memory:hover,
 #clock:hover {
   color: @text-main;
-  background: alpha(@surface-variant, 0.2);
+  background: alpha(@primary-neon, 0.15);
 }
 
 /* --- Audio States --- */
