@@ -58,6 +58,6 @@ hl.window_rule({
 local opacity = 0.7
 
 hl.window_rule({
-	match = { class = "localsend" },
+	match = { class = "org.localsend.localsend_app" },
 	opacity = opacity,
 })
