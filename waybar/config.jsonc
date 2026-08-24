@@ -35,7 +35,7 @@
   },
 
   "custom/cpucat": {
-    "exec": "pkill catloop ; ~/.config/scripts/catloop",
+    "exec": "pkill waycat ; ~/.config/scripts/waycat",
     "spacing": 1,
     "format": "{}",
     "tooltip": false,
