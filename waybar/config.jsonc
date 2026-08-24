@@ -4,7 +4,7 @@
   "height": 22,
 
   "modules-center": ["hyprland/window"],
-  "modules-left": ["hyprland/workspaces", "tray"],
+  "modules-left": ["hyprland/workspaces", "tray", "custom/cpucat"],
 
   "modules-right": [
     "custom/media",
@@ -32,6 +32,13 @@
     "icon-size": 18,
     "spacing": 10,
     "tooltip": false,
+  },
+
+  "custom/cpucat": {
+    "exec": "~/.config/scripts/catloop.sh",
+    "spacing": 1,
+    "format": "{}",
+    "tooltip": true,
   },
 
   "custom/media": {
