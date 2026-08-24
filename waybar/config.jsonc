@@ -35,10 +35,10 @@
   },
 
   "custom/cpucat": {
-    "exec": "~/.config/scripts/catloop.sh",
+    "exec": "~/.config/scripts/catloop",
     "spacing": 1,
     "format": "{}",
-    "tooltip": true,
+    "tooltip": false,
   },
 
   "custom/media": {
