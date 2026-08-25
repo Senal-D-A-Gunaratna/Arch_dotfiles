@@ -16,11 +16,14 @@ prepend_keymap = [
   { on = "T", run = "tab_close", desc = "Close tab" },
   { on = "<C-t>", run = 'shell "setsid kitty &" --block', desc = "Open terminal here" },
 
-# Compression Selection Menu (c -> c)
+  # Compression Selection Menu (c -> c)
   { on = ["c", "c", "1"], run = "plugin ouch tar.gz", desc = "Compress with ouch (.tar.gz)" },
   { on = ["c", "c", "2"], run = "plugin ouch zip",    desc = "Compress with ouch (.zip)" },
   { on = ["c", "c", "3"], run = "plugin ouch 7z",     desc = "Compress with ouch (.7z)" },
 
-# Interactive compress dialog
+  # Interactive compress dialog
   { on = ["c", "o"], run = "plugin ouch", desc = "Compress with ouch" },
+
+  # Extraction
+  { on = ["c", "x"], run = 'shell "ouch d -y %s" --confirm', desc = "Extract with ouch" },
 ]
