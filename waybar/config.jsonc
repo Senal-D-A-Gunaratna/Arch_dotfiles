@@ -35,8 +35,8 @@
   },
 
   "custom/cpucat": {
-    "exec": "pkill waycat ; ~/.config/scripts/waycat",
-    "on-click": "~/.config/scripts/waycat toggle",
+    "exec": "pkill waycat ; ~/.config/scripts/waycat-rs",
+    "on-click": "~/.config/scripts/waycat-rs toggle",
     "spacing": 1,
     "format": "{}",
     "tooltip": false,
