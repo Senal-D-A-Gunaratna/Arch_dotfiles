@@ -12,6 +12,7 @@ return {
         "yaml-language-server",
         "css-lsp",
         "taplo",
+        "tree-sitter-cli",
         "pyright",
         "ruff",
         "rust-analyzer",
