@@ -4,7 +4,7 @@
   "height": 22,
 
   "modules-center": ["hyprland/window"],
-  "modules-left": ["hyprland/workspaces", "tray", "custom/cpucat"],
+  "modules-left": ["hyprland/workspaces", "tray", "custom/waycat-rs"],
 
   "modules-right": [
     "custom/media",
@@ -34,8 +34,8 @@
     "tooltip": false,
   },
 
-  "custom/cpucat": {
-    "exec": "pkill waycat ; ~/.config/scripts/waycat-rs",
+  "custom/waycat-rs": {
+    "exec": "pkill waycat-rs ; ~/.config/scripts/waycat-rs",
     "on-click": "~/.config/scripts/waycat-rs toggle",
     "spacing": 1,
     "format": "{}",
