@@ -8,5 +8,10 @@ use = "uhs-robert/recycle-bin"
 rev = "fa68711"
 hash = "8714306b5cac6359edbacbf545fbd691"
 
+[[plugin.deps]]
+use = "ndtoan96/ouch"
+rev = "cfe4f50"
+hash = "eff5702573b6cfba61e4ac8b1969629a"
+
 [flavor]
 deps = []

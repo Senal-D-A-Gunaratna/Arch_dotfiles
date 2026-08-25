@@ -5,3 +5,15 @@ ratio = [1, 2, 2]
 edit = [
   { run = 'nvim "$@"', block = true, desc = "Neovim" },
 ]
+extract = [
+  { run = 'ouch d -y "$@"', desc = "Extract with ouch" },
+]
+
+[open]
+prepend_rules = [
+  { mime = "application/{*zip,tar,bzip2,7z*,rar,xz,zstd,java-archive}", use = "extract" },
+]
+
+[[plugin.prepend_previewers]]
+mime = "application/{*zip,tar,bzip2,7z*,rar,xz,zstd,java-archive}"
+run = "ouch"
