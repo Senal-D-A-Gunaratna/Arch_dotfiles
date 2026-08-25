@@ -3,10 +3,10 @@ ratio = [1, 2, 2]
 
 [opener]
 edit = [
-  { run = 'nvim "$@"', block = true, desc = "Neovim" },
+  { run = 'nvim %s', block = true, desc = "Neovim" },
 ]
 extract = [
-  { run = 'ouch d -y "$@"', desc = "Extract with ouch" },
+  { run = 'ouch d -y %s', desc = "Extract with ouch" },
 ]
 
 [open]
