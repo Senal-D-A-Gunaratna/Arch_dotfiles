@@ -35,18 +35,4 @@ return {
       { "<leader>du", function() require("dapui").toggle() end, desc = "Toggle DAP UI" },
     },
   },
-
-  -- -- Debug adapters (install via Mason)
-  -- {
-  --   "jay-babu/mason-nvim-dap.nvim",
-  --   dependencies = { "williamboman/mason.nvim", "mfussenegger/nvim-dap" },
-  --   opts = {
-  --     ensure_installed = {
-  --       "python",     -- for Python (debugpy)
-  --       "rust",       -- for Rust (lldb/codelldb)
-  --       -- "lua"      -- Lua doesn't have a standard DAP adapter
-  --     },
-  --     automatic_installation = true,
-  --   },
-  -- },
 }
