@@ -22,6 +22,21 @@ return {
   },
 
   {
+    "neovim/nvim-lspconfig",
+    config = function()
+      require("lspconfig").ruff.setup({})
+
+      -- Auto-enable ruff when opening Python files
+      vim.api.nvim_create_autocmd("FileType", {
+        pattern = "python",
+        callback = function()
+          vim.lsp.enable("ruff")
+        end,
+      })
+    end,
+  },
+
+  {
     "stevearc/conform.nvim",
     opts = {
       formatters_by_ft = {
