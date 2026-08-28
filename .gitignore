@@ -70,3 +70,8 @@ hypr/hyprland/border_color.lua
 !concord
 concord/*
 !concord/config.toml
+
+# chess-tui
+!chess-tui
+chess-tui/*
+!chess-tui/config/toml

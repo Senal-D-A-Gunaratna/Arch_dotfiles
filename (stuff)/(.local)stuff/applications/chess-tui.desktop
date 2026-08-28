@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Chess TUI
+Comment=Play chess in terminal with Stockfish
+Exec=kitty chess-tui
+Icon=utilities-terminal
+Terminal=false
+Categories=Game;BoardGame;
