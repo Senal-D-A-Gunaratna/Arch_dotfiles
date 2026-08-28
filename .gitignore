@@ -74,4 +74,4 @@ concord/*
 # chess-tui
 !chess-tui
 chess-tui/*
-!chess-tui/config/toml
+!chess-tui/config.toml

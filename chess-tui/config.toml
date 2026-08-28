@@ -1,0 +1,7 @@
+engine_path = "/usr/bin/stockfish"
+display_mode = "DEFAULT"
+log_level = "OFF"
+bot_depth = 10
+selected_skin_name = "Default"
+sound_enabled = true
+animations_enabled = false
