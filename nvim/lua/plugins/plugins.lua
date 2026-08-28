@@ -26,6 +26,7 @@ return {
     opts = {
       formatters_by_ft = {
         rust = { "rustfmt" },
+        python = { "ruff_format" },
       },
     },
   },
