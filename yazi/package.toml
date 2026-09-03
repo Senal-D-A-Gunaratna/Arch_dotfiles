@@ -1,12 +1,12 @@
 [[plugin.deps]]
 use = "yazi-rs/plugins:mount"
-rev = "442d908"
-hash = "77e20b071404f97c09d3f9afdb9482e0"
+rev = "4dc7f1b"
+hash = "b95f898e6dc60b52edbc415952e14395"
 
 [[plugin.deps]]
 use = "uhs-robert/recycle-bin"
-rev = "fa68711"
-hash = "8714306b5cac6359edbacbf545fbd691"
+rev = "fe48a02"
+hash = "edd449b02a169bd8fee052be96a31823"
 
 [[plugin.deps]]
 use = "ndtoan96/ouch"
