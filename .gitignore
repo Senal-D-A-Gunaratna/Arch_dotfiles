@@ -7,7 +7,6 @@
 # 3. Simple Directories (Whole folder tracked)
 !README.md
 !mpv
-!yazi
 !qt6ct
 !matugen
 !scripts
@@ -33,6 +32,10 @@
 #Matugen
 !matugen
 matugen/themes
+
+# Yazi
+!yazi
+yazi/plugins
 
 # Btop: Track config, ignore themes
 !btop
