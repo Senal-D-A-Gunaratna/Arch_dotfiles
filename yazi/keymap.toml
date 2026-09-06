@@ -1,20 +1,19 @@
 [mgr]
 prepend_keymap = [
-  # Mount Plugin
-  { on = ["M", "m",], run = "plugin mount", desc = "Open mount manager" },
-
   # gvfs mount plugin
-  { on = ["M",], run = "plugin mount", desc = "Open mount manager" },
-  { on = [ "M", "g" ], run = "plugin gvfs -- select-then-mount --jump", desc = "GVFS: select device to mount and jump" },
-  { on = [ "M", "u" ], run = "plugin gvfs -- select-then-unmount --eject", desc = "GVFS: select device then eject" },
-  { on = [ "M", "R" ], run = "plugin gvfs -- remount-current-cwd-device", desc = "GVFS: remount device under cwd" },
-  { on = [ "M", "a" ], run = "plugin gvfs -- add-mount", desc = "GVFS: add a mount URI" },
-  { on = [ "M", "e" ], run = "plugin gvfs -- edit-mount", desc = "GVFS: edit a mount URI" },
-  { on = [ "M", "r" ], run = "plugin gvfs -- remove-mount", desc = "GVFS: remove a mount URI" },
-  { on = [ "M", "j" ], run = "plugin gvfs -- jump-to-device --automount", desc = "GVFS: automount then jump to device" },
-  { on = [ "M", "b" ], run = "plugin gvfs -- jump-back-prev-cwd", desc = "GVFS: jump back to previous cwd" },
-  { on = [ "M", "t" ], run = "plugin gvfs -- automount-when-cd", desc = "GVFS: enable automount when cd to device" },
-  { on = [ "M", "T" ], run = "plugin gvfs -- automount-when-cd --disabled", desc = "GVFS: disable automount when cd to device" },
+  { on = [ "M", "m" ], run = "plugin gvfs -- select-then-mount", desc = "Select device then mount" },
+  { on = [ "M", "R" ], run = "plugin gvfs -- remount-current-cwd-device", desc = "Remount device under cwd" },
+  { on = [ "M", "u" ], run = "plugin gvfs -- select-then-unmount", desc = "Select device then unmount" },
+  { on = [ "M", "U" ], run = "plugin gvfs -- select-then-unmount --eject", desc = "Select device then eject" },
+  # { on = [ "M", "U" ], run = "plugin gvfs -- select-then-unmount --eject --force", desc = "Select device then force to eject/unmount" },
+  { on = [ "M", "a" ], run = "plugin gvfs -- add-mount", desc = "Add a GVFS mount URI" },
+  { on = [ "M", "e" ], run = "plugin gvfs -- edit-mount", desc = "Edit a GVFS mount URI" },
+  { on = [ "M", "r" ], run = "plugin gvfs -- remove-mount", desc = "Remove a GVFS mount URI" },
+  { on = [ "g", "m" ], run = "plugin gvfs -- jump-to-device", desc = "Select device then jump to its mount point" },
+  { on = [ "g", "m" ], run = "plugin gvfs -- jump-to-device --automount", desc = "Automount then select device to jump to its mount point" },
+  { on = [ "`", "`" ], run = "plugin gvfs -- jump-back-prev-cwd", desc = "Jump back to the position before jumped to device" },
+  { on = [ "M", "t" ], run = "plugin gvfs -- automount-when-cd", desc = "Enable automount when cd to device under cwd" },
+  { on = [ "M", "T" ], run = "plugin gvfs -- automount-when-cd --disabled", desc = "Disable automount when cd to device under cwd" },
 
   # Recycle Bin Actions
   { on = ["R","b"], run = "plugin recycle-bin --launch",    desc = "Open Recycle Bin menu" },
