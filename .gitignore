@@ -7,7 +7,6 @@
 # 3. Simple Directories (Whole folder tracked)
 !README.md
 !mpv
-!qt6ct
 !matugen
 !scripts
 !xsettingsd
@@ -19,9 +18,7 @@
 !waybar
 !rofi
 !kitty
-!.vscode
 !autostart
-!cspell.json
 !.luarc.json
 !kdeglobals
 !mimeapps.list
