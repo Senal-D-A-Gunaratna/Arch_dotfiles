@@ -49,7 +49,6 @@ return {
       npm = {
         enabled = true,
         tool = "bun",
-        patch_version_lookup = true,
       },
       pip = {
         enabled = true,
