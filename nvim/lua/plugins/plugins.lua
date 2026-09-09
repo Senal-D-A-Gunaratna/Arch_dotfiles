@@ -5,8 +5,7 @@ return {
       ensure_installed = {
         "shellcheck",
         "debugpy",
-        "cspell",
-        "cspell-lsp",
+        "codebook",
         "marksman",
         "yaml-language-server",
         "taplo",
@@ -20,10 +19,19 @@ return {
 
   {
     "neovim/nvim-lspconfig",
+    opts = {
+      servers = {
+        -- Enable CodeBook using the built-in preset
+        codebook = {},
+        -- Ruff LSP configuration
+        ruff = {},
+      },
+    },
     config = function()
-      require("lspconfig").ruff.setup({})
+      -- Enable CodeBook
+      vim.lsp.enable("codebook")
 
-      -- Auto-enable ruff when opening Python files
+      -- Enable ruff for Python files
       vim.api.nvim_create_autocmd("FileType", {
         pattern = "python",
         callback = function()
@@ -75,7 +83,6 @@ return {
       { "<leader>uu", "<cmd>UndotreeToggle<cr>", desc = "Toggle UndoTree" },
     },
     config = function()
-      -- Optional: Persistent undo so history survives restarts
       vim.opt.undofile = true
     end,
   },
@@ -95,24 +102,26 @@ return {
     end,
   },
 
-  "Exafunction/codeium.nvim",
-  cmd = "Codeium",
-  event = "InsertEnter",
-  dependencies = {
-    "nvim-lua/plenary.nvim",
-  },
-  config = function()
-    require("codeium").setup({
-      enable_cmp_source = false, -- Disables searching for hrsh7th/nvim-cmp
-      virtual_text = {
-        enabled = true,
-        key_bindings = {
-          accept = "<Tab>",
-          next = "<M-]>",
-          prev = "<M-[>",
-          dismiss = "<C-]>",
+  {
+    "Exafunction/codeium.nvim",
+    cmd = "Codeium",
+    event = "InsertEnter",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+    },
+    config = function()
+      require("codeium").setup({
+        enable_cmp_source = false,
+        virtual_text = {
+          enabled = true,
+          key_bindings = {
+            accept = "<Tab>",
+            next = "<M-]>",
+            prev = "<M-[>",
+            dismiss = "<C-]>",
+          },
         },
-      },
-    })
-  end,
+      })
+    end,
+  },
 }
