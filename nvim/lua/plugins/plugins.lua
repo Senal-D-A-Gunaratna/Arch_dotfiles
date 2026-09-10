@@ -32,12 +32,7 @@ return {
       vim.lsp.enable("codebook")
 
       -- Enable ruff for Python files
-      vim.api.nvim_create_autocmd("FileType", {
-        pattern = "python",
-        callback = function()
-          vim.lsp.enable("ruff")
-        end,
-      })
+      vim.lsp.enable("ruff")
     end,
   },
 
