@@ -113,7 +113,6 @@ source $ZSH/oh-my-zsh.sh
 export PATH="$HOME/.npm-global/bin:$PATH"
 
 # Load plugins BEFORE OMZ initializes compinit
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh 
 
 
