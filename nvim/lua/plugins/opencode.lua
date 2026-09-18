@@ -25,9 +25,22 @@ return {
     opencode_executable = "/home/senal/.cache/.bun/bin/opencode",
 
     -- Recommended optional settings for a smoother experience
-    preferred_picker = "snacks", -- uses your snacks picker if available
+    preferred_picker = "snacks",
     preferred_completion = "blink",
-    default_global_keymaps = true, -- Keep the other default mappings
+    default_global_keymaps = true,
+
+    -- Server configuration
+    server = {
+      url = nil, -- URL/hostname (e.g., 'http://192.168.1.100', 'localhost', 'https://myserver.com')
+      port = nil, -- Port number (e.g., 8080), 'auto' for random port
+      timeout = 5, -- Health check timeout in seconds when connecting
+      spawn_command = nil, -- Optional function to start the server: function(port, url) ... end
+      auto_kill = true, -- Kill spawned servers when last nvim instance exits (default: true)
+      -- Only applies to servers spawned by the plugin with spawn_command/kill_command
+      path_map = nil, -- Map host paths to server paths: string ('/app') or function(path) -> string
+      username = nil, -- Username for Basic auth. Falls back to OPENCODE_SERVER_USERNAME env var, then "opencode"
+      password = nil, -- Password for Basic auth. Falls back to OPENCODE_SERVER_PASSWORD env var
+    },
 
     ui = {
       window_width = 0.40, -- 👈 Side panel width (40% of screen)
@@ -40,13 +53,11 @@ return {
       },
     },
 
-    -- This is where we override the default toggle keys.
+    -- Override the default toggle keys.
     keymap = {
       editor = {
-        -- Default is <leader>og, we change it to <leader>ai
         ["<leader>ai"] = { "toggle" },
-        -- Add a key to toggle zoom
-        ["<leader>oz"] = { "toggle_zoom" },
+        ["<leader>az"] = { "toggle_zoom" },
       },
     },
   },
