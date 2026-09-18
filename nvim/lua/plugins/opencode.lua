@@ -43,7 +43,7 @@ return {
     },
 
     ui = {
-      window_width = 0.40, -- 👈 Side panel width (40% of screen)
+      window_width = 0.30, -- 👈 Side panel width (40% of screen)
       zoom_width = 0.80, -- 👈 Width when zoomed
       input_position = "bottom", -- Keeps the input at the bottom of the panel
       input = {
