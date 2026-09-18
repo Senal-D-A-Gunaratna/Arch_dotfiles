@@ -109,8 +109,8 @@ fi
 
 source $ZSH/oh-my-zsh.sh
 
-#npm global pkg path fix
-export PATH="$HOME/.npm-global/bin:$PATH"
+#opencode global pkg path fix
+export PATH="/home/senal/.cache/.bun/bin:$PATH"
 
 # Load plugins BEFORE OMZ initializes compinit
 source /usr/share/zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh 
