@@ -10,8 +10,8 @@
     "custom/media",
     "pulseaudio",
     "custom/monitor_brightness",
-    "network",
     "bluetooth",
+    "network",
     "cpu",
     "memory",
     "clock",
@@ -73,7 +73,7 @@
     "format-device-preference": ["Mcdodo T03"],
     "tooltip-format": "{device_alias}",
     "tooltip-format-connected-battery": "{device_alias} {device_battery_percentage}%",
-    "tooltip": true,
+    "tooltip": false,
   },
 
   "cpu": {
