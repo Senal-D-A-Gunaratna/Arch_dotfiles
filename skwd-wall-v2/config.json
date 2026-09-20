@@ -1,7 +1,9 @@
 {
   "components": {
     "wallpaperSelector": {
-      "enabled": true
+      "enabled": true,
+      "lastAppliedKey": "static:other/nature-landscape-mountains-clouds-trees-hd-wallpaper-a836fd18e0a0bce810ecf1bec8c2341a.jpg",
+      "startPosition": "applied"
     }
   },
   "defaultMatugenConfig": "~/.config/matugen/config.toml",
@@ -10,7 +12,16 @@
     "matugen": true
   },
   "general": {
+    "closeOnSelection": true,
+    "maxFps": 60,
     "notifyOnWallpaperChange": false
+  },
+  "monitor": "HDMI-A-2",
+  "performance": {
+    "batterySaver": false,
+    "batteryVideoIdleSeconds": 60,
+    "gpuDevice": "uuid:86801219060000000002000000000000",
+    "gpuPreference": "auto"
   },
   "theme": {
     "authority": "skwd",
