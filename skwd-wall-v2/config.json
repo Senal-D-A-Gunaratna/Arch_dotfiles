@@ -1,0 +1,19 @@
+{
+  "components": {
+    "wallpaperSelector": {
+      "enabled": true
+    }
+  },
+  "defaultMatugenConfig": "~/.config/matugen/config.toml",
+  "externalMatugenCommand": "matugen -c %config% image %path% --source-color-index 0",
+  "features": {
+    "matugen": true
+  },
+  "general": {
+    "notifyOnWallpaperChange": false
+  },
+  "theme": {
+    "authority": "skwd",
+    "engine": "matugen"
+  }
+}
