@@ -2,7 +2,7 @@
   "components": {
     "wallpaperSelector": {
       "enabled": true,
-      "lastAppliedKey": "static:ogarart/tokyo-ninght/ogarart-wolf-and-blue-trees-2019-01-22.jpg",
+      "lastAppliedKey": "static:Toothless/N6Ml5pg4-fond-decran-Toothless-9.png",
       "startPosition": "applied"
     }
   },
@@ -14,7 +14,8 @@
   "general": {
     "closeOnSelection": true,
     "maxFps": 60,
-    "notifyOnWallpaperChange": false
+    "notifyOnWallpaperChange": false,
+    "randomRotate": false
   },
   "monitor": "HDMI-A-2",
   "performance": {
@@ -28,6 +29,6 @@
     "engine": "matugen"
   },
   "transition": {
-    "shader": "directional-wipe"
+    "shader": "iris"
   }
 }
