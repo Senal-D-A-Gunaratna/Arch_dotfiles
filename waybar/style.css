@@ -75,6 +75,7 @@ window#waybar {
 #pulseaudio,
 #custom-monitor_brightness,
 #network,
+#bluetooth,
 #cpu,
 #memory,
 #clock {
@@ -88,6 +89,7 @@ window#waybar {
 #pulseaudio:hover,
 #custom-monitor_brightness:hover,
 #network:hover,
+#bluetooth:hover,
 #cpu:hover,
 #memory:hover,
 #clock:hover {
@@ -99,6 +101,17 @@ window#waybar {
 #pulseaudio.muted {
   color: @surface-variant;
   opacity: 0.6;
+}
+
+/* --- Bluetooth States --- */
+#bluetooth.disabled,
+#bluetooth.off {
+  color: @surface-variant;
+  opacity: 0.6;
+}
+
+#bluetooth.connected {
+  color: @primary-neon;
 }
 
 /* --- System Tray --- */

@@ -11,6 +11,7 @@
     "pulseaudio",
     "custom/monitor_brightness",
     "network",
+    "bluetooth",
     "cpu",
     "memory",
     "clock",
@@ -55,7 +56,6 @@
     "format": "  {volume}%",
     "format-muted": " muted",
     "tooltip": false,
-    //"on-click": "setsid hyprctl dispatch exec '[float;center;size 650 800]' 'kitty -e wiremix'"
   },
 
   "network": {
@@ -64,7 +64,16 @@
     "format-disconnected": "⚠",
     "tooltip": false,
     "interval": 1,
-    //"on-click": "setsid hyprctl dispatch exec '[float;center;size 650 800]' 'kitty -e impala'"
+  },
+
+  "bluetooth": {
+    "format": "󰂲",
+    "format-connected": "󰋋",
+    "format-connected-battery": "󰋋 {device_battery_percentage}%",
+    "format-device-preference": ["Mcdodo T03"],
+    "tooltip-format": "{device_alias}",
+    "tooltip-format-connected-battery": "{device_alias} {device_battery_percentage}%",
+    "tooltip": true,
   },
 
   "cpu": {
