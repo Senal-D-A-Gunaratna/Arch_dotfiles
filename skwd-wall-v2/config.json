@@ -19,10 +19,17 @@
   },
   "monitor": "HDMI-A-2",
   "performance": {
+    "autoDeleteImageTrash": false,
     "batterySaver": false,
     "batteryVideoIdleSeconds": 60,
     "gpuDevice": "uuid:86801219060000000002000000000000",
-    "gpuPreference": "auto"
+    "gpuPreference": "auto",
+    "imageOptimizeResolution": "1080p"
+  },
+  "plasma": {
+    "lockScreen": {
+      "mode": "static"
+    }
   },
   "theme": {
     "authority": "skwd",
@@ -30,5 +37,10 @@
   },
   "transition": {
     "shader": "iris"
+  },
+  "wallhaven": {
+    "defaults": {
+      "anime": false
+    }
   }
 }
