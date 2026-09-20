@@ -17,6 +17,9 @@
     "notifyOnWallpaperChange": false,
     "randomRotate": false
   },
+  "keys": {
+    "tagCloud": "/"
+  },
   "monitor": "HDMI-A-2",
   "performance": {
     "autoDeleteImageTrash": false,
