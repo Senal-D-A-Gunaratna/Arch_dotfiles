@@ -34,6 +34,9 @@
       "mode": "static"
     }
   },
+  "tagging": {
+    "defaultSearchMode": "describe"
+  },
   "theme": {
     "authority": "skwd",
     "engine": "matugen"
