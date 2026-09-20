@@ -37,7 +37,7 @@ window#waybar {
 #workspaces button label {
   margin: 0px 1px;
   padding: 0px 6px;
-  color: @surface-variant;
+  color: mix(@surface-variant, @text-main, 0.35);
 }
 
 #workspaces button:hover {
