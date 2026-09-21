@@ -11,6 +11,20 @@
   "features": {
     "matugen": true
   },
+  "filterBar": {
+    "show": {
+      "folder": false,
+      "random": true,
+      "sort": {
+        "res": false
+      },
+      "tagcloud": false,
+      "theme": false,
+      "type": {
+        "we": false
+      }
+    }
+  },
   "general": {
     "closeOnSelection": true,
     "maxFps": 60,
