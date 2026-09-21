@@ -23,7 +23,6 @@
 !kdeglobals
 !mimeapps.list
 !systemd
-!skwd-wall-v2
 
 # 4. Selective Tracking (Riced apps)
 
@@ -76,3 +75,8 @@ concord/*
 !chess-tui
 chess-tui/*
 !chess-tui/config.toml
+
+# skwd-wall
+!skwd-wall-v2
+skwd-wall-v2/*
+!skwd-wall-v2/config.toml
