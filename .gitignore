@@ -79,4 +79,4 @@ chess-tui/*
 # skwd-wall
 !skwd-wall-v2
 skwd-wall-v2/*
-!skwd-wall-v2/config.toml
+!skwd-wall-v2/config.json
