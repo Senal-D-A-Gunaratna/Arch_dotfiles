@@ -64,8 +64,7 @@ return {
     "folke/which-key.nvim",
     opts = {
       spec = {
-        { "<leader>a", group = "AI", icon = "󰚩" },
-        { "<leader>at", desc = "Toggle AI Completion", icon = "" },
+        { "<leader>o", group = "opencode", icon = "󰚩" },
         { "<leader>ca", vim.lsp.buf.code_action, desc = "CodeBook: Code Action", mode = { "n", "v" } },
         { "<leader>k", desc = "Kitty", icon = "󰍹" },
       },
