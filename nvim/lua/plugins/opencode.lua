@@ -4,8 +4,13 @@ return {
   -- This keeps your startup time fast.
   cmd = { "Opencode" },
   keys = {
-    { "<leader>ai", desc = "Toggle OpenCode" },
+    { "<leader>og", desc = "Toggle OpenCode" },
+    { "<leader>oi", desc = "OpenCode Input" },
+    { "<leader>oo", desc = "OpenCode Output" },
+    { "<leader>ot", desc = "Toggle OpenCode Focus" },
     { "<leader>oz", desc = "Toggle OpenCode Zoom" },
+    { "<leader>os", desc = "Select OpenCode Session" },
+    { "<leader>o/", desc = "OpenCode Quick Chat" },
   },
   dependencies = {
     "nvim-lua/plenary.nvim",
@@ -52,13 +57,4 @@ return {
         },
       },
     },
-
-    -- Override the default toggle keys.
-    keymap = {
-      editor = {
-        ["<leader>ai"] = { "toggle" },
-        ["<leader>az"] = { "toggle_zoom" },
-      },
-    },
-  },
 }
