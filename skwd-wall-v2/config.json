@@ -32,11 +32,10 @@
     "randomRotate": false
   },
   "keys": {
-    "navDown": "j",
-    "navLeft": "h",
-    "navRight": "l",
-    "navUp": "k",
-    "tagCloud": "/"
+    "navDown": "down, j",
+    "navLeft": "left, h",
+    "navRight": "right, l",
+    "navUp": "up, k"
   },
   "library": {
     "pollingFallback": true
