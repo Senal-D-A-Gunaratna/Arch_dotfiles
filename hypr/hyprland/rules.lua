@@ -35,6 +35,7 @@ hl.layer_rule({
 hl.layer_rule({
 	match = { namespace = "rofi" },
 	blur = true,
+	ignore_alpha = 0.2,
 })
 
 -- hyprland-run float rule
